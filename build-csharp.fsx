@@ -18,7 +18,7 @@ Target "Clean" (fun _ ->
 Target "RestorePackages" (fun _ -> 
      "src/csharp-kata.sln"
         |> RestoreMSSolutionPackages (fun p ->
-            { p with Sources = "https://www.nuget.org/api/v2/" :: p.Sources ;Retries = 4 })
+            { p with Sources = "https://www.nuget.org/api/v2/" :: p.Sources ;Retries = 4; OutputPath= "./src/packages" })
  )
 
 Target "Build" (fun _ ->
