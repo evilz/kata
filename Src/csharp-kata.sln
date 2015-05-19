@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FizzBuzz.csharp", "FizzBuzz\FizzBuzz.csharp\FizzBuzz.csharp.xproj", "{7E1060A9-D77B-4F8E-81CB-696FEA4AEBA1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4CC9CCF-C1B1-48D2-9935-16E2DD294087}"
 	ProjectSection(SolutionItems) = preProject
 		ReadMe.md = ReadMe.md
@@ -12,8 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37874DED-80DC-4EB1-AD50-EA6663AAD840}"
 	ProjectSection(SolutionItems) = preProject
-		..\build.cmd = ..\build.cmd
+		..\build-csharp.cmd = ..\build-csharp.cmd
+		..\build-csharp.fsx = ..\build-csharp.fsx
+		..\paket.dependencies = ..\paket.dependencies
+		..\paket.lock = ..\paket.lock
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz-csharp", "FizzBuzz\FizzBuzz-csharp\FizzBuzz-csharp.csproj", "{AD0E342C-FE9E-4841-B116-35AD1EB19F36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,15 +24,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7E1060A9-D77B-4F8E-81CB-696FEA4AEBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E1060A9-D77B-4F8E-81CB-696FEA4AEBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E1060A9-D77B-4F8E-81CB-696FEA4AEBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E1060A9-D77B-4F8E-81CB-696FEA4AEBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0E342C-FE9E-4841-B116-35AD1EB19F36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0E342C-FE9E-4841-B116-35AD1EB19F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0E342C-FE9E-4841-B116-35AD1EB19F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0E342C-FE9E-4841-B116-35AD1EB19F36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7E1060A9-D77B-4F8E-81CB-696FEA4AEBA1} = {E4CC9CCF-C1B1-48D2-9935-16E2DD294087}
+		{AD0E342C-FE9E-4841-B116-35AD1EB19F36} = {E4CC9CCF-C1B1-48D2-9935-16E2DD294087}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,10 @@
+source https://nuget.org/api/v2
+
+nuget NUnit 
+nuget NUnit.Runners
+nuget NUnitOrange
+nuget OpenCover
+nuget ReportGenerator
+nuget FAKE
+
+github fsharp/FAKE modules/Octokit/Octokit.fsx
