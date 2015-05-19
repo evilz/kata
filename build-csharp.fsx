@@ -52,9 +52,9 @@ Target "Test" (fun _ ->
 )
 
 Target "Watch" (fun _ ->
-    use watcher = !! "src/**/*.*" |> WatchChanges (fun changes -> 
+    use watcher = !! "src/**/*.cs" |> WatchChanges (fun changes -> 
         tracefn "%A" changes
-        Run "Default"
+        Run "Test"
     )
 
     System.Console.ReadLine() |> ignore //Needed to keep FAKE from exiting
