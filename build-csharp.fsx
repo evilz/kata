@@ -15,6 +15,12 @@ Target "Clean" (fun _ ->
     CleanDirs [buildDir; testDir]
 )
 
+Target "RestorePackages" (fun _ -> 
+     "src/csharp-kata.sln"
+        |> RestoreMSSolutionPackages (fun p ->
+            { p with Sources = "https://www.nuget.org/api/v2/" :: p.Sources ;Retries = 4 })
+ )
+
 Target "Build" (fun _ ->
    !! "src/**/*.csproj"
      |> MSBuildRelease buildDir "Build"
@@ -70,6 +76,7 @@ Target "Default" (fun _ ->
 
 // Dependencies
 "Clean"
+  ==> "RestorePackages"
   ==> "Build"
 //  ==> "Test-Cover"
   ==> "Test"
