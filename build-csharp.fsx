@@ -7,12 +7,11 @@ open Fake.ReportGeneratorHelper
 open System
 
 // Properties
-let buildDir = "./build/"
-let testDir  = "./test/"
+let buildDir = "./artifacts/"
 
 // Targets
 Target "Clean" (fun _ ->
-    CleanDirs [buildDir; testDir]
+    CleanDirs [buildDir]
 )
 
 Target "RestorePackages" (fun _ -> 
@@ -41,9 +40,10 @@ Target "Test" (fun _ ->
                               TestRunnerExePath = nunitPath; 
                               Output = (buildDir + "opencover.xml"); 
                               Register = RegisterType.RegisterUser ; 
-                              Filter = "+[*]* -[*]*Tests" }) 
-         (assemblies + " /config:Release /noshadow /xml:build/TestResults.xml /framework:net-4.5")
-    ReportGenerator (fun p -> { p with ExePath = reportGenPath; TargetDir = (buildDir + "reports/") }) [ (buildDir + "opencover.xml") ]
+                              Filter = "+[*]* -[*]*Tests";
+                              OptionalArguments = "-excludebyattribute:System.Diagnostics.Conditional" })  
+         (assemblies + " /config:Release /noshadow /xml:"+buildDir+"TestResults.xml /framework:net-4.5")
+    ReportGenerator (fun p -> { p with ExePath = reportGenPath; TargetDir = (buildDir + "coverage/") }) [ (buildDir + "opencover.xml") ]
 
     ExecProcess (fun info ->
             info.FileName <- nunitOrangePath; info.WorkingDirectory <- buildDir; info.Arguments <- "TestResults.xml TestResults.html") (TimeSpan.FromMinutes 5.0)
@@ -62,16 +62,8 @@ Target "Watch" (fun _ ->
     watcher.Dispose() // Use to stop the watch from elsewhere, ie another task.
 )
 
-//Target "Test" (fun _ ->
-//    !! (buildDir + "*.dll")
-//      |> NUnit (fun p ->
-//          {p with
-//             DisableShadowCopy = true;
-//             OutputFile = testDir + "TestResults.xml" })
-//)
-
 Target "Default" (fun _ ->
-    trace "Hello World from FAKE"
+    trace "All done :)"
 )
 
 // Dependencies

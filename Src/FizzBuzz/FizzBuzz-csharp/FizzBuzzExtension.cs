@@ -1,4 +1,7 @@
-﻿namespace FizzBuzz_csharp
+﻿using System;
+using System.Diagnostics;
+
+namespace FizzBuzz_csharp
 {
     public static class FizzBuzzExtension
     {
@@ -14,5 +17,14 @@
             
             return number.ToString();
         }
+
+        // USAGE
+        //public static void Main()
+        //{
+        //    for (var i = 1; i <= 100; i++)
+        //    {
+        //        Console.WriteLine(i.FizzBuzz());
+        //    }
+        //}
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4CC9CCF-C1B1-48D2-9935-16E2DD294087}"
 	ProjectSection(SolutionItems) = preProject
-		ReadMe.md = ReadMe.md
+		FizzBuzz\ReadMe.md = FizzBuzz\ReadMe.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37874DED-80DC-4EB1-AD50-EA6663AAD840}"
@@ -18,6 +18,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz-csharp", "FizzBuzz\FizzBuzz-csharp\FizzBuzz-csharp.csproj", "{AD0E342C-FE9E-4841-B116-35AD1EB19F36}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeapYears", "LeapYears", "{F095024C-956C-4132-9C95-1CD75B25E85A}"
+	ProjectSection(SolutionItems) = preProject
+		LeapYears\ReadMe.md = LeapYears\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYears-csharp", "LeapYears\LeapYears-csharp\LeapYears-csharp.csproj", "{EAE66D52-635D-4870-B326-3BADD0EDE093}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FooBarQix", "FooBarQix", "{68ABDE80-83D0-4612-9D1C-D894395B7188}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artifacts", "artifacts", "{D39C79C1-CCB6-41EA-B9F5-93716688BD91}"
+	ProjectSection(SolutionItems) = preProject
+		..\artifacts\TestResults.html = ..\artifacts\TestResults.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "coverage", "coverage", "{AA402D8C-3696-4078-8070-FC4E7F409FEE}"
+	ProjectSection(SolutionItems) = preProject
+		..\artifacts\coverage\combined.js = ..\artifacts\coverage\combined.js
+		..\artifacts\coverage\FizzBuzz_csharp_FizzBuzzExtension.htm = ..\artifacts\coverage\FizzBuzz_csharp_FizzBuzzExtension.htm
+		..\artifacts\coverage\index.htm = ..\artifacts\coverage\index.htm
+		..\artifacts\coverage\LeapYears_csharp_DateTimeExtensions.htm = ..\artifacts\coverage\LeapYears_csharp_DateTimeExtensions.htm
+		..\artifacts\coverage\report.css = ..\artifacts\coverage\report.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,11 +51,17 @@ Global
 		{AD0E342C-FE9E-4841-B116-35AD1EB19F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD0E342C-FE9E-4841-B116-35AD1EB19F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD0E342C-FE9E-4841-B116-35AD1EB19F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE66D52-635D-4870-B326-3BADD0EDE093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE66D52-635D-4870-B326-3BADD0EDE093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE66D52-635D-4870-B326-3BADD0EDE093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE66D52-635D-4870-B326-3BADD0EDE093}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AD0E342C-FE9E-4841-B116-35AD1EB19F36} = {E4CC9CCF-C1B1-48D2-9935-16E2DD294087}
+		{EAE66D52-635D-4870-B326-3BADD0EDE093} = {F095024C-956C-4132-9C95-1CD75B25E85A}
+		{AA402D8C-3696-4078-8070-FC4E7F409FEE} = {D39C79C1-CCB6-41EA-B9F5-93716688BD91}
 	EndGlobalSection
 EndGlobal
