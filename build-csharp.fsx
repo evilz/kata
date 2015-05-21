@@ -14,19 +14,25 @@ Target "Clean" (fun _ ->
     CleanDirs [buildDir]
 )
 
-Target "RestorePackages" (fun _ -> 
-     "src/csharp-kata.sln"
+let runRestorePackages() = 
+    "src/csharp-kata.sln"
         |> RestoreMSSolutionPackages (fun p ->
             { p with Sources = "https://www.nuget.org/api/v2/" :: p.Sources ;Retries = 4; OutputPath= "./src/packages" })
+
+Target "RestorePackages" (fun _ -> 
+    runRestorePackages()
  )
 
-Target "Build" (fun _ ->
+let runBuild() = 
    !! "src/**/*.csproj"
      |> MSBuildRelease buildDir "Build"
      |> Log "AppBuild-Output: "
+
+Target "Build" (fun _ ->
+    runBuild()
 )
 
-Target "Test" (fun _ ->
+let runtest () =
     let opencoverPath = findToolFolderInSubPath "OpenCover.Console.exe" (currentDirectory @@ "tools" @@ "OpenCover") @@ "OpenCover.Console.exe"
     let nunitPath = findToolFolderInSubPath "nunit-console.exe" (currentDirectory @@ "tools" @@ "Nunit") @@ "nunit-console.exe"
     let nunitOrangePath = findToolFolderInSubPath "NUnitOrange.exe" (currentDirectory @@ "tools" @@ "NUnitOrange") @@ "NUnitOrange.exe"
@@ -49,12 +55,17 @@ Target "Test" (fun _ ->
             info.FileName <- nunitOrangePath; info.WorkingDirectory <- buildDir; info.Arguments <- "TestResults.xml TestResults.html") (TimeSpan.FromMinutes 5.0)
             |> ignore
 
+
+Target "Test" (fun _ ->
+    runtest()
 )
 
 Target "Watch" (fun _ ->
     use watcher = !! "src/**/*.cs" |> WatchChanges (fun changes -> 
         tracefn "%A" changes
-        Run "Test"
+        runRestorePackages()
+        runBuild()
+        runtest()
     )
 
     System.Console.ReadLine() |> ignore //Needed to keep FAKE from exiting

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-
-namespace FizzBuzz_csharp
+﻿namespace FizzBuzz_csharp
 {
     public static class FizzBuzzExtension
     {
