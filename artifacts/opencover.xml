@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Summary numSequencePoints="39" visitedSequencePoints="39" numBranchPoints="51" visitedBranchPoints="50" sequenceCoverage="100" branchCoverage="98.04" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="4C-39-F2-37-40-B1-C4-8A-F9-84-DB-18-56-B5-F9-F6-90-0B-5C-58">
+      <FullName>C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F9-04-A8-31-CD-FB-23-72-95-63-5D-14-9A-A0-66-8E-7F-44-93-7A">
+      <FullName>C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\sorttbls.nlp</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="9F-C3-2E-51-B5-EB-69-B9-60-21-42-1F-17-25-12-07-16-11-20-50">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\nunit-console.exe</FullName>
+      <ModuleName>nunit-console</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="F2-ED-FF-09-01-C9-D7-BC-29-AC-A6-93-C5-97-8A-0D-43-DD-8D-F2">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit-console-runner.dll</FullName>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="14-C3-4B-3E-39-7A-EE-C0-B9-2F-83-44-2F-04-8A-F7-48-7B-67-DE">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.util.dll</FullName>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6E-30-2E-50-36-FB-60-2C-8E-50-C0-83-54-8B-CC-EA-A8-91-B6-CC">
+      <FullName>C:\Windows\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\sortkey.nlp</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="55-BA-A4-A1-F6-E9-77-45-55-59-ED-C2-F7-90-65-6A-E2-0A-F0-D1">
+      <FullName>C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5B-58-14-72-A0-28-85-4B-B5-A1-BA-11-BB-9D-9D-05-65-A3-5E-54">
+      <FullName>C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="06-27-0C-FC-C3-23-F5-AA-2C-D5-FE-4B-08-2E-CE-01-09-7B-2F-D1">
+      <FullName>C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="CB-29-2C-91-2E-AE-28-D8-A5-84-C7-B9-DB-F2-0B-51-CC-CD-72-80">
+      <FullName>C:\Windows\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</FullName>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="74-12-F2-0F-40-B8-B2-CE-9E-8B-23-68-2B-F0-CD-3D-39-F2-D8-0E">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</FullName>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="E8-07-A4-A1-06-33-5B-A6-17-CF-DC-6F-28-47-58-85-D6-9F-6B-46">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\nunit-agent.exe</FullName>
+      <ModuleName>nunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="14-C3-4B-3E-39-7A-EE-C0-B9-2F-83-44-2F-04-8A-F7-48-7B-67-DE">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.util.dll</FullName>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="98-54-0E-D5-F8-8E-A2-10-F8-05-4B-0A-E0-A3-C0-BF-53-BA-B3-39">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="41-E4-B7-1F-1D-5A-03-E3-25-97-69-EB-0E-7F-02-BA-F4-B9-5A-D8">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</FullName>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-2D-DD-6B-5F-8E-AA-A2-25-4E-A9-3A-D9-B3-F1-4C-32-10-00-FB">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8B-7A-84-28-F9-A1-75-E1-A8-64-05-FB-84-AA-30-36-36-A1-5A-B9">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="83-B3-A1-F3-9F-60-DF-93-F3-05-A7-2A-62-D9-44-0E-32-07-9E-AB">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</FullName>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="FE-AE-8A-61-F6-E2-C4-E9-F9-8F-B6-D5-A6-16-A8-9E-91-46-80-33">
+      <FullName>C:\Windows\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll</FullName>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="98-54-0E-D5-F8-8E-A2-10-F8-05-4B-0A-E0-A3-C0-BF-53-BA-B3-39">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="53-25-23-C6-63-70-35-C6-0C-82-04-1A-0A-BF-1A-E7-1F-EA-74-A3">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit.framework.dll</FullName>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="21-69-E9-47-C6-F8-02-12-31-E6-18-DE-8E-43-24-C9-AB-F7-C2-BE">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit-agent.exe</FullName>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="1D-6A-24-3E-4E-96-A6-0A-2C-0E-F4-4B-6C-47-91-59-CE-78-10-52">
+      <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="8" visitedBranchPoints="8" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" />
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\FizzBuzz-csharp.dll</FullName>
+      <ModuleName>FizzBuzz-csharp</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\Vincent\Documents\GITHUB\kata\src\FizzBuzz\FizzBuzz-csharp\FizzBuzzExtension.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" />
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="8" visitedBranchPoints="8" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" />
+          <FullName>FizzBuzz_csharp.FizzBuzzExtension</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Boolean FizzBuzz_csharp.FizzBuzzExtension::IsDivisibleBy(System.Int32,System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="24" uspid="1" ordinal="0" offset="0" sl="7" sc="13" el="7" ec="40" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="24" uspid="1" ordinal="0" offset="0" sl="7" sc="13" el="7" ec="40" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="7" visitedBranchPoints="7" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.String FizzBuzz_csharp.FizzBuzzExtension::FizzBuzz(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="11" uspid="2" ordinal="0" offset="0" sl="11" sc="13" el="11" ec="42" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="3" uspid="3" ordinal="1" offset="10" sl="11" sc="45" el="11" ec="63" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="8" uspid="4" ordinal="2" offset="16" sl="12" sc="13" el="12" ec="41" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="3" uspid="5" ordinal="3" offset="25" sl="12" sc="44" el="12" ec="58" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="6" ordinal="4" offset="31" sl="13" sc="13" el="13" ec="41" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="3" uspid="7" ordinal="5" offset="40" sl="13" sc="44" el="13" ec="58" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="8" ordinal="6" offset="46" sl="15" sc="13" el="15" ec="38" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="3" uspid="9" ordinal="0" offset="8" sl="11" path="0" offsetend="10" fileid="1" />
+                <BranchPoint vc="8" uspid="10" ordinal="1" offset="8" sl="11" path="1" offsetend="16" fileid="1" />
+                <BranchPoint vc="3" uspid="11" ordinal="2" offset="23" sl="12" path="0" offsetend="25" fileid="1" />
+                <BranchPoint vc="5" uspid="12" ordinal="3" offset="23" sl="12" path="1" offsetend="31" fileid="1" />
+                <BranchPoint vc="3" uspid="13" ordinal="4" offset="38" sl="13" path="0" offsetend="40" fileid="1" />
+                <BranchPoint vc="2" uspid="14" ordinal="5" offset="38" sl="13" path="1" offsetend="46" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="11" uspid="2" ordinal="0" offset="0" sl="11" sc="13" el="11" ec="42" bec="2" bev="2" fileid="1" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>FizzBuzz_csharp.Tests.FizzBuzzTests</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="A2-D0-DB-C9-20-FB-37-90-D4-D6-25-E5-C4-7B-E0-42-CA-32-C0-51">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\nunit.framework.dll</FullName>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="98-54-0E-D5-F8-8E-A2-10-F8-05-4B-0A-E0-A3-C0-BF-53-BA-B3-39">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="53-25-23-C6-63-70-35-C6-0C-82-04-1A-0A-BF-1A-E7-1F-EA-74-A3">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit.framework.dll</FullName>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="21-69-E9-47-C6-F8-02-12-31-E6-18-DE-8E-43-24-C9-AB-F7-C2-BE">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit-agent.exe</FullName>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="B7-E1-E9-35-7D-B0-D1-36-FC-9E-8D-9F-42-16-46-CD-F2-82-14-45">
+      <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="14" visitedBranchPoints="14" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" />
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\FooBarQix-csharp.dll</FullName>
+      <ModuleName>FooBarQix-csharp</ModuleName>
+      <Files>
+        <File uid="3" fullPath="C:\Users\Vincent\Documents\GITHUB\kata\src\FooBarQix\FooBarQix-csharp\FooBarQixExtensions.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" />
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="10" visitedBranchPoints="10" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" />
+          <FullName>FooBarQix_csharp.FooBarQixExtensions</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="5" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="9" visitedBranchPoints="9" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.String FooBarQix_csharp.FooBarQixExtensions::FooBarQix(System.Int32)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="17" uspid="15" ordinal="0" offset="13" sl="18" sc="13" el="20" ec="98" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="17" uspid="16" ordinal="1" offset="82" sl="22" sc="13" el="24" ec="94" bec="4" bev="4" fileid="3" />
+                <SequencePoint vc="17" uspid="17" ordinal="2" offset="167" sl="27" sc="13" el="27" ec="78" bec="2" bev="2" fileid="3" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="18" ordinal="0" offset="51" sl="18" path="0" offsetend="53" fileid="3" />
+                <BranchPoint vc="16" uspid="19" ordinal="1" offset="51" sl="18" path="1" offsetend="76" fileid="3" />
+                <BranchPoint vc="1" uspid="20" ordinal="2" offset="99" sl="22" path="0" offsetend="101" fileid="3" />
+                <BranchPoint vc="16" uspid="21" ordinal="3" offset="99" sl="22" path="1" offsetend="124" fileid="3" />
+                <BranchPoint vc="1" uspid="22" ordinal="4" offset="136" sl="22" path="0" offsetend="138" fileid="3" />
+                <BranchPoint vc="16" uspid="23" ordinal="5" offset="136" sl="22" path="1" offsetend="161" fileid="3" />
+                <BranchPoint vc="15" uspid="24" ordinal="6" offset="173" sl="27" path="0" offsetend="175" fileid="3" />
+                <BranchPoint vc="2" uspid="25" ordinal="7" offset="173" sl="27" path="1" offsetend="177" fileid="3" />
+              </BranchPoints>
+              <MethodPoint vc="17" uspid="26" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void FooBarQix_csharp.FooBarQixExtensions::.cctor()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="27" ordinal="0" offset="0" sl="9" sc="9" el="14" ec="15" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="27" ordinal="0" offset="0" sl="9" sc="9" el="14" ec="15" bec="0" bev="0" fileid="3" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+          <FullName>FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c__DisplayClass1_0</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>System.Void FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c__DisplayClass1_0::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="17" uspid="28" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.Boolean FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c__DisplayClass1_0::&lt;FooBarQix&gt;b__0(System.Int32)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="51" uspid="29" ordinal="0" offset="0" sl="19" sc="41" el="19" ec="54" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="51" uspid="29" ordinal="0" offset="0" sl="19" sc="41" el="19" ec="54" bec="0" bev="0" fileid="3" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="3" visitedBranchPoints="3" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+          <FullName>FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Void FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="30" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Void FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="31" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.String FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c::&lt;FooBarQix&gt;b__1_1(System.String,System.Int32)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="11" uspid="32" ordinal="0" offset="0" sl="20" sc="70" el="20" ec="96" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="11" uspid="32" ordinal="0" offset="0" sl="20" sc="70" el="20" ec="96" bec="0" bev="0" fileid="3" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>System.Boolean FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c::&lt;FooBarQix&gt;b__1_2(System.Char)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="30" uspid="33" ordinal="0" offset="0" sl="23" sc="37" el="23" ec="69" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="30" uspid="33" ordinal="0" offset="0" sl="23" sc="37" el="23" ec="69" bec="0" bev="0" fileid="3" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663317</MetadataToken>
+              <Name>System.String FooBarQix_csharp.FooBarQixExtensions/&lt;&gt;c::&lt;FooBarQix&gt;b__1_3(System.String,System.Char)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="11" uspid="34" ordinal="0" offset="0" sl="24" sc="60" el="24" ec="92" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="11" uspid="34" ordinal="0" offset="0" sl="24" sc="60" el="24" ec="92" bec="0" bev="0" fileid="3" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>FooBarQix_csharp.FooBarQixTests</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="A2-D0-DB-C9-20-FB-37-90-D4-D6-25-E5-C4-7B-E0-42-CA-32-C0-51">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\nunit.framework.dll</FullName>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="98-54-0E-D5-F8-8E-A2-10-F8-05-4B-0A-E0-A3-C0-BF-53-BA-B3-39">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="53-25-23-C6-63-70-35-C6-0C-82-04-1A-0A-BF-1A-E7-1F-EA-74-A3">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit.framework.dll</FullName>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="21-69-E9-47-C6-F8-02-12-31-E6-18-DE-8E-43-24-C9-AB-F7-C2-BE">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit-agent.exe</FullName>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="3D-43-71-CB-CD-45-A3-D8-CE-86-62-B0-13-44-BC-F2-02-81-C9-4E">
+      <Summary numSequencePoints="3" visitedSequencePoints="3" numBranchPoints="8" visitedBranchPoints="8" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" />
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\LeapYears-csharp.dll</FullName>
+      <ModuleName>LeapYears-csharp</ModuleName>
+      <Files>
+        <File uid="9" fullPath="C:\Users\Vincent\Documents\GITHUB\kata\src\LeapYears\LeapYears-csharp\DateTimeExtensions.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" />
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="7" visitedBranchPoints="7" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" />
+          <FullName>LeapYears_csharp.DateTimeExtensions</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="7" visitedBranchPoints="7" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Boolean LeapYears_csharp.DateTimeExtensions::IsLeapYear(System.Int32)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="35" ordinal="0" offset="0" sl="9" sc="13" el="9" ec="85" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="9" uspid="36" ordinal="1" offset="32" sl="10" sc="13" el="10" ec="76" bec="4" bev="4" fileid="9" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="37" ordinal="0" offset="6" sl="9" path="0" offsetend="8" fileid="9" />
+                <BranchPoint vc="8" uspid="38" ordinal="1" offset="6" sl="9" path="1" offsetend="31" fileid="9" />
+                <BranchPoint vc="7" uspid="39" ordinal="2" offset="44" sl="10" path="0" offsetend="46" fileid="9" />
+                <BranchPoint vc="2" uspid="40" ordinal="3" offset="44" sl="10" path="1" offsetend="71" fileid="9" />
+                <BranchPoint vc="4" uspid="41" ordinal="4" offset="54" sl="10" path="0" offsetend="56" fileid="9" />
+                <BranchPoint vc="3" uspid="42" ordinal="5" offset="54" sl="10" path="1" offsetend="69" fileid="9" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="9" uspid="35" ordinal="0" offset="0" sl="9" sc="13" el="9" ec="85" bec="2" bev="2" fileid="9" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+          <FullName>LeapYears_csharp.DateTimeExtensions/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Void LeapYears_csharp.DateTimeExtensions/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="43" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Void LeapYears_csharp.DateTimeExtensions/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="44" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Boolean LeapYears_csharp.DateTimeExtensions/&lt;&gt;c::&lt;IsLeapYear&gt;b__0_0(System.Int32,System.Int32)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="20" uspid="45" ordinal="0" offset="0" sl="9" sc="63" el="9" ec="84" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="20" uspid="45" ordinal="0" offset="0" sl="9" sc="63" el="9" ec="84" bec="0" bev="0" fileid="9" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>LeapYears_csharp.LeapYearsTests</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="A2-D0-DB-C9-20-FB-37-90-D4-D6-25-E5-C4-7B-E0-42-CA-32-C0-51">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\nunit.framework.dll</FullName>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="98-54-0E-D5-F8-8E-A2-10-F8-05-4B-0A-E0-A3-C0-BF-53-BA-B3-39">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="53-25-23-C6-63-70-35-C6-0C-82-04-1A-0A-BF-1A-E7-1F-EA-74-A3">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit.framework.dll</FullName>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="21-69-E9-47-C6-F8-02-12-31-E6-18-DE-8E-43-24-C9-AB-F7-C2-BE">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit-agent.exe</FullName>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="A2-D0-DB-C9-20-FB-37-90-D4-D6-25-E5-C4-7B-E0-42-CA-32-C0-51">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\nunit.framework.dll</FullName>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.dll</FullName>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="98-54-0E-D5-F8-8E-A2-10-F8-05-4B-0A-E0-A3-C0-BF-53-BA-B3-39">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</FullName>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="53-25-23-C6-63-70-35-C6-0C-82-04-1A-0A-BF-1A-E7-1F-EA-74-A3">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit.framework.dll</FullName>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="21-69-E9-47-C6-F8-02-12-31-E6-18-DE-8E-43-24-C9-AB-F7-C2-BE">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\pnunit-agent.exe</FullName>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit.core.interfaces.dll</FullName>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="22-43-0E-AF-41-92-72-09-33-82-51-65-F6-67-08-2C-C5-F1-A0-79">
+      <Summary numSequencePoints="20" visitedSequencePoints="20" numBranchPoints="21" visitedBranchPoints="20" sequenceCoverage="100" branchCoverage="95.24" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" />
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\StringCalculator-csharp.dll</FullName>
+      <ModuleName>StringCalculator-csharp</ModuleName>
+      <Files>
+        <File uid="13" fullPath="C:\Users\Vincent\Documents\GITHUB\kata\src\StringCalculator\StringCalculator-csharp\StringCalculator.cs" />
+        <File uid="15" fullPath="C:\Users\Vincent\Documents\GITHUB\kata\src\StringCalculator\StringCalculator-csharp\StringCalculatorTests.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" />
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="17" visitedSequencePoints="17" numBranchPoints="18" visitedBranchPoints="17" sequenceCoverage="100" branchCoverage="94.44" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" />
+          <FullName>StringCalculator_csharp.StringCalculator</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="7" visitedBranchPoints="7" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Int32 StringCalculator_csharp.StringCalculator::Add(System.String)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="46" ordinal="0" offset="0" sl="13" sc="13" el="13" ec="47" bec="2" bev="2" fileid="13" />
+                <SequencePoint vc="1" uspid="47" ordinal="1" offset="8" sl="14" sc="17" el="14" ec="26" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="8" uspid="48" ordinal="2" offset="10" sl="16" sc="13" el="16" ec="62" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="8" uspid="49" ordinal="3" offset="25" sl="18" sc="13" el="23" ec="28" bec="2" bev="2" fileid="13" />
+                <SequencePoint vc="8" uspid="50" ordinal="4" offset="106" sl="25" sc="13" el="25" ec="39" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="6" uspid="51" ordinal="5" offset="112" sl="27" sc="13" el="27" ec="69" bec="2" bev="2" fileid="13" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="52" ordinal="0" offset="6" sl="13" path="0" offsetend="8" fileid="13" />
+                <BranchPoint vc="8" uspid="53" ordinal="1" offset="6" sl="13" path="1" offsetend="10" fileid="13" />
+                <BranchPoint vc="1" uspid="54" ordinal="2" offset="70" sl="18" path="0" offsetend="72" fileid="13" />
+                <BranchPoint vc="7" uspid="55" ordinal="3" offset="70" sl="18" path="1" offsetend="95" fileid="13" />
+                <BranchPoint vc="4" uspid="56" ordinal="4" offset="116" sl="27" path="0" offsetend="118" fileid="13" />
+                <BranchPoint vc="2" uspid="57" ordinal="5" offset="116" sl="27" path="1" offsetend="125" fileid="13" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="9" uspid="46" ordinal="0" offset="0" sl="13" sc="13" el="13" ec="47" bec="2" bev="2" fileid="13" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="5" visitedBranchPoints="5" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>System.Void StringCalculator_csharp.StringCalculator::CheckNegativeNumber(System.Int32[])</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="8" uspid="58" ordinal="0" offset="0" sl="32" sc="13" el="32" ec="56" bec="2" bev="2" fileid="13" />
+                <SequencePoint vc="8" uspid="59" ordinal="1" offset="43" sl="33" sc="13" el="33" ec="27" bec="2" bev="2" fileid="13" />
+                <SequencePoint vc="2" uspid="60" ordinal="2" offset="51" sl="35" sc="17" el="35" ec="105" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="6" uspid="61" ordinal="3" offset="78" sl="37" sc="9" el="37" ec="10" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="62" ordinal="0" offset="7" sl="32" path="0" offsetend="9" fileid="13" />
+                <BranchPoint vc="7" uspid="63" ordinal="1" offset="7" sl="32" path="1" offsetend="32" fileid="13" />
+                <BranchPoint vc="2" uspid="64" ordinal="2" offset="49" sl="33" path="0" offsetend="51" fileid="13" />
+                <BranchPoint vc="6" uspid="65" ordinal="3" offset="49" sl="33" path="1" offsetend="78" fileid="13" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="8" uspid="58" ordinal="0" offset="0" sl="32" sc="13" el="32" ec="56" bec="2" bev="2" fileid="13" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" sequenceCoverage="100" branchCoverage="80" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="5" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="80" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.String StringCalculator_csharp.StringCalculator::ExtractDelimiter(System.String,System.Collections.Generic.ICollection`1&lt;System.Char&gt;)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="9" uspid="66" ordinal="0" offset="0" sl="41" sc="13" el="41" ec="47" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="9" uspid="67" ordinal="1" offset="18" sl="42" sc="13" el="42" ec="45" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="9" uspid="68" ordinal="2" offset="25" sl="43" sc="13" el="43" ec="69" bec="3" bev="3" fileid="13" />
+                <SequencePoint vc="2" uspid="69" ordinal="3" offset="47" sl="45" sc="17" el="45" ec="46" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="2" uspid="70" ordinal="4" offset="60" sl="46" sc="17" el="46" ec="70" bec="0" bev="0" fileid="13" />
+                <SequencePoint vc="9" uspid="71" ordinal="5" offset="79" sl="48" sc="13" el="48" ec="28" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="72" ordinal="0" offset="36" sl="43" path="0" offsetend="38" fileid="13" />
+                <BranchPoint vc="7" uspid="73" ordinal="1" offset="36" sl="43" path="1" offsetend="79" fileid="13" />
+                <BranchPoint vc="2" uspid="74" ordinal="2" offset="45" sl="43" path="0" offsetend="47" fileid="13" />
+                <BranchPoint vc="0" uspid="75" ordinal="3" offset="45" sl="43" path="1" offsetend="79" fileid="13" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="9" uspid="66" ordinal="0" offset="0" sl="41" sc="13" el="41" ec="47" bec="0" bev="0" fileid="13" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>System.Void StringCalculator_csharp.StringCalculator::.ctor()</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="76" ordinal="0" offset="0" sl="10" sc="9" el="10" ec="71" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="76" ordinal="0" offset="0" sl="10" sc="9" el="10" ec="71" bec="0" bev="0" fileid="13" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+          <FullName>StringCalculator_csharp.StringCalculator/&lt;&gt;c</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>System.Void StringCalculator_csharp.StringCalculator/&lt;&gt;c::.cctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="77" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.Void StringCalculator_csharp.StringCalculator/&lt;&gt;c::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="78" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.Boolean StringCalculator_csharp.StringCalculator/&lt;&gt;c::&lt;Add&gt;b__1_0(System.Int32)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="20" uspid="79" ordinal="0" offset="0" sl="22" sc="29" el="22" ec="38" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="20" uspid="79" ordinal="0" offset="0" sl="22" sc="29" el="22" ec="38" bec="0" bev="0" fileid="13" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Boolean StringCalculator_csharp.StringCalculator/&lt;&gt;c::&lt;CheckNegativeNumber&gt;b__2_0(System.Int32)</Name>
+              <FileRef uid="13" />
+              <SequencePoints>
+                <SequencePoint vc="19" uspid="80" ordinal="0" offset="0" sl="32" sc="39" el="32" ec="44" bec="0" bev="0" fileid="13" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="19" uspid="80" ordinal="0" offset="0" sl="32" sc="39" el="32" ec="44" bec="0" bev="0" fileid="13" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>StringCalculator_csharp.StringCalculatorTests</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+          <FullName>StringCalculator_csharp.StringCalculatorTests/&lt;&gt;c__DisplayClass8_0</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Void StringCalculator_csharp.StringCalculatorTests/&lt;&gt;c__DisplayClass8_0::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="2" uspid="81" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>System.Void StringCalculator_csharp.StringCalculatorTests/&lt;&gt;c__DisplayClass8_0::&lt;Add_Should_Throw_NegativesNotAllowed_when_AnyNegativeNumver&gt;b__0()</Name>
+              <FileRef uid="15" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="82" ordinal="0" offset="0" sl="70" sc="70" el="70" ec="88" bec="0" bev="0" fileid="15" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="82" ordinal="0" offset="0" sl="70" sc="70" el="70" ec="88" bec="0" bev="0" fileid="15" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="A2-D0-DB-C9-20-FB-37-90-D4-D6-25-E5-C4-7B-E0-42-CA-32-C0-51">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\artifacts\nunit.framework.dll</FullName>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="MissingPdb" hash="F2-ED-FF-09-01-C9-D7-BC-29-AC-A6-93-C5-97-8A-0D-43-DD-8D-F2">
+      <FullName>C:\Users\Vincent\Documents\GITHUB\kata\packages\NUnit.Runners\tools\lib\nunit-console-runner.dll</FullName>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-2D-DD-6B-5F-8E-AA-A2-25-4E-A9-3A-D9-B3-F1-4C-32-10-00-FB">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8B-7A-84-28-F9-A1-75-E1-A8-64-05-FB-84-AA-30-36-36-A1-5A-B9">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-2D-DD-6B-5F-8E-AA-A2-25-4E-A9-3A-D9-B3-F1-4C-32-10-00-FB">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8B-7A-84-28-F9-A1-75-E1-A8-64-05-FB-84-AA-30-36-36-A1-5A-B9">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2B-02-FF-14-83-9D-12-56-EF-97-DF-97-B2-E7-B8-F3-E5-F8-C2-32">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</FullName>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-2D-DD-6B-5F-8E-AA-A2-25-4E-A9-3A-D9-B3-F1-4C-32-10-00-FB">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8B-7A-84-28-F9-A1-75-E1-A8-64-05-FB-84-AA-30-36-36-A1-5A-B9">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-2D-DD-6B-5F-8E-AA-A2-25-4E-A9-3A-D9-B3-F1-4C-32-10-00-FB">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8B-7A-84-28-F9-A1-75-E1-A8-64-05-FB-84-AA-30-36-36-A1-5A-B9">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-2D-DD-6B-5F-8E-AA-A2-25-4E-A9-3A-D9-B3-F1-4C-32-10-00-FB">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</FullName>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8B-7A-84-28-F9-A1-75-E1-A8-64-05-FB-84-AA-30-36-36-A1-5A-B9">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</FullName>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2B-02-FF-14-83-9D-12-56-EF-97-DF-97-B2-E7-B8-F3-E5-F8-C2-32">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</FullName>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A7-79-BE-52-D7-93-C1-6F-9E-61-64-40-03-B2-F9-B7-BA-E6-6D-7A">
+      <FullName>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll</FullName>
+      <ModuleName>System.Data</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>
