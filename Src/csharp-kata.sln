@@ -53,6 +53,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StringCalculator", "StringC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator-csharp", "StringCalculator\StringCalculator-csharp\StringCalculator-csharp.csproj", "{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RomanNumerals", "RomanNumerals", "{A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}"
+	ProjectSection(SolutionItems) = preProject
+		RomanNumerals\ReadMe.md = RomanNumerals\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals-csharp", "RomanNumerals\RomanNumerals-csharp\RomanNumerals-csharp.csproj", "{5B14A93B-2A45-4044-ABF8-DA330E782791}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +82,10 @@ Global
 		{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +96,6 @@ Global
 		{AA402D8C-3696-4078-8070-FC4E7F409FEE} = {D39C79C1-CCB6-41EA-B9F5-93716688BD91}
 		{C075AD15-A759-4D0A-9B74-99ABAAD21E77} = {68ABDE80-83D0-4612-9D1C-D894395B7188}
 		{5F9F33BB-BF05-4570-BF7B-770ED8C307D1} = {BE23CA87-6894-4A48-A245-4C0B6C9CFB84}
+		{5B14A93B-2A45-4044-ABF8-DA330E782791} = {A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}
 	EndGlobalSection
 EndGlobal
