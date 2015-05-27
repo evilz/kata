@@ -1,22 +1,23 @@
-﻿using NUnit.Framework;
+﻿using System.Linq;
+using NUnit.Framework;
 
 namespace RomanNumerals_csharp
 {
 
     public class RomanNumeralsTests
     {
-        [TestCase(1,"I")]
-        [TestCase(5,"V")]
-        [TestCase(10,"X")]
-        [TestCase(50,"L")]
-        [TestCase(100,"C")]
-        [TestCase(500,"D")]
-        [TestCase(1000,"M")]
+        [TestCase(1, "I")]
+        [TestCase(5, "V")]
+        [TestCase(10, "X")]
+        [TestCase(50, "L")]
+        [TestCase(100, "C")]
+        [TestCase(500, "D")]
+        [TestCase(1000, "M")]
 
         public void ToRomanNumeral_Should_Return_SimpleLetter(int number, string expected)
         {
             var result = number.ToRomanNumeral();
-            Assert.AreEqual(expected,result);
+            Assert.AreEqual(expected, result);
         }
 
         [TestCase(2, "II")]
@@ -61,6 +62,17 @@ namespace RomanNumerals_csharp
         {
             var result = number.ToRomanNumeral();
             Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ToRomanNumeralAndFromRomanNumeral_Should_RevertToInitialValue()
+        {
+            for (int i = 1; i < 3001; i++)
+            {
+                var roman = i.ToRomanNumeral();
+                var revert = roman.FromRomanNumeral();
+                Assert.AreEqual(i, revert);
+            }
         }
     }
 }
