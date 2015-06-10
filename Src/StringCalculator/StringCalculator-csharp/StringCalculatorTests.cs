@@ -19,10 +19,10 @@ namespace StringCalculator_csharp
         }
 
         [Test]
-        public void Add_Should_ReturnSum_When_InputIsOneNumber()
+        public void Add_Should_ReturnInput_When_InputIsOneNumber()
         {
             var result = _calc.Add("3");
-            Assert.AreEqual(6, result);
+            Assert.AreEqual(3, result);
         }
 
         [Test]
@@ -75,7 +75,7 @@ namespace StringCalculator_csharp
         public void Add_Should_IgnoreNumber_When_GreaterThan1000(string numbers)
         {
             var result = _calc.Add(numbers);
-            Assert.AreEqual(4, result);
+            Assert.AreEqual(2, result);
         }
        
     }

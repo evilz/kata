@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37874DED-80DC-4EB1-AD50-EA6663AAD840}"
 	ProjectSection(SolutionItems) = preProject
-		..\build-csharp.cmd = ..\build-csharp.cmd
+		..\build-csharp.bat = ..\build-csharp.bat
 		..\build-csharp.fsx = ..\build-csharp.fsx
 		..\paket.dependencies = ..\paket.dependencies
 		..\paket.lock = ..\paket.lock
@@ -60,6 +60,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RomanNumerals", "RomanNumer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals-csharp", "RomanNumerals\RomanNumerals-csharp\RomanNumerals-csharp.csproj", "{5B14A93B-2A45-4044-ABF8-DA330E782791}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Args", "Args", "{90A8538B-3938-4A2B-B63F-6FFB50BE7570}"
+	ProjectSection(SolutionItems) = preProject
+		Args\ReadMe.md = Args\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Args-csharp", "Args\Args-csharp\Args-csharp.csproj", "{980699FF-C475-4DAD-8E54-48962B5FA26B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +93,10 @@ Global
 		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +108,6 @@ Global
 		{C075AD15-A759-4D0A-9B74-99ABAAD21E77} = {68ABDE80-83D0-4612-9D1C-D894395B7188}
 		{5F9F33BB-BF05-4570-BF7B-770ED8C307D1} = {BE23CA87-6894-4A48-A245-4C0B6C9CFB84}
 		{5B14A93B-2A45-4044-ABF8-DA330E782791} = {A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}
+		{980699FF-C475-4DAD-8E54-48962B5FA26B} = {90A8538B-3938-4A2B-B63F-6FFB50BE7570}
 	EndGlobalSection
 EndGlobal

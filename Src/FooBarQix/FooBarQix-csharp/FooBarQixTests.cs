@@ -78,7 +78,7 @@ namespace FooBarQix_csharp
         }
 
         [TestCase(21, "fooqix")]
-        public void FooBarQix_Should_DividerInOrder3_5_7(int number, string expected)
+        public void FooBarQix_Should_DivideInOrder3_5_7(int number, string expected)
         {
             var result = number.FooBarQix();
             Assert.AreEqual(expected, result);
@@ -88,7 +88,7 @@ namespace FooBarQix_csharp
         [TestCase(15, "foobarbar")]
         [TestCase(33, "foofoofoo")]
         
-        public void FooBarQix_Should_DividerInOrder3_5_7_And_Then_WatchInOrder(int number, string expected)
+        public void FooBarQix_Should_DivideInOrder3_5_7_And_Then_WatchInOrder(int number, string expected)
         {
             var result = number.FooBarQix();
             Assert.AreEqual(expected, result);

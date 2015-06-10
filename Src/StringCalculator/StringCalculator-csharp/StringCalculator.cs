@@ -8,14 +8,14 @@ namespace StringCalculator_csharp
     public class StringCalculator
     {
         private List<char> _delimiters = new List<char> { ',', '\n' };
-        public int Add(string numbers)
+        public int Add(string input)
         {
-            if (string.IsNullOrEmpty(numbers))
+            if (string.IsNullOrEmpty(input))
                 return 0;
 
-            numbers = ExtractDelimiter(numbers, _delimiters);
+            input = ExtractDelimiter(input, _delimiters);
             
-            var ints = numbers
+            var ints = input
                 .Trim()
                 .Split(_delimiters.ToArray())
                 .Select(int.Parse)
@@ -24,7 +24,7 @@ namespace StringCalculator_csharp
 
             CheckNegativeNumber(ints);
 
-            return ints.Length == 1 ? ints.First() * 2 : ints.Sum();
+            return ints.Sum();
         }
 
         internal static void CheckNegativeNumber(int[] ints)
