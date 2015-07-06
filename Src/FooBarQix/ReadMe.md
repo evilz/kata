@@ -10,14 +10,14 @@ An example of rendering
 ```
 1
 2
-foofoo
+FooFoo
 4
 BarBar
-foo
+Foo
 QixQix
 8
-foo
-bar
+Foo
+Bar
 ...
 ```
 
@@ -27,5 +27,5 @@ bar
 - We watch the content in the order that it appears (eg 53 -> BarFoo)
 - We watch multiple in the order Foo, Bar and Qix (eg 21 -> FooQix)
 - 13 contains, so 3 is written, "Foo"
-- 15 is divisible by 3 and 5 contain either a 5 therefore written "foobarbar"
+- 15 is divisible by 3 and 5 contain either a 5 therefore written "FooBarBar"
 - 33 contains twice 3 is divisible by 3 and thus is written "FooFooFoo"

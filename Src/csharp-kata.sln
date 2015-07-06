@@ -67,6 +67,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Args", "Args", "{90A8538B-3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Args-csharp", "Args\Args-csharp\Args-csharp.csproj", "{980699FF-C475-4DAD-8E54-48962B5FA26B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diamond", "Diamond", "{35B3057D-3DD5-40DE-B93A-D6B76AEB7F75}"
+	ProjectSection(SolutionItems) = preProject
+		Diamond\ReadMe.md = Diamond\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond-csharp", "Diamond\Diamond-csharp\Diamond-csharp.csproj", "{8FF273ED-B670-4350-A885-C61317036D7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DDD", "DDD", "{982FBA1C-F57D-4825-8E5A-C4946E07CD12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD-csharp", "DDD\DDD-csharp\DDD-csharp.csproj", "{94ED8D4B-8899-406E-AED1-89130CA60434}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrimeFactor", "PrimeFactor", "{C33501F7-DDE8-4C93-A32E-509C629DCAAD}"
+	ProjectSection(SolutionItems) = preProject
+		PrimeFactor\PrimeFactor-csharp\ReadMe.md = PrimeFactor\PrimeFactor-csharp\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactor-csharp", "PrimeFactor\PrimeFactor-csharp\PrimeFactor-csharp.csproj", "{A65DA4E8-394F-44A2-87FB-12407ABAAF33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileSystem", "FileSystem", "{CA696AE8-54F2-4470-91F8-424DE5CE8903}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +117,18 @@ Global
 		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF273ED-B670-4350-A885-C61317036D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF273ED-B670-4350-A885-C61317036D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF273ED-B670-4350-A885-C61317036D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF273ED-B670-4350-A885-C61317036D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94ED8D4B-8899-406E-AED1-89130CA60434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94ED8D4B-8899-406E-AED1-89130CA60434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94ED8D4B-8899-406E-AED1-89130CA60434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94ED8D4B-8899-406E-AED1-89130CA60434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65DA4E8-394F-44A2-87FB-12407ABAAF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65DA4E8-394F-44A2-87FB-12407ABAAF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65DA4E8-394F-44A2-87FB-12407ABAAF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65DA4E8-394F-44A2-87FB-12407ABAAF33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,5 +141,8 @@ Global
 		{5F9F33BB-BF05-4570-BF7B-770ED8C307D1} = {BE23CA87-6894-4A48-A245-4C0B6C9CFB84}
 		{5B14A93B-2A45-4044-ABF8-DA330E782791} = {A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}
 		{980699FF-C475-4DAD-8E54-48962B5FA26B} = {90A8538B-3938-4A2B-B63F-6FFB50BE7570}
+		{8FF273ED-B670-4350-A885-C61317036D7E} = {35B3057D-3DD5-40DE-B93A-D6B76AEB7F75}
+		{94ED8D4B-8899-406E-AED1-89130CA60434} = {982FBA1C-F57D-4825-8E5A-C4946E07CD12}
+		{A65DA4E8-394F-44A2-87FB-12407ABAAF33} = {C33501F7-DDE8-4C93-A32E-509C629DCAAD}
 	EndGlobalSection
 EndGlobal
