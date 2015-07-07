@@ -29,5 +29,5 @@ Kata Steps:
 
     - Example "-1,2" throws "Negatives not allowed: -1"
     - Example "2,-4,3,-5" throws "Negatives not allowed: -4,-5" 
-    - Numbers bigger than 1000 should be ignored. 
+6. Numbers bigger than 1000 should be ignored. 
     - Example: "1001,2" returns 2

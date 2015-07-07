@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace DDD_csharp
 {
@@ -22,6 +23,20 @@ namespace DDD_csharp
             Salary = salary;
             Balance = balance;
             Email = email;
+        }
+
+        public static Customer FromCvs(string text)
+        {
+            string[] fields = text.Split(',');
+
+            return new Customer(
+                fields[0],
+                fields[1],
+                DateTime.ParseExact("YYYY/MM/dd", fields[2], CultureInfo.InvariantCulture),
+                double.Parse(fields[3]),
+                double.Parse(fields[4]),
+                fields[5]
+                );
         }
 
     }

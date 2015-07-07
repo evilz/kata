@@ -1,23 +1,25 @@
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
 namespace StringCalculator_csharp
 {
-    public class StringCalculator
+    public static class StringCalculator
     {
-        private List<char> _delimiters = new List<char> { ',', '\n' };
-        public int Add(string input)
+        private static readonly char[] _defaultDelimiters = { ',', '\n' };
+        public static int Add(string input)
         {
+            input = input.Trim();
+
             if (string.IsNullOrEmpty(input))
                 return 0;
 
-            input = ExtractDelimiter(input, _delimiters);
+            var inputAndDelimiters = ExtractDelimiter(input);
+            input = inputAndDelimiters.Item1;
+            var delimiter = inputAndDelimiters.Item2;
             
             var ints = input
-                .Trim()
-                .Split(_delimiters.ToArray())
+                .Split(delimiter)
                 .Select(int.Parse)
                 .Where(i => i <= 1000)
                 .ToArray();
@@ -27,7 +29,7 @@ namespace StringCalculator_csharp
             return ints.Sum();
         }
 
-        internal static void CheckNegativeNumber(int[] ints)
+        private static void CheckNegativeNumber(int[] ints)
         {
             var neg = ints.Where(i => i < 0).ToArray();
             if (neg.Any())
@@ -36,16 +38,14 @@ namespace StringCalculator_csharp
             }
         }
 
-        internal string ExtractDelimiter(string numbers, ICollection<char> delimiters)
+        private static Tuple<string,char[]> ExtractDelimiter(string input)
         {
-            var splited = numbers.Split('\n');
-            var separator = splited.First();
-            if (separator.StartsWith("//") && separator.Length >= 3)
-            {
-                delimiters.Add(separator[2]);
-                numbers = string.Join(string.Empty, splited.Skip(1));
-            }
-            return numbers;
+            if (input.Length < 4 || !input.StartsWith("//") || input[3] != '\n')
+                return new Tuple<string, char[]>(input, _defaultDelimiters.ToArray());
+
+            var allDelimitors = _defaultDelimiters.ToList();
+            allDelimitors.Add(input[2]);
+            return new Tuple<string, char[]>(input.Substring(4),allDelimitors.ToArray());
         }
     }
 }

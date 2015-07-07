@@ -20,13 +20,7 @@ namespace DDD_csharp
 
             var lines = new List<string> { "lastname,firstname,1982/10/08,2000,1000" };
 
-            IStreamReader reader = Substitute.For<IStreamReader>();
-
-            var lineIndex = 0;
-            reader.ReadLine().Returns(info => lines[lineIndex++]);
-            //IFileStreamWrap fs = fi.Create();
-            //fs.Close();
-            //fi.Delete();
+            TextReader reader = new StringReader(string.Join(Environment.NewLine,lines));
 
             // Arrange
             var su = new TxtCutomerRepository(reader);
@@ -41,9 +35,9 @@ namespace DDD_csharp
 
     public class TxtCutomerRepository : ICutomerRepository
     {
-        private IStreamReader reader;
+        private TextReader reader;
         
-        public TxtCutomerRepository(IStreamReader reader, bool hasHeader = false)
+        public TxtCutomerRepository(TextReader reader, bool hasHeader = false)
         {
             this.reader = reader;
             if (hasHeader)
@@ -54,9 +48,10 @@ namespace DDD_csharp
         {
             get
             {
-                while (!reader.EndOfStream)
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    var line = reader.ReadLine();
+
                     yield return new Customer("","",DateTime.Today,0,0 ,"");
                 }
                 
