@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Linq;
 using System.Text;
 
 namespace RomanNumerals_csharp
 {
-
     public static class RomanNumeralExtensions
     {
         private struct RomanLetter
@@ -16,8 +13,8 @@ namespace RomanNumerals_csharp
                 Letter = letter;
             }
 
-            public int Value { get; set; }
-            public string Letter { get; set; }
+            public int Value { get; }
+            public string Letter { get; }
         }
 
         private static readonly RomanLetter[] _map = {
@@ -30,29 +27,21 @@ namespace RomanNumerals_csharp
             new RomanLetter(1000, "M")
         };
 
-        private static string GetLetterFromValue(int val)
-        {
-            return _map.Single(x => x.Value == val).Letter;
-        }
+        private static string GetLetterFromValue(int val) => _map.Single(x => x.Value == val).Letter;
 
-        private static int GetValueFromLetter(char letter)
-        {
-            return GetValueFromLetter(letter.ToString());
-        }
+        private static int GetValueFromLetter(char letter) => GetValueFromLetter(letter.ToString());
 
-        private static int GetValueFromLetter(string letter)
-        {
-            return _map.Single(x => x.Letter == letter).Value;
-        }
+        private static int GetValueFromLetter(string letter) => _map.Single(x => x.Letter == letter).Value;
 
         public static string ToRomanNumeral(this int number)
         {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 1000; i > 0; i = i / 10)
+            var sb = new StringBuilder();
+            for (var i = 1000; i > 0; i = i / 10)
             {
                 int part = number / i;
                 if (part == 0) continue;
-                else if (part == 1) sb.Append(GetLetterFromValue(i));
+
+                if (part == 1) sb.Append(GetLetterFromValue(i));
                 else if (part == 2) sb.Append(GetLetterFromValue(i) + GetLetterFromValue(i));
                 else if (part == 3) sb.Append(GetLetterFromValue(i) + GetLetterFromValue(i) + GetLetterFromValue(i));
                 else if (part == 4) sb.Append(GetLetterFromValue(i) + GetLetterFromValue(i * 5));
@@ -71,7 +60,7 @@ namespace RomanNumerals_csharp
         {
             var result = 0;
 
-            for (int i = 0; i < romanNumber.Length; i++)
+            for (var i = 0; i < romanNumber.Length; i++)
             {
                 var currentLetter = romanNumber[i];
                 var currentValue = GetValueFromLetter(currentLetter);
@@ -81,8 +70,7 @@ namespace RomanNumerals_csharp
                 {
                     result -= currentValue;
                 }
-               
-                else
+               else
                 {
                     result += currentValue;
                 }

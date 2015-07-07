@@ -1,9 +1,7 @@
-﻿using System.Linq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace RomanNumerals_csharp
 {
-
     public class RomanNumeralsTests
     {
         [TestCase(1, "I")]
