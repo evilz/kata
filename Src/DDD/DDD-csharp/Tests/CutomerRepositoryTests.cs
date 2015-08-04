@@ -21,7 +21,7 @@ namespace DDD_csharp
             var lines = new List<string> { "lastname,firstname,1982/10/08,2000,1000" };
 
             TextReader reader = new StringReader(string.Join(Environment.NewLine,lines));
-
+        
             // Arrange
             var su = new TxtCutomerRepository(reader);
 

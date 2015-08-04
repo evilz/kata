@@ -92,6 +92,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileSystem", "FileSystem", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem-csharp", "FileSystem\FileSystem-csharp\FileSystem-csharp.csproj", "{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MiniPricer", "MiniPricer", "{E8760454-7F06-4BE2-AF03-5CDBE590B679}"
+	ProjectSection(SolutionItems) = preProject
+		LeapYears\ReadMe.md = LeapYears\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniPricer-csharp", "MiniPricer\MiniPricer-csharp\MiniPricer-csharp.csproj", "{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,6 +145,10 @@ Global
 		{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,5 +165,6 @@ Global
 		{94ED8D4B-8899-406E-AED1-89130CA60434} = {982FBA1C-F57D-4825-8E5A-C4946E07CD12}
 		{A65DA4E8-394F-44A2-87FB-12407ABAAF33} = {C33501F7-DDE8-4C93-A32E-509C629DCAAD}
 		{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0} = {CA696AE8-54F2-4470-91F8-424DE5CE8903}
+		{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87} = {E8760454-7F06-4BE2-AF03-5CDBE590B679}
 	EndGlobalSection
 EndGlobal
