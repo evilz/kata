@@ -14,6 +14,7 @@ namespace DDD_csharp
     public class CutomerRepositoryTests
     {
         [Test]
+        [Ignore("TODO !!!!!")]
         public void Should_Return_XXXX_When_YYYY()
         {
             var customer = new Customer("lastname","firstname",new DateTime(1982,10,08),2000,-1000, null);
