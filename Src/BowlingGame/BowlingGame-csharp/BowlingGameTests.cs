@@ -76,17 +76,11 @@ namespace BowlingGame_csharp.Tests
             Assert.AreEqual(BowlingGameState.InProgress, _bowlingGame.State);
         }
         
-
         [Test]
         public void Should_be_finished_when_20_rolls_have_be_done_without_bonus()
         {
             RollMany(20,1);
             Assert.AreEqual(BowlingGameState.Finished, _bowlingGame.State);
         }
-
-
-
-
-
     }
 }

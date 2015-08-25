@@ -35,7 +35,7 @@ Target "Build" (fun _ ->
 let runtest () =
     let opencoverPath = findToolFolderInSubPath "OpenCover.Console.exe" (currentDirectory @@ "tools" @@ "OpenCover") @@ "OpenCover.Console.exe"
     let nunitPath = findToolFolderInSubPath "nunit-console.exe" (currentDirectory @@ "tools" @@ "Nunit") @@ "nunit-console.exe"
-    let nunitOrangePath = findToolFolderInSubPath "NUnitOrange.exe" (currentDirectory @@ "tools" @@ "NUnitOrange") @@ "NUnitOrange.exe"
+    let ReportUnitPath = findToolFolderInSubPath "reportunit.exe" (currentDirectory @@ "tools" @@ "reportunit") @@ "reportunit.exe"
     let reportGenPath = findToolFolderInSubPath "ReportGenerator.exe" (currentDirectory @@ "tools" @@ "ReportGenerator") @@ "ReportGenerator.exe"
    
     let assemblies = !! (buildDir + "*.dll") --"nunit.framework.*" |> separated " "
@@ -49,10 +49,10 @@ let runtest () =
                               Filter = "+[*]* -[*]*Tests";
                               OptionalArguments = "-excludebyattribute:System.Diagnostics.Conditional" })  
          (assemblies + " /config:Release /noshadow /xml:"+buildDir+"TestResults.xml /framework:net-4.5")
-    ReportGenerator (fun p -> { p with ExePath = reportGenPath; TargetDir = (buildDir + "coverage/") }) [ (buildDir + "opencover.xml") ]
+    //ReportGenerator (fun p -> { p with ExePath = reportGenPath; TargetDir = (buildDir + "coverage/") }) [ (buildDir + "opencover.xml") ]
 
     ExecProcess (fun info ->
-            info.FileName <- nunitOrangePath; info.WorkingDirectory <- buildDir; info.Arguments <- "TestResults.xml TestResults.html") (TimeSpan.FromMinutes 5.0)
+            info.FileName <- ReportUnitPath; info.WorkingDirectory <- buildDir; info.Arguments <- "TestResults.xml TestResults.html") (TimeSpan.FromMinutes 5.0)
             |> ignore
 
 

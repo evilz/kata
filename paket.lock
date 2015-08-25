@@ -1,22 +1,25 @@
 NUGET
   remote: https://nuget.org/api/v2
   specs:
-    FAKE (3.32.4)
+    FAKE (4.2.0)
+    ICSharpCode.NRefactory (5.5.1)
+      Mono.Cecil (>= 0.9.5.4)
     Microsoft.Bcl (1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
     Microsoft.Bcl.Build (1.0.21)
     Microsoft.Net.Http (2.2.29)
       Microsoft.Bcl (>= 1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
+    Mono.Cecil (0.9.6.1)
     NUnit (2.6.4)
     NUnit.Runners (2.6.4)
-    NUnitOrange (2.1)
-    Octokit (0.11.0)
+    Octokit (0.14.0)
       Microsoft.Net.Http
-    OpenCover (4.5.3723)
-    ReportGenerator (2.1.4.0)
+    OpenCover (4.6.166)
+    ReportGenerator (2.2.0)
+    ReportUnit (1.2.0)
 GITHUB
   remote: fsharp/FAKE
   specs:
-    modules/Octokit/Octokit.fsx (2d2071cddcaf768340e5893363a0e121f373a999)
+    modules/Octokit/Octokit.fsx (49e3408b7069b16fa7405d2e04eb35725e83c2ca)
       Octokit
