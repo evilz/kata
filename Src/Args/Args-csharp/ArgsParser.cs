@@ -8,9 +8,7 @@ namespace Args_csharp
     public class ArgsParser
     {
         public Dictionary<string, Arg> Spec { get; }
-
-
-
+        
         public ArgsParser(IEnumerable<Arg> spec)
         {
             Spec = spec.ToDictionary(argSpec => argSpec.Flag, argSpec => argSpec);
@@ -18,7 +16,6 @@ namespace Args_csharp
 
         public Dictionary<string, Arg> Parse(IEnumerable<string> args)
         {
-            // clone val
             var result = GetDefaultResult();
 
             Arg currentSpec = null;

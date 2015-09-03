@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace FooBarQix_csharp
@@ -16,15 +17,35 @@ namespace FooBarQix_csharp
         public static string FooBarQix(this int number)
         {
             var result = _fooBarQixMap.Keys
-                            .Where(i => number%i == 0)
+                            .Where(i => IsDivisible(number, i))
                             .Aggregate(string.Empty, (current, i) => current + _fooBarQixMap[i]);
 
             result = number.ToString()
-                        .Where(c => _fooBarQixMap.ContainsKey(c-'0'))
-                        .Aggregate(result, (current, c) => current + _fooBarQixMap[c - '0']);
+                        .Where(HasFooBarQixReplacer())
+                        .Aggregate(result, (current, c) => current + GetReplacerFromChar(c));
 
 
             return string.IsNullOrEmpty(result) ? number.ToString() : result;
+        }
+
+        private static bool IsDivisible(int number, int i)
+        {
+            return number%i == 0;
+        }
+
+        private static Func<char, bool> HasFooBarQixReplacer()
+        {
+            return c => _fooBarQixMap.ContainsKey(IntFromChar(c));
+        }
+
+        private static string GetReplacerFromChar(char c)
+        {
+            return _fooBarQixMap[IntFromChar(c)];
+        }
+
+        private static int IntFromChar(char c)
+        {
+            return c-'0';
         }
     }
 }

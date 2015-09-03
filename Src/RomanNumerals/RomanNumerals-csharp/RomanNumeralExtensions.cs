@@ -5,7 +5,7 @@ namespace RomanNumerals_csharp
 {
     public static class RomanNumeralExtensions
     {
-        private struct RomanLetter
+        private class RomanLetter
         {
             public RomanLetter(int value, string letter)
             {
@@ -27,7 +27,11 @@ namespace RomanNumerals_csharp
             new RomanLetter(1000, "M")
         };
 
-        private static string GetLetterFromValue(int val) => _map.Single(x => x.Value == val).Letter;
+        private static string GetLetterFromValue(int val)
+        {
+            var romanLetter = _map.SingleOrDefault(x => x.Value == val);
+           return romanLetter == null ? string.Empty : romanLetter.Letter;
+        }
 
         private static int GetValueFromLetter(char letter) => GetValueFromLetter(letter.ToString());
 
@@ -36,24 +40,34 @@ namespace RomanNumerals_csharp
         public static string ToRomanNumeral(this int number)
         {
             var sb = new StringBuilder();
-            for (var i = 1000; i > 0; i = i / 10)
+            var maxRomanDigit = _map.Max(x => x.Value);
+
+            for (var powOfTen = maxRomanDigit; powOfTen > 0; powOfTen = powOfTen / 10)
             {
-                int part = number / i;
-                if (part == 0) continue;
+                var currentDigit = number / powOfTen;
+                if (currentDigit == 0) continue;
 
-                if (part == 1) sb.Append(GetLetterFromValue(i));
-                else if (part == 2) sb.Append(GetLetterFromValue(i) + GetLetterFromValue(i));
-                else if (part == 3) sb.Append(GetLetterFromValue(i) + GetLetterFromValue(i) + GetLetterFromValue(i));
-                else if (part == 4) sb.Append(GetLetterFromValue(i) + GetLetterFromValue(i * 5));
-                else if (part == 5) sb.Append(GetLetterFromValue(i * 5));
-                else if (part == 6) sb.Append(GetLetterFromValue(i * 5) + GetLetterFromValue(i));
-                else if (part == 7) sb.Append(GetLetterFromValue(i * 5) + GetLetterFromValue(i) + GetLetterFromValue(i));
-                else if (part == 8) sb.Append(GetLetterFromValue(i * 5) + GetLetterFromValue(i) + GetLetterFromValue(i) + GetLetterFromValue(i));
-                else if (part == 9) sb.Append(GetLetterFromValue(i) + GetLetterFromValue(i * 10));
+                var unitLetter = GetLetterFromValue(powOfTen)[0];
+                var halfLetter = GetLetterFromValue(powOfTen*5);
+                var decimalLetter = GetLetterFromValue(powOfTen*10);
 
-                number -= part * i;
+                var currentRoman = string.Empty;
+
+                if (currentDigit.IsBetween(1,3)) currentRoman = new string(unitLetter, currentDigit);
+                else if (currentDigit == 4) currentRoman = (unitLetter + halfLetter);
+                else if (currentDigit.IsBetween(5,8)) currentRoman = (halfLetter + new string(unitLetter, currentDigit-5));
+                else if (currentDigit == 9) currentRoman = (unitLetter + decimalLetter);
+
+                sb.Append(currentRoman);
+
+                number -= currentDigit * powOfTen;
             }
             return sb.ToString();
+        }
+
+        public static bool IsBetween(this int number,int left, int right)
+        {
+            return number >= left && number <= right;
         }
 
         public static int FromRomanNumeral(this string romanNumber)

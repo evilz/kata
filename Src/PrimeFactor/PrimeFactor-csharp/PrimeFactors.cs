@@ -29,6 +29,11 @@ namespace PrimeFactor_csharp
 
             return accumulator;
         }
+
+        public static bool IsDivisibleBy(this int number, int divider)
+        {
+            return number%divider == 0;
+        }
         
         public static bool IsPrimeNumber(this int number)
         {
