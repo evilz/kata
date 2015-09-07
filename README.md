@@ -4,7 +4,7 @@ TDD, Refactoring kata in many languages
 #### Builds
 
 
-| ![](http://www.unityninjas.com/wp-content/uploads/2015/03/cs6_logo_200.png =30px) | [![Build status](https://ci.appveyor.com/api/projects/status/owl5fe1pfagu1rf5?svg=true)](https://ci.appveyor.com/project/evilz/kata)|
+| ![](cs6.png) | [![Build status](https://ci.appveyor.com/api/projects/status/owl5fe1pfagu1rf5?svg=true)](https://ci.appveyor.com/project/evilz/kata)|
 |-----|-----|
 | |   .  |
 
