@@ -116,6 +116,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameOfLife", "GameOfLife", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife-csharp", "GameOfLife\GameOfLife-csharp\GameOfLife-csharp.csproj", "{C804C936-31E6-4AD2-8888-D08EB4D6D169}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe-csharp", "TicTacToe\TicTacToe-csharp\TicTacToe-csharp.csproj", "{298E8531-827A-473C-8F11-B4FEC82DE9D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToe", "TicTacToe", "{30B7A890-B7EB-491A-B7A7-22D2CEBAC91E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -178,6 +182,10 @@ Global
 		{C804C936-31E6-4AD2-8888-D08EB4D6D169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C804C936-31E6-4AD2-8888-D08EB4D6D169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C804C936-31E6-4AD2-8888-D08EB4D6D169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298E8531-827A-473C-8F11-B4FEC82DE9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298E8531-827A-473C-8F11-B4FEC82DE9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298E8531-827A-473C-8F11-B4FEC82DE9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298E8531-827A-473C-8F11-B4FEC82DE9D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -198,5 +206,6 @@ Global
 		{D0FC464E-3A0F-4FD8-AE79-73AE389DACD5} = {090B458D-47CF-4417-8C8A-1DF74BB31AFD}
 		{466973FE-CADA-4A12-A886-FB76D3EB4635} = {2B2DD7BB-42BC-4D54-A096-08C4AA90F9F1}
 		{C804C936-31E6-4AD2-8888-D08EB4D6D169} = {2960C3C5-2E1B-475D-8A04-3D795BEE97DD}
+		{298E8531-827A-473C-8F11-B4FEC82DE9D5} = {30B7A890-B7EB-491A-B7A7-22D2CEBAC91E}
 	EndGlobalSection
 EndGlobal
