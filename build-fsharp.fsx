@@ -15,7 +15,7 @@ Target "Clean" (fun _ ->
 )
 
 let runRestorePackages() = 
-    "src/csharp-kata.sln"
+    "src/fsharp-kata.sln"
         |> RestoreMSSolutionPackages (fun p ->
             { p with Sources = "https://www.nuget.org/api/v2/" :: p.Sources ;Retries = 4; OutputPath= "./src/packages" })
 
@@ -24,7 +24,7 @@ Target "RestorePackages" (fun _ ->
  )
 
 let runBuild() = 
-   !! "src/**/*.csproj"
+   !! "src/**/*.fsproj"
      |> MSBuildRelease buildDir "Build"
      |> Log "AppBuild-Output: "
 
@@ -48,11 +48,11 @@ let runtest () =
                               Register = RegisterType.RegisterUser ; 
                               Filter = "+[*]* -[*]*Tests";
                               OptionalArguments = "-excludebyattribute:System.Diagnostics.Conditional" })  
-         (assemblies + " /config:Release /noshadow /xml:"+buildDir+"TestResults.xml /framework:net-4.5")
+         (assemblies + " /config:Release /noshadow /xml:"+buildDir+"TestResults-fsharp.xml /framework:net-4.5")
     //ReportGenerator (fun p -> { p with ExePath = reportGenPath; TargetDir = (buildDir + "coverage/") }) [ (buildDir + "opencover.xml") ]
 
     ExecProcess (fun info ->
-            info.FileName <- ReportUnitPath; info.WorkingDirectory <- buildDir; info.Arguments <- "TestResults-csharp.xml TestResults-csharp.html") (TimeSpan.FromMinutes 5.0)
+            info.FileName <- ReportUnitPath; info.WorkingDirectory <- buildDir; info.Arguments <- "TestResults-fsharp.xml TestResults-fsharp.html") (TimeSpan.FromMinutes 5.0)
             |> ignore
 
 
@@ -61,7 +61,7 @@ Target "Test" (fun _ ->
 )
 
 Target "Watch" (fun _ ->
-    use watcher = !! "src/**/*.cs" |> WatchChanges (fun changes -> 
+    use watcher = !! "src/**/*.fs" |> WatchChanges (fun changes -> 
         tracefn "%A" changes
         runRestorePackages()
         runBuild()
