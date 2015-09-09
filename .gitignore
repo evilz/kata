@@ -197,3 +197,6 @@ FakesAssemblies/
 .fake/*
 .paket/*
 artifacts/*
+paket-files/*
+*.ncrunchproject
+*/bin/*
