@@ -36,9 +36,6 @@
     <StartupObject>GameOfLife.GameOfLife</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NFluent">
-      <HintPath>..\packages\NFluent.1.2.0.0\lib\net35\NFluent.dll</HintPath>
-    </Reference>
     <Reference Include="NSubstitute">
       <HintPath>..\packages\NSubstitute.1.7.2.0\lib\NET35\NSubstitute.dll</HintPath>
     </Reference>

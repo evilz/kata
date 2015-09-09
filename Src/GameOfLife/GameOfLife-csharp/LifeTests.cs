@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using NFluent;
 using NUnit.Framework;
 
 namespace GameOfLife
@@ -8,27 +7,27 @@ namespace GameOfLife
     public class LifeTests
     {
         [Test]
-     public void GridOf4_8_should_Evolve()
+        public void GridOf4_8_should_Evolve()
         {
-   
-    //........
-    //....*...
-    //...**...
-    //........
-         var initGrid = new[,]
-         {
+
+            //........
+            //....*...
+            //...**...
+            //........
+            var initGrid = new[,]
+            {
              {false, false, false, false, false , false, false, false},
              {false, false, false, false, true  , false, false, false},
              {false, false, false, true , true  , false, false, false},
              {false, false, false, false, false , false, false, false}
           };
 
-    //........
-    //...**...
-    //...**...
-    //........
-         var nextGrid = new[,]
-         {
+            //........
+            //...**...
+            //...**...
+            //........
+            var nextGrid = new[,]
+            {
              {false, false, false, false, false , false, false, false},
              {false, false, false, true, true  , false, false, false},
              {false, false, false, true , true  , false, false, false},
@@ -37,104 +36,104 @@ namespace GameOfLife
             var life = new Life(initGrid);
             life.Evolve();
 
-            Check.That(life.CurrentGrid).ContainsExactly(nextGrid);
+
+            Assert.That(life.CurrentGrid, Is.EquivalentTo(nextGrid));
         }
 
         [Test]
         public void CurrentGrid_SouldBe_InitGrid_When_LifeHasNotEvolve()
         {
             var initGrid = new[,] { { true, true }, { true, true } };
-          
+
             var life = new Life(initGrid);
-       
-            Check.That(life.CurrentGrid).ContainsExactly(initGrid);
+
+            Assert.That(life.CurrentGrid, Is.EquivalentTo(initGrid));
         }
 
         [Test]
         public void OneCellAlone_Sould_Die_When_Evolve()
         {
-            var initGrid = new[,] {{true}};
+            var initGrid = new[,] { { true } };
             var nextGrid = new[,] { { false } };
             var life = new Life(initGrid);
-            
+
             life.Evolve();
 
-            Check.That(life.CurrentGrid).ContainsExactly(nextGrid);
+            Assert.That(life.CurrentGrid, Is.EquivalentTo(nextGrid));
         }
-
-       [Test]
-       public void LivingCell_Sould_Die_When_HasLessThan2NeighboursAlive()
-       {
-           var initGrid = new[,] { { false, false, false }, { false, false, false }, { false, false, false } };
-           initGrid[1, 1] = true;
-
-           var nextGrid = new[,] { { false, false, false }, { false, false, false }, { false, false, false } }; 
-
-            var life = new Life(initGrid);
-            
-            life.Evolve();
-
-            Check.That(life.CurrentGrid).ContainsExactly(nextGrid);
-        }
-
-       [Test]
-       public void LivingCell_Sould_Die_When_HasMoreThan3NeighboursAlive()
-       {
-           var initGrid = new[,] {  { true, true, true }, { true, true, true }, { true, true, true } }; 
-            var nextGrid = new[,] { { true, false, true }, { false, false, false }, { true, false, true } }; 
-
-           var life = new Life(initGrid);
-
-           life.Evolve();
-
-           Check.That(life.CurrentGrid).ContainsExactly(nextGrid);
-       }
-
-       [Test]
-       public void LivingCell_Sould_GoesAlive_When_HasTwoOrThreeNeighboursAlive()
-       {
-           var initGrid = new[,]
-           {
-               { false, true , false }, 
-               { true , true , false }, 
-               { false, false, false }
-           };
-           var nextGrid = new[,]
-           {
-               { true, true , false },
-               { true, true , false }, 
-               { false, false , false }
-           };
-
-           var life = new Life(initGrid);
-
-           life.Evolve();
-
-           Check.That(life.CurrentGrid).ContainsExactly(nextGrid);
-       }
 
         [Test]
-       public void DeadCell_Sould_GoesAlive_When_HasThreeNeighboursAlive()
-       {
-           var initGrid = new[,]
-           {
-               { false, true , false }, 
-               { true , true , false }, 
+        public void LivingCell_Sould_Die_When_HasLessThan2NeighboursAlive()
+        {
+            var initGrid = new[,] { { false, false, false }, { false, false, false }, { false, false, false } };
+            initGrid[1, 1] = true;
+
+            var nextGrid = new[,] { { false, false, false }, { false, false, false }, { false, false, false } };
+
+            var life = new Life(initGrid);
+
+            life.Evolve();
+
+            Assert.That(life.CurrentGrid, Is.EquivalentTo(nextGrid));
+
+        }
+
+        [Test]
+        public void LivingCell_Sould_Die_When_HasMoreThan3NeighboursAlive()
+        {
+            var initGrid = new[,] { { true, true, true }, { true, true, true }, { true, true, true } };
+            var nextGrid = new[,] { { true, false, true }, { false, false, false }, { true, false, true } };
+
+            var life = new Life(initGrid);
+
+            life.Evolve();
+            Assert.That(life.CurrentGrid, Is.EquivalentTo(nextGrid));
+
+        }
+
+        [Test]
+        public void LivingCell_Sould_GoesAlive_When_HasTwoOrThreeNeighboursAlive()
+        {
+            var initGrid = new[,]
+            {
+               { false, true , false },
+               { true , true , false },
                { false, false, false }
            };
-           var nextGrid = new[,]
-           {
+            var nextGrid = new[,]
+            {
                { true, true , false },
-               { true, true , false }, 
+               { true, true , false },
                { false, false , false }
            };
 
-           var life = new Life(initGrid);
+            var life = new Life(initGrid);
 
-           life.Evolve();
+            life.Evolve();
+            Assert.That(life.CurrentGrid, Is.EquivalentTo(nextGrid));
+        }
 
-           Check.That(life.CurrentGrid).ContainsExactly(nextGrid);
-       }
+        [Test]
+        public void DeadCell_Sould_GoesAlive_When_HasThreeNeighboursAlive()
+        {
+            var initGrid = new[,]
+            {
+               { false, true , false },
+               { true , true , false },
+               { false, false, false }
+           };
+            var nextGrid = new[,]
+            {
+               { true, true , false },
+               { true, true , false },
+               { false, false , false }
+           };
+
+            var life = new Life(initGrid);
+
+            life.Evolve();
+            Assert.That(life.CurrentGrid, Is.EquivalentTo(nextGrid));
+        }
 
 
         [Test]
@@ -144,9 +143,9 @@ namespace GameOfLife
 
             var life = new Life(initGrid);
 
-            var neighbours = life.GetNeighboursCells(1,1);
+            var neighbours = life.GetNeighboursCells(1, 1);
 
-            Check.That(neighbours.Count(b => b)).IsEqualTo(0);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(0));
         }
 
         [Test]
@@ -158,7 +157,8 @@ namespace GameOfLife
 
             var neighbours = life.GetNeighboursCells(1, 1);
 
-            Check.That(neighbours.Count(b => b)).IsEqualTo(1);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(1));
+            
         }
 
         [Test]
@@ -169,8 +169,7 @@ namespace GameOfLife
             var life = new Life(initGrid);
 
             var neighbours = life.GetNeighboursCells(1, 1);
-
-            Check.That(neighbours.Count(b => b)).IsEqualTo(2);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(2));
         }
 
         [Test]
@@ -181,8 +180,7 @@ namespace GameOfLife
             var life = new Life(initGrid);
 
             var neighbours = life.GetNeighboursCells(1, 1);
-
-            Check.That(neighbours.Count(b => b)).IsEqualTo(3);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(3));
         }
 
         [Test]
@@ -193,8 +191,7 @@ namespace GameOfLife
             var life = new Life(initGrid);
 
             var neighbours = life.GetNeighboursCells(1, 1);
-
-            Check.That(neighbours.Count(b => b)).IsEqualTo(4);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(4));
         }
 
         [Test]
@@ -205,8 +202,7 @@ namespace GameOfLife
             var life = new Life(initGrid);
 
             var neighbours = life.GetNeighboursCells(1, 1);
-
-            Check.That(neighbours.Count(b => b)).IsEqualTo(5);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(5));
         }
 
         [Test]
@@ -217,8 +213,7 @@ namespace GameOfLife
             var life = new Life(initGrid);
 
             var neighbours = life.GetNeighboursCells(1, 1);
-
-            Check.That(neighbours.Count(b => b)).IsEqualTo(6);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(6));
         }
 
         [Test]
@@ -229,8 +224,7 @@ namespace GameOfLife
             var life = new Life(initGrid);
 
             var neighbours = life.GetNeighboursCells(1, 1);
-
-            Check.That(neighbours.Count(b => b)).IsEqualTo(7);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(7));
         }
 
         [Test]
@@ -241,8 +235,7 @@ namespace GameOfLife
             var life = new Life(initGrid);
 
             var neighbours = life.GetNeighboursCells(1, 1);
-
-            Check.That(neighbours.Count(b => b)).IsEqualTo(8);
+            Assert.That(neighbours.Count(b => b), Is.EqualTo(8));
         }
     }
 }
