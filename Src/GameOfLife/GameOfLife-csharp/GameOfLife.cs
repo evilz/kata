@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
-using FirstFloor.XamlSpy;
 
 namespace GameOfLife
 {
@@ -178,4 +176,45 @@ namespace GameOfLife
 
         }
     }
+
+    public class RelayCommand : ICommand
+    {
+        readonly Action<object> _execute;
+        readonly Predicate<object> _canExecute;
+
+        #region Constructors
+
+        public RelayCommand(Action<object> execute) : this(execute, null) {}
+
+        public RelayCommand(Action<object> execute, Predicate<object> canExecute)
+        {
+            if (execute == null)
+                throw new ArgumentNullException("execute");
+
+            _execute = execute;
+            _canExecute = canExecute;
+        }
+        #endregion // Constructors
+
+        #region ICommand Members
+
+        public bool CanExecute(object parameter)
+        {
+            return _canExecute?.Invoke(parameter) ?? true;
+        }
+
+        public event EventHandler CanExecuteChanged
+        {
+            add { CommandManager.RequerySuggested += value; }
+            remove { CommandManager.RequerySuggested -= value; }
+        }
+
+        public void Execute(object parameter)
+        {
+            _execute(parameter);
+        }
+
+        #endregion // ICommand Members
+    }
+    
 }
