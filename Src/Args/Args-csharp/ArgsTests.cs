@@ -20,14 +20,12 @@ namespace Args_csharp
         [TestCase("Int Test", "i", -1.0f, typeof(float))]
         [TestCase("String Test", "s", "", typeof(string))]
         [TestCase("bool test", "b", false, typeof(bool))]
-        public void Should_TakeSpecOfManyType(string desc, string flag, object val, Type expectedType)
+        public void Should_give_spec_of_many_types(string desc, string flag, object val, Type expectedType)
         {
-            var specs = new List<Arg>();
-            specs.Add(new Arg(desc,flag,val));
+            var specs = new List<Arg> {new Arg(desc, flag, val)};
             var parser = new ArgsParser(specs);
             Assert.AreEqual(1, parser.Spec.Count());
             Assert.AreEqual(expectedType, parser.Spec[flag].Type);
-
         }
 
 

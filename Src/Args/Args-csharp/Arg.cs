@@ -13,7 +13,6 @@ namespace Args_csharp
 
         public string Description { get; }
         public string Flag { get; }
-        
         public object Value { get; set; }
 
         public Type Type => Value.GetType();

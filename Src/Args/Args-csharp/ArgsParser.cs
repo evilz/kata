@@ -14,9 +14,9 @@ namespace Args_csharp
             Spec = spec.ToDictionary(argSpec => argSpec.Flag, argSpec => argSpec);
         }
 
-        public Dictionary<string, Arg> Parse(IEnumerable<string> args)
+        public IDictionary<string, Arg> Parse(IEnumerable<string> args)
         {
-            var result = GetDefaultResult();
+            var result = GetDefaultArgsValues();
 
             Arg currentSpec = null;
 
@@ -25,7 +25,7 @@ namespace Args_csharp
                 if (IsFlag(arg))
                 {
                     currentSpec = GetSpecFor(arg);
-                    SetTrueIfBoolean(currentSpec, result);
+                    result = SetTrueIfBoolean(currentSpec, result);
                 }
                 else
                 {
@@ -47,14 +47,13 @@ namespace Args_csharp
             return result;
         }
 
-        private static Arg SetTrueIfBoolean(Arg currentSpec, Dictionary<string, Arg> result)
+        private static IDictionary<string, Arg> SetTrueIfBoolean(Arg currentSpec, IDictionary<string, Arg> currentValues)
         {
             if (currentSpec.Type == typeof (bool))
             {
-                result[currentSpec.Flag].Value = true;
-                currentSpec = null;
+                currentValues[currentSpec.Flag].Value = true;
             }
-            return currentSpec;
+            return currentValues;
         }
 
         private Arg GetSpecFor(string flag)
@@ -72,12 +71,10 @@ namespace Args_csharp
             return arg.StartsWith("-");
         }
 
-        private Dictionary<string, Arg> GetDefaultResult()
+        private IDictionary<string, Arg> GetDefaultArgsValues()
         {
-            var defaultValues = new Arg[Spec.Count];
-            Spec.Values.CopyTo(defaultValues, 0);
-            var result = defaultValues.ToDictionary(arg => arg.Flag, arg => arg);
-            return result;
+            return Spec.Values
+                .ToDictionary(arg => arg.Flag, arg => arg);
         }
     }
 }
