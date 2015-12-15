@@ -1,6 +1,6 @@
-Introduction
+# Introduction
 
-Objectifs
+## Objectifs
 
 Le premier objectif de ce Kata est identique à tous les Kata: S’améliorer dans la technique du TDD, par l’écriture de tests, l’écriture du code. Puis le refactoring des tests et du code à cause des changements de spécifications (complexification de l’algo, exception à la règle, besoin d’amélioration techniques induit,…).
 
@@ -16,7 +16,7 @@ Etapes:
 
 Pour chaque étape, il y a un énoncé que j’ai essayé de faire le plus clair possible. Il y a aussi un paragraphe nommé: « A la fin de l’étape ». Il s’agit de quelques questions pouvant amener à une phase de refactoring ou non. Le but étant de challenger/réfléchir à ce que l’on à fait lors de l’étape. Il n’y a pas forcément de bonne réponse absolue à ces questions. Ne trichez pas et lisez le qu’une fois l’étape résolue ;-)
 
-Etape 1: Extrapolation du prix simple
+# Etape 1: Extrapolation du prix simple
 
 Enoncé:
 
@@ -36,7 +36,7 @@ Les marchés sont fermés le samedi, le dimanche, et les jours fériés, donc la
 
 Note: pour simplifier on peut ne considérer que les jours fériés à date fixe 01/01, 01/05, 08/05… et pas ceux comme le lundi de pentecôte, Lundi de Pâques… Toujours pour simplifier, on peut en considérer que les 3 premiers, donnée précédemment.
 
- Etape 2: Le caractère aléatoire
+# Etape 2: Le caractère aléatoire
 
  Enoncé:
 
@@ -52,7 +52,7 @@ Avez vous utilisé des tests sur les extremums ( nb jours ouvrés x volatilité 
 
 Avez vous utilisé un faux (mock) générateur de nombre aléatoire en vérifiant le nombre de fois où il a été appelé par exemple ?
 
-Etape 3: Monté-Carlo
+# Etape 3: Monté-Carlo
 
 Enoncé:
 
@@ -66,7 +66,7 @@ Avez vous touché aux tests précédents ? Comment verifier que l’algorithme �
 
 Avez vous mis en parallèle  le calcul des trajectoires ? Si oui, doit/peut on le vérifier par un test ?
 
-Etape 4: Le panier d’instruments
+# Etape 4: Le panier d’instruments
 
 Enoncé:
 
@@ -78,7 +78,7 @@ Peut-on toujours pricer qu’un seul instrument ? Avez-vous gardé vos premiers 
 
 Ce changement de spécification a-t-il engendré un changement de l’API de votre MiniPricer ? Est-ce nécessaire/bien ?
 
-Etape 5: La précision sur demande
+# Etape 5: La précision sur demande
 
 Avertissement:
 
@@ -106,4 +106,4 @@ Combien avez vous fait de classe ?
 
 Combien avez vous fait de méthode ?
 
-Bravo !
+# Bravo !
