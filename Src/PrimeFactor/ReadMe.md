@@ -8,11 +8,11 @@ The generate method takes an integer argument and returns a collection of intege
 
 __Examples__ 
 
-generate(2) = [2] 
-generate(3) = [3] 
-generate(4) = [2,2] 
-generate(6) = [2,3] 
-generate(8) = [2,2,2] 
-generate(9) = [3,3] 
-generate(10)=[2,5] 
-generate(12) = [2,2,3]
+- generate(2) = [2] 
+- generate(3) = [3] 
+- generate(4) = [2,2] 
+- generate(6) = [2,3] 
+- generate(8) = [2,2,2] 
+- generate(9) = [3,3] 
+- generate(10)=[2,5] 
+- generate(12) = [2,2,3]
