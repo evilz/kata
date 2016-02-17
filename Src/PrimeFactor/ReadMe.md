@@ -1,7 +1,33 @@
-# Leap Years 
+# Introduction 
 
-Write a function that returns true or false depending on whether its input integer is a leap year or not.
+The prime factors kata is a math-based kata in which we write a method which will break 
 
-A leap year is defined as one that is divisible by 4, but is not otherwise divisible by 100 unless it is also divisible by 400.
+down any number into a list of its prime factors. This means that we return the set of one or 
 
-For example, 2001 is a typical common year and 1996 is a typical leap year, whereas 1900 is an atypical common year and 2000 is an atypical leap year.
+more prime numbers that when multiplied together will give us the initial number. 
+
+## Requirements 
+
+Write a class named "PrimeFactors" that has one static method: generate. 
+
+• The generate method takes an integer argument and returns a collection of integers. That 
+
+list contains the prime factors in numerical sequence. 
+
+__Examples__ 
+
+• generate(2) = [2] 
+
+• generate(3) = [3] 
+
+• generate(4) = [2,2] 
+
+• generate(6) = [2,3] 
+
+• generate(8) = [2,2,2] 
+
+• generate(9) = [3,3] 
+
+• generate(10)=[2,5] 
+
+• generate(12) = [2,2,3]
