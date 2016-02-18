@@ -14,19 +14,20 @@ TDD, Refactoring kata in many languages
 
 | Name | Versions |
 |--------|--------|
-| [FizzBuzz](https://github.com/evilz/kata/tree/master/Src/FizzBuzz) | C#  F#     |
-| [FooBarQix](https://github.com/evilz/kata/tree/master/Src/FooBarQix) | C# |
-| [RomanNumerals](https://github.com/evilz/kata/tree/master/Src/RomanNumerals) | C#  F# |
-| [Args](https://github.com/evilz/kata/tree/master/Src/Args) | C# |
-| [Diamond](https://github.com/evilz/kata/tree/master/Src/Diamond) | C# |
-| [PrimeFactor](https://github.com/evilz/kata/tree/master/Src/PrimeFactor) | C# |
-| [StringCalculator](https://github.com/evilz/kata/tree/master/Src/StringCalculator) | C# |
-| [MiniPricer](https://github.com/evilz/kata/tree/master/Src/MiniPricer) | C# |
-| [LeapYears](https://github.com/evilz/kata/tree/master/Src/LeapYears) | C# |
-| [BowlingGame](https://github.com/evilz/kata/tree/master/Src/BowlingGame) | C# |
+| [FizzBuzz](https://github.com/evilz/kata/tree/master/Src/FizzBuzz) | ![](cs6.png)  ![](fsharp.png)     |
+| [FooBarQix](https://github.com/evilz/kata/tree/master/Src/FooBarQix) | ![](cs6.png) |
+| [RomanNumerals](https://github.com/evilz/kata/tree/master/Src/RomanNumerals) | ![](cs6.png)  ![](fsharp.png) |
+| [Args](https://github.com/evilz/kata/tree/master/Src/Args) | ![](cs6.png) |
+| [Diamond](https://github.com/evilz/kata/tree/master/Src/Diamond) | ![](cs6.png) |
+| [PrimeFactor](https://github.com/evilz/kata/tree/master/Src/PrimeFactor) | ![](cs6.png) |
+| [StringCalculator](https://github.com/evilz/kata/tree/master/Src/StringCalculator) | ![](cs6.png) |
+| [MiniPricer](https://github.com/evilz/kata/tree/master/Src/MiniPricer) | ![](cs6.png) |
+| [LeapYears](https://github.com/evilz/kata/tree/master/Src/LeapYears) | ![](cs6.png) |
+| [BowlingGame](https://github.com/evilz/kata/tree/master/Src/BowlingGame) | ![](cs6.png) |
 | MineSweeper | C# |
-| [FileSystem](https://github.com/evilz/kata/tree/master/Src/FileSystem) | C# |
-| [TennisGame](https://github.com/evilz/kata/tree/master/Src/TennisGame) | F# |
+| [FileSystem](https://github.com/evilz/kata/tree/master/Src/FileSystem) | ![](cs6.png) |
+| [TennisGame](https://github.com/evilz/kata/tree/master/Src/TennisGame) | ![](fsharp.png) |
+| [Game of life](https://github.com/evilz/kata/tree/master/Src/GameOfLife/GameOfLife-csharp) | ![](fsharp.png) |
 
 
 #### Refactoring
