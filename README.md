@@ -24,7 +24,7 @@ TDD, Refactoring kata in many languages
 | [MiniPricer](https://github.com/evilz/kata/tree/master/Src/MiniPricer) | ![](cs6.png) |
 | [LeapYears](https://github.com/evilz/kata/tree/master/Src/LeapYears) | ![](cs6.png) |
 | [BowlingGame](https://github.com/evilz/kata/tree/master/Src/BowlingGame) | ![](cs6.png) |
-| MineSweeper | C# |
+| [MineSweeper](https://github.com/evilz/kata/tree/master/Src/Minesweeper) | ![](cs6.png) |
 | [FileSystem](https://github.com/evilz/kata/tree/master/Src/FileSystem) | ![](cs6.png) |
 | [TennisGame](https://github.com/evilz/kata/tree/master/Src/TennisGame) | ![](fsharp.png) |
 | [Game of life](https://github.com/evilz/kata/tree/master/Src/GameOfLife/GameOfLife-csharp) | ![](fsharp.png) |
