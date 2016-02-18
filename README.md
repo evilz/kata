@@ -28,6 +28,7 @@ TDD, Refactoring kata in many languages
 | [FileSystem](https://github.com/evilz/kata/tree/master/Src/FileSystem) | ![](cs6.png) |
 | [TennisGame](https://github.com/evilz/kata/tree/master/Src/TennisGame) | ![](fsharp.png) |
 | [Game of life](https://github.com/evilz/kata/tree/master/Src/GameOfLife/GameOfLife-csharp) | ![](fsharp.png) |
+| [Reload countdown](https://github.com/evilz/kata/tree/master/Src/ReloadCountdown/ReloadCountdown-csharp) | ![](cs6.png) |
 
 
 #### Refactoring
