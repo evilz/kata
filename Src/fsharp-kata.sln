@@ -1,17 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{B17771DF-D1BB-4CC4-9998-F97139DCD485}"
-	ProjectSection(SolutionItems) = preProject
-		paket.dependencies = paket.dependencies
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4CC9CCF-C1B1-48D2-9935-16E2DD294087}"
-	ProjectSection(SolutionItems) = preProject
-		FizzBuzz\ReadMe.md = FizzBuzz\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37874DED-80DC-4EB1-AD50-EA6663AAD840}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,71 +13,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeapYears", "LeapYears", "{F095024C-956C-4132-9C95-1CD75B25E85A}"
-	ProjectSection(SolutionItems) = preProject
-		LeapYears\ReadMe.md = LeapYears\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FooBarQix", "FooBarQix", "{68ABDE80-83D0-4612-9D1C-D894395B7188}"
-	ProjectSection(SolutionItems) = preProject
-		FooBarQix\ReadMe.md = FooBarQix\ReadMe.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artifacts", "artifacts", "{D39C79C1-CCB6-41EA-B9F5-93716688BD91}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StringCalculator", "StringCalculator", "{BE23CA87-6894-4A48-A245-4C0B6C9CFB84}"
-	ProjectSection(SolutionItems) = preProject
-		StringCalculator\ReadMe.md = StringCalculator\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RomanNumerals", "RomanNumerals", "{A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}"
-	ProjectSection(SolutionItems) = preProject
-		RomanNumerals\ReadMe.md = RomanNumerals\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Args", "Args", "{90A8538B-3938-4A2B-B63F-6FFB50BE7570}"
-	ProjectSection(SolutionItems) = preProject
-		Args\ReadMe.md = Args\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diamond", "Diamond", "{35B3057D-3DD5-40DE-B93A-D6B76AEB7F75}"
-	ProjectSection(SolutionItems) = preProject
-		Diamond\ReadMe.md = Diamond\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DDD", "DDD", "{982FBA1C-F57D-4825-8E5A-C4946E07CD12}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrimeFactor", "PrimeFactor", "{C33501F7-DDE8-4C93-A32E-509C629DCAAD}"
-	ProjectSection(SolutionItems) = preProject
-		PrimeFactor\PrimeFactor-csharp\ReadMe.md = PrimeFactor\PrimeFactor-csharp\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileSystem", "FileSystem", "{CA696AE8-54F2-4470-91F8-424DE5CE8903}"
-	ProjectSection(SolutionItems) = preProject
-		FileSystem\ReadMe.md = FileSystem\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MiniPricer", "MiniPricer", "{E8760454-7F06-4BE2-AF03-5CDBE590B679}"
-	ProjectSection(SolutionItems) = preProject
-		LeapYears\ReadMe.md = LeapYears\ReadMe.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BowlingGame", "BowlingGame", "{090B458D-47CF-4417-8C8A-1DF74BB31AFD}"
-	ProjectSection(SolutionItems) = preProject
-		BowlingGame\Readme.md = BowlingGame\Readme.md
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Minesweeper", "Minesweeper", "{2B2DD7BB-42BC-4D54-A096-08C4AA90F9F1}"
-	ProjectSection(SolutionItems) = preProject
-		Minesweeper\ReadMe.md = Minesweeper\ReadMe.md
-	EndProjectSection
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FizzBuzz-fsharp", "FizzBuzz\FizzBuzz-fsharp\FizzBuzz-fsharp.fsproj", "{AAEFAD26-6045-4FF0-A744-9BB62C8EADDE}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RomanNumerals-fsharp", "RomanNumerals\RomanNumerals-fsharp\RomanNumerals-fsharp.fsproj", "{C51A9B3A-C026-401A-A942-12EAF1A717BA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TennisGame", "TennisGame", "{1808F0B3-2AD1-480A-B2A4-728A5F199072}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TennisGame-fsharp", "TennisGame\TennisGame-fsharp\TennisGame-fsharp.fsproj", "{DA54CAB8-E3B2-4460-A448-6032AB195729}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDD-Kata", "TDD-Kata", "{631E2ACD-91D7-4A3C-BF85-22D496A5F92D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FizzBuzz-fsharp", "TDD-Kata\FizzBuzz\FizzBuzz-fsharp\FizzBuzz-fsharp.fsproj", "{AAEFAD26-6045-4FF0-A744-9BB62C8EADDE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RomanNumerals-fsharp", "TDD-Kata\RomanNumerals\RomanNumerals-fsharp\RomanNumerals-fsharp.fsproj", "{C51A9B3A-C026-401A-A942-12EAF1A717BA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TennisGame-fsharp", "TDD-Kata\TennisGame\TennisGame-fsharp\TennisGame-fsharp.fsproj", "{DA54CAB8-E3B2-4460-A448-6032AB195729}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +69,20 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{E4CC9CCF-C1B1-48D2-9935-16E2DD294087} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{F095024C-956C-4132-9C95-1CD75B25E85A} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{68ABDE80-83D0-4612-9D1C-D894395B7188} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{BE23CA87-6894-4A48-A245-4C0B6C9CFB84} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{90A8538B-3938-4A2B-B63F-6FFB50BE7570} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{35B3057D-3DD5-40DE-B93A-D6B76AEB7F75} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{982FBA1C-F57D-4825-8E5A-C4946E07CD12} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{C33501F7-DDE8-4C93-A32E-509C629DCAAD} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{CA696AE8-54F2-4470-91F8-424DE5CE8903} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{E8760454-7F06-4BE2-AF03-5CDBE590B679} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{090B458D-47CF-4417-8C8A-1DF74BB31AFD} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{2B2DD7BB-42BC-4D54-A096-08C4AA90F9F1} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
+		{1808F0B3-2AD1-480A-B2A4-728A5F199072} = {631E2ACD-91D7-4A3C-BF85-22D496A5F92D}
 		{AAEFAD26-6045-4FF0-A744-9BB62C8EADDE} = {E4CC9CCF-C1B1-48D2-9935-16E2DD294087}
 		{C51A9B3A-C026-401A-A942-12EAF1A717BA} = {A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}
 		{DA54CAB8-E3B2-4460-A448-6032AB195729} = {1808F0B3-2AD1-480A-B2A4-728A5F199072}
