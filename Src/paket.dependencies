@@ -1,0 +1,9 @@
+source https://www.nuget.org/api/v2
+
+nuget FSharp.Core
+nuget FsUnit
+nuget NFluent
+nuget NSubstitute
+nuget NUnit
+nuget SystemWrapper.Interfaces
+nuget SystemWrapper.Wrappers

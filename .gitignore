@@ -200,3 +200,6 @@ artifacts/*
 paket-files/*
 *.ncrunchproject
 */bin/*
+artifacts/*
+artifacts
+*.dll

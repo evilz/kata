@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{C051AD41-DF49-433B-9162-59E904FB68DA}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4CC9CCF-C1B1-48D2-9935-16E2DD294087}"
 	ProjectSection(SolutionItems) = preProject
-		FizzBuzz\ReadMe.md = FizzBuzz\ReadMe.md
+		TDD-Kata\FizzBuzz\ReadMe.md = TDD-Kata\FizzBuzz\ReadMe.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37874DED-80DC-4EB1-AD50-EA6663AAD840}"
@@ -15,114 +20,108 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\paket.dependencies = ..\paket.dependencies
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz-csharp", "FizzBuzz\FizzBuzz-csharp\FizzBuzz-csharp.csproj", "{AD0E342C-FE9E-4841-B116-35AD1EB19F36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz-csharp", "TDD-Kata\FizzBuzz\FizzBuzz-csharp\FizzBuzz-csharp.csproj", "{AD0E342C-FE9E-4841-B116-35AD1EB19F36}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeapYears", "LeapYears", "{F095024C-956C-4132-9C95-1CD75B25E85A}"
 	ProjectSection(SolutionItems) = preProject
-		LeapYears\ReadMe.md = LeapYears\ReadMe.md
+		TDD-Kata\LeapYears\ReadMe.md = TDD-Kata\LeapYears\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYears-csharp", "LeapYears\LeapYears-csharp\LeapYears-csharp.csproj", "{EAE66D52-635D-4870-B326-3BADD0EDE093}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYears-csharp", "TDD-Kata\LeapYears\LeapYears-csharp\LeapYears-csharp.csproj", "{EAE66D52-635D-4870-B326-3BADD0EDE093}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FooBarQix", "FooBarQix", "{68ABDE80-83D0-4612-9D1C-D894395B7188}"
 	ProjectSection(SolutionItems) = preProject
-		FooBarQix\ReadMe.md = FooBarQix\ReadMe.md
+		TDD-Kata\FooBarQix\ReadMe.md = TDD-Kata\FooBarQix\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artifacts", "artifacts", "{D39C79C1-CCB6-41EA-B9F5-93716688BD91}"
-	ProjectSection(SolutionItems) = preProject
-		..\artifacts\TestResults.html = ..\artifacts\TestResults.html
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "coverage", "coverage", "{AA402D8C-3696-4078-8070-FC4E7F409FEE}"
-	ProjectSection(SolutionItems) = preProject
-		..\artifacts\coverage\combined.js = ..\artifacts\coverage\combined.js
-		..\artifacts\coverage\FizzBuzz_csharp_FizzBuzzExtension.htm = ..\artifacts\coverage\FizzBuzz_csharp_FizzBuzzExtension.htm
-		..\artifacts\coverage\index.htm = ..\artifacts\coverage\index.htm
-		..\artifacts\coverage\LeapYears_csharp_DateTimeExtensions.htm = ..\artifacts\coverage\LeapYears_csharp_DateTimeExtensions.htm
-		..\artifacts\coverage\report.css = ..\artifacts\coverage\report.css
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBarQix-csharp", "FooBarQix\FooBarQix-csharp\FooBarQix-csharp.csproj", "{C075AD15-A759-4D0A-9B74-99ABAAD21E77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBarQix-csharp", "TDD-Kata\FooBarQix\FooBarQix-csharp\FooBarQix-csharp.csproj", "{C075AD15-A759-4D0A-9B74-99ABAAD21E77}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StringCalculator", "StringCalculator", "{BE23CA87-6894-4A48-A245-4C0B6C9CFB84}"
 	ProjectSection(SolutionItems) = preProject
-		StringCalculator\ReadMe.md = StringCalculator\ReadMe.md
+		TDD-Kata\StringCalculator\ReadMe.md = TDD-Kata\StringCalculator\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator-csharp", "StringCalculator\StringCalculator-csharp\StringCalculator-csharp.csproj", "{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator-csharp", "TDD-Kata\StringCalculator\StringCalculator-csharp\StringCalculator-csharp.csproj", "{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RomanNumerals", "RomanNumerals", "{A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}"
 	ProjectSection(SolutionItems) = preProject
-		RomanNumerals\ReadMe.md = RomanNumerals\ReadMe.md
+		TDD-Kata\RomanNumerals\ReadMe.md = TDD-Kata\RomanNumerals\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals-csharp", "RomanNumerals\RomanNumerals-csharp\RomanNumerals-csharp.csproj", "{5B14A93B-2A45-4044-ABF8-DA330E782791}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals-csharp", "TDD-Kata\RomanNumerals\RomanNumerals-csharp\RomanNumerals-csharp.csproj", "{5B14A93B-2A45-4044-ABF8-DA330E782791}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Args", "Args", "{90A8538B-3938-4A2B-B63F-6FFB50BE7570}"
 	ProjectSection(SolutionItems) = preProject
-		Args\ReadMe.md = Args\ReadMe.md
+		TDD-Kata\Args\ReadMe.md = TDD-Kata\Args\ReadMe.md
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Args-csharp", "Args\Args-csharp\Args-csharp.csproj", "{980699FF-C475-4DAD-8E54-48962B5FA26B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diamond", "Diamond", "{35B3057D-3DD5-40DE-B93A-D6B76AEB7F75}"
 	ProjectSection(SolutionItems) = preProject
-		Diamond\ReadMe.md = Diamond\ReadMe.md
+		TDD-Kata\Diamond\ReadMe.md = TDD-Kata\Diamond\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond-csharp", "Diamond\Diamond-csharp\Diamond-csharp.csproj", "{8FF273ED-B670-4350-A885-C61317036D7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond-csharp", "TDD-Kata\Diamond\Diamond-csharp\Diamond-csharp.csproj", "{8FF273ED-B670-4350-A885-C61317036D7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DDD", "DDD", "{982FBA1C-F57D-4825-8E5A-C4946E07CD12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD-csharp", "DDD\DDD-csharp\DDD-csharp.csproj", "{94ED8D4B-8899-406E-AED1-89130CA60434}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD-csharp", "TDD-Kata\DDD\DDD-csharp\DDD-csharp.csproj", "{94ED8D4B-8899-406E-AED1-89130CA60434}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PrimeFactor", "PrimeFactor", "{C33501F7-DDE8-4C93-A32E-509C629DCAAD}"
 	ProjectSection(SolutionItems) = preProject
-		PrimeFactor\PrimeFactor-csharp\ReadMe.md = PrimeFactor\PrimeFactor-csharp\ReadMe.md
+		TDD-Kata\PrimeFactor\PrimeFactor-csharp\ReadMe.md = TDD-Kata\PrimeFactor\PrimeFactor-csharp\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactor-csharp", "PrimeFactor\PrimeFactor-csharp\PrimeFactor-csharp.csproj", "{A65DA4E8-394F-44A2-87FB-12407ABAAF33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactor-csharp", "TDD-Kata\PrimeFactor\PrimeFactor-csharp\PrimeFactor-csharp.csproj", "{A65DA4E8-394F-44A2-87FB-12407ABAAF33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileSystem", "FileSystem", "{CA696AE8-54F2-4470-91F8-424DE5CE8903}"
 	ProjectSection(SolutionItems) = preProject
-		FileSystem\ReadMe.md = FileSystem\ReadMe.md
+		TDD-Kata\FileSystem\ReadMe.md = TDD-Kata\FileSystem\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem-csharp", "FileSystem\FileSystem-csharp\FileSystem-csharp.csproj", "{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem-csharp", "TDD-Kata\FileSystem\FileSystem-csharp\FileSystem-csharp.csproj", "{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MiniPricer", "MiniPricer", "{E8760454-7F06-4BE2-AF03-5CDBE590B679}"
 	ProjectSection(SolutionItems) = preProject
-		LeapYears\ReadMe.md = LeapYears\ReadMe.md
+		TDD-Kata\LeapYears\ReadMe.md = TDD-Kata\LeapYears\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniPricer-csharp", "MiniPricer\MiniPricer-csharp\MiniPricer-csharp.csproj", "{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniPricer-csharp", "TDD-Kata\MiniPricer\MiniPricer-csharp\MiniPricer-csharp.csproj", "{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BowlingGame", "BowlingGame", "{090B458D-47CF-4417-8C8A-1DF74BB31AFD}"
 	ProjectSection(SolutionItems) = preProject
-		BowlingGame\Readme.md = BowlingGame\Readme.md
+		TDD-Kata\BowlingGame\Readme.md = TDD-Kata\BowlingGame\Readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame-csharp", "BowlingGame\BowlingGame-csharp\BowlingGame-csharp.csproj", "{D0FC464E-3A0F-4FD8-AE79-73AE389DACD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame-csharp", "TDD-Kata\BowlingGame\BowlingGame-csharp\BowlingGame-csharp.csproj", "{D0FC464E-3A0F-4FD8-AE79-73AE389DACD5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Minesweeper", "Minesweeper", "{2B2DD7BB-42BC-4D54-A096-08C4AA90F9F1}"
 	ProjectSection(SolutionItems) = preProject
-		Minesweeper\ReadMe.md = Minesweeper\ReadMe.md
+		TDD-Kata\Minesweeper\ReadMe.md = TDD-Kata\Minesweeper\ReadMe.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper-csharp", "Minesweeper\Minesweeper-csharp\Minesweeper-csharp.csproj", "{466973FE-CADA-4A12-A886-FB76D3EB4635}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper-csharp", "TDD-Kata\Minesweeper\Minesweeper-csharp\Minesweeper-csharp.csproj", "{466973FE-CADA-4A12-A886-FB76D3EB4635}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameOfLife", "GameOfLife", "{2960C3C5-2E1B-475D-8A04-3D795BEE97DD}"
+	ProjectSection(SolutionItems) = preProject
+		TDD-Kata\GameOfLife\Readme.md = TDD-Kata\GameOfLife\Readme.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife-csharp", "GameOfLife\GameOfLife-csharp\GameOfLife-csharp.csproj", "{C804C936-31E6-4AD2-8888-D08EB4D6D169}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife-csharp", "TDD-Kata\GameOfLife\GameOfLife-csharp\GameOfLife-csharp.csproj", "{C804C936-31E6-4AD2-8888-D08EB4D6D169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe-csharp", "TicTacToe\TicTacToe-csharp\TicTacToe-csharp.csproj", "{298E8531-827A-473C-8F11-B4FEC82DE9D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe-csharp", "TDD-Kata\TicTacToe\TicTacToe-csharp\TicTacToe-csharp.csproj", "{298E8531-827A-473C-8F11-B4FEC82DE9D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToe", "TicTacToe", "{30B7A890-B7EB-491A-B7A7-22D2CEBAC91E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReloadCountdown-csharp", "ReloadCountdown\ReloadCountdown-csharp\ReloadCountdown-csharp.csproj", "{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReloadCountdown-csharp", "TDD-Kata\ReloadCountdown\ReloadCountdown-csharp\ReloadCountdown-csharp.csproj", "{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReloadCountdown", "ReloadCountdown", "{2F509C1E-5259-49DD-8CAD-82BE641AF86F}"
+	ProjectSection(SolutionItems) = preProject
+		TDD-Kata\ReloadCountdown\Readme.md = TDD-Kata\ReloadCountdown\Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDD-Kata", "TDD-Kata", "{A651760D-445C-4AB2-80D8-3084D5BD15E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Args-csharp", "TDD-Kata\Args\Args-csharp\Args-csharp.csproj", "{980699FF-C475-4DAD-8E54-48962B5FA26B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -150,10 +149,6 @@ Global
 		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B14A93B-2A45-4044-ABF8-DA330E782791}.Release|Any CPU.Build.0 = Release|Any CPU
-		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8FF273ED-B670-4350-A885-C61317036D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8FF273ED-B670-4350-A885-C61317036D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FF273ED-B670-4350-A885-C61317036D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -194,27 +189,47 @@ Global
 		{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980699FF-C475-4DAD-8E54-48962B5FA26B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{E4CC9CCF-C1B1-48D2-9935-16E2DD294087} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
+		{37874DED-80DC-4EB1-AD50-EA6663AAD840} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{AD0E342C-FE9E-4841-B116-35AD1EB19F36} = {E4CC9CCF-C1B1-48D2-9935-16E2DD294087}
+		{F095024C-956C-4132-9C95-1CD75B25E85A} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{EAE66D52-635D-4870-B326-3BADD0EDE093} = {F095024C-956C-4132-9C95-1CD75B25E85A}
-		{AA402D8C-3696-4078-8070-FC4E7F409FEE} = {D39C79C1-CCB6-41EA-B9F5-93716688BD91}
+		{68ABDE80-83D0-4612-9D1C-D894395B7188} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{C075AD15-A759-4D0A-9B74-99ABAAD21E77} = {68ABDE80-83D0-4612-9D1C-D894395B7188}
+		{BE23CA87-6894-4A48-A245-4C0B6C9CFB84} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{5F9F33BB-BF05-4570-BF7B-770ED8C307D1} = {BE23CA87-6894-4A48-A245-4C0B6C9CFB84}
+		{A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{5B14A93B-2A45-4044-ABF8-DA330E782791} = {A2FB3E73-1C25-46FB-B3B8-EEC2131DBA73}
-		{980699FF-C475-4DAD-8E54-48962B5FA26B} = {90A8538B-3938-4A2B-B63F-6FFB50BE7570}
+		{90A8538B-3938-4A2B-B63F-6FFB50BE7570} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
+		{35B3057D-3DD5-40DE-B93A-D6B76AEB7F75} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{8FF273ED-B670-4350-A885-C61317036D7E} = {35B3057D-3DD5-40DE-B93A-D6B76AEB7F75}
+		{982FBA1C-F57D-4825-8E5A-C4946E07CD12} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{94ED8D4B-8899-406E-AED1-89130CA60434} = {982FBA1C-F57D-4825-8E5A-C4946E07CD12}
+		{C33501F7-DDE8-4C93-A32E-509C629DCAAD} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{A65DA4E8-394F-44A2-87FB-12407ABAAF33} = {C33501F7-DDE8-4C93-A32E-509C629DCAAD}
+		{CA696AE8-54F2-4470-91F8-424DE5CE8903} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0} = {CA696AE8-54F2-4470-91F8-424DE5CE8903}
+		{E8760454-7F06-4BE2-AF03-5CDBE590B679} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87} = {E8760454-7F06-4BE2-AF03-5CDBE590B679}
+		{090B458D-47CF-4417-8C8A-1DF74BB31AFD} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{D0FC464E-3A0F-4FD8-AE79-73AE389DACD5} = {090B458D-47CF-4417-8C8A-1DF74BB31AFD}
+		{2B2DD7BB-42BC-4D54-A096-08C4AA90F9F1} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{466973FE-CADA-4A12-A886-FB76D3EB4635} = {2B2DD7BB-42BC-4D54-A096-08C4AA90F9F1}
+		{2960C3C5-2E1B-475D-8A04-3D795BEE97DD} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{C804C936-31E6-4AD2-8888-D08EB4D6D169} = {2960C3C5-2E1B-475D-8A04-3D795BEE97DD}
 		{298E8531-827A-473C-8F11-B4FEC82DE9D5} = {30B7A890-B7EB-491A-B7A7-22D2CEBAC91E}
+		{30B7A890-B7EB-491A-B7A7-22D2CEBAC91E} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
 		{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4} = {2F509C1E-5259-49DD-8CAD-82BE641AF86F}
+		{2F509C1E-5259-49DD-8CAD-82BE641AF86F} = {A651760D-445C-4AB2-80D8-3084D5BD15E3}
+		{980699FF-C475-4DAD-8E54-48962B5FA26B} = {90A8538B-3938-4A2B-B63F-6FFB50BE7570}
 	EndGlobalSection
 EndGlobal

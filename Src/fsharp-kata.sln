@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{B17771DF-D1BB-4CC4-9998-F97139DCD485}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4CC9CCF-C1B1-48D2-9935-16E2DD294087}"
 	ProjectSection(SolutionItems) = preProject
 		FizzBuzz\ReadMe.md = FizzBuzz\ReadMe.md
