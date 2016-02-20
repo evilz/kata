@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{C051AD41-DF49-433B-9162-59E904FB68DA}"
-	ProjectSection(SolutionItems) = preProject
-		paket.dependencies = paket.dependencies
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4CC9CCF-C1B1-48D2-9935-16E2DD294087}"
 	ProjectSection(SolutionItems) = preProject
 		TDD-Kata\FizzBuzz\ReadMe.md = TDD-Kata\FizzBuzz\ReadMe.md

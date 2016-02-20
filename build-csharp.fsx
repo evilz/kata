@@ -33,10 +33,10 @@ Target "Build" (fun _ ->
 )
 
 let runtest () =
-    let opencoverPath = findToolFolderInSubPath "OpenCover.Console.exe" (currentDirectory @@ "tools" @@ "OpenCover") @@ "OpenCover.Console.exe"
-    let nunitPath = findToolFolderInSubPath "nunit-console.exe" (currentDirectory @@ "tools" @@ "Nunit") @@ "nunit-console.exe"
-    let ReportUnitPath = findToolFolderInSubPath "reportunit.exe" (currentDirectory @@ "tools" @@ "reportunit") @@ "reportunit.exe"
-    let reportGenPath = findToolFolderInSubPath "ReportGenerator.exe" (currentDirectory @@ "tools" @@ "ReportGenerator") @@ "ReportGenerator.exe"
+    let opencoverPath = findToolFolderInSubPath "OpenCover.Console.exe" (currentDirectory @@ "packages/OpenCover/tools" ) @@ "OpenCover.Console.exe"
+    let nunitPath = findToolFolderInSubPath "nunit3-console.exe" (currentDirectory @@ "packages/NUnit.Console/tools") @@ "nunit3-console.exe"
+    let ReportUnitPath = findToolFolderInSubPath "reportunit.exe" (currentDirectory @@ "packages/ReportUnit/tools" @@ "reportunit") @@ "reportunit.exe"
+    let reportGenPath = findToolFolderInSubPath "ReportGenerator.exe" (currentDirectory @@ "packages/ReportGenerator/tools" ) @@ "ReportGenerator.exe"
    
     let assemblies = !! (buildDir + "*.dll") --"nunit.framework.*" |> separated " "
     
@@ -48,7 +48,8 @@ let runtest () =
                               Register = RegisterType.RegisterUser ; 
                               Filter = "+[*]* -[*]*Tests";
                               OptionalArguments = "-excludebyattribute:System.Diagnostics.Conditional" })  
-         (assemblies + " /config:Release /noshadow /xml:"+buildDir+"TestResults.xml /framework:net-4.5")
+         (assemblies + " --out="+buildDir+"TestResults-csharp.xml")
+    //     (assemblies + " /config:Release /noshadow /xml:"+buildDir+"TestResults.xml /framework:net-4.5")
     //ReportGenerator (fun p -> { p with ExePath = reportGenPath; TargetDir = (buildDir + "coverage/") }) [ (buildDir + "opencover.xml") ]
 
     ExecProcess (fun info ->
