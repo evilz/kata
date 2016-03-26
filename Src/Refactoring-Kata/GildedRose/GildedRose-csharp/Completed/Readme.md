@@ -1,0 +1,29 @@
+﻿## Steps :
+
+- Extract constant string
+-convert for in foreach
+- invert if to positive
+- split first if
+- remove unused  if (item.Name == BACKSTAGE_PASSES_TO_A_TAFKAL80_ETC_CONCERT)
+- convert to switch (two switch)
+- inverse if (item.SellIn < 0)
+- extract IncreaseQuality(item);
+- use IncreaseQuality(item);
+- replace item.Quality - item.Quality by 0
+- -split if
+- extract DecreaseQuality
+- make Items readonly and rename
+- create case SULFURAS_HAND_OF_RAGNAROS
+- simplify default case
+- move first if in first switch
+- move second if in second switch
+- merge switch
+- move IncreaseQuality and DecreaseQuality to Item
+- extract update methods
+- extract DecreaseSellIn and move to Item
+- create interface     public interface ItemUpdator
+- implement each updater and use it
+- add variable for IItemUpdater
+- extract factory GetItemUpdater and move to ItemUpdaterFactory
+- create static dictionnary
+- clean code

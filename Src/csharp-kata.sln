@@ -121,6 +121,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refactoring-Kata", "Refactoring-Kata", "{01D61791-87A2-48C5-A222-A91EE8AF2A6D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GildedRose", "GildedRose", "{63FC4728-1B7F-4B77-80F3-2701722763B6}"
+	ProjectSection(SolutionItems) = preProject
+		Refactoring-Kata\GildedRose\GildedRoseRequirements.txt = Refactoring-Kata\GildedRose\GildedRoseRequirements.txt
+		Refactoring-Kata\GildedRose\GildedRoseRequirements_fr.md = Refactoring-Kata\GildedRose\GildedRoseRequirements_fr.md
+		Refactoring-Kata\GildedRose\license.txt = Refactoring-Kata\GildedRose\license.txt
+		Refactoring-Kata\GildedRose\README.md = Refactoring-Kata\GildedRose\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose-csharp", "Refactoring-Kata\GildedRose\GildedRose-csharp\GildedRose-csharp.csproj", "{330AA49E-6C8E-425B-9878-DE0C846B643F}"
 EndProject
