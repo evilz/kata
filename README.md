@@ -33,5 +33,8 @@ TDD, Refactoring kata in many languages
 
 #### Refactoring
 
+| Name | Versions |
+|--------|--------|
+| [GildedRose](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/GildedRose) | ![](cs6.png)   |
 
 
