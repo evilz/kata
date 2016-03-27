@@ -1,0 +1,9 @@
+﻿Rental Record for jpartogi
+	REGULAR3	3,5
+	REGULAR1	2
+	NEW_RELEASE3	9
+	NEW_RELEASE1	3
+	CHILDRENS1	1,5
+	CHILDRENS5	4,5
+Amount owed is 23,5
+You earned 7 frequent renter points
