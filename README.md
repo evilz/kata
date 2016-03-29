@@ -36,5 +36,5 @@ TDD, Refactoring kata in many languages
 | Name | Versions |
 |--------|--------|
 | [GildedRose](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/GildedRose) | ![](cs6.png)   |
-
+| [MovieRental](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/MovieRental) | ![](cs6.png)   |
 
