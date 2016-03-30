@@ -144,6 +144,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tennis", "Tennis", "{A95B3E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tennis-csharp", "Refactoring-Kata\Tennis\Tennis-csharp\Tennis-csharp.csproj", "{DABC0239-B02D-43BE-8DBD-45535A17005E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TripService", "TripService", "{B7749DDF-F452-499A-932E-9B8C60ADC21C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripService-csharp", "Refactoring-Kata\TripService\TripService-csharp\TripService-csharp.csproj", "{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -226,6 +230,10 @@ Global
 		{DABC0239-B02D-43BE-8DBD-45535A17005E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DABC0239-B02D-43BE-8DBD-45535A17005E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DABC0239-B02D-43BE-8DBD-45535A17005E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -270,5 +278,7 @@ Global
 		{F268E7CB-15F0-46CD-AE37-08E8F487F85E} = {73FEF71D-1E40-4D01-93D4-759E5F16D5D2}
 		{A95B3EA4-C7AB-4008-8457-9E5ED86709AA} = {01D61791-87A2-48C5-A222-A91EE8AF2A6D}
 		{DABC0239-B02D-43BE-8DBD-45535A17005E} = {A95B3EA4-C7AB-4008-8457-9E5ED86709AA}
+		{B7749DDF-F452-499A-932E-9B8C60ADC21C} = {01D61791-87A2-48C5-A222-A91EE8AF2A6D}
+		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0} = {B7749DDF-F452-499A-932E-9B8C60ADC21C}
 	EndGlobalSection
 EndGlobal
