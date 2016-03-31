@@ -148,6 +148,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TripService", "TripService"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripService-csharp", "Refactoring-Kata\TripService\TripService-csharp\TripService-csharp.csproj", "{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Yatzy", "Yatzy", "{EF6C4C7C-4260-421A-8156-36CBB22FBB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy-csharp", "Refactoring-Kata\Yatzy\Yatzy-csharp\Yatzy-csharp.csproj", "{BE25113C-4165-475C-8904-DAFD97FDF53B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -234,6 +238,10 @@ Global
 		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE25113C-4165-475C-8904-DAFD97FDF53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE25113C-4165-475C-8904-DAFD97FDF53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE25113C-4165-475C-8904-DAFD97FDF53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE25113C-4165-475C-8904-DAFD97FDF53B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -280,5 +288,7 @@ Global
 		{DABC0239-B02D-43BE-8DBD-45535A17005E} = {A95B3EA4-C7AB-4008-8457-9E5ED86709AA}
 		{B7749DDF-F452-499A-932E-9B8C60ADC21C} = {01D61791-87A2-48C5-A222-A91EE8AF2A6D}
 		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0} = {B7749DDF-F452-499A-932E-9B8C60ADC21C}
+		{EF6C4C7C-4260-421A-8156-36CBB22FBB83} = {01D61791-87A2-48C5-A222-A91EE8AF2A6D}
+		{BE25113C-4165-475C-8904-DAFD97FDF53B} = {EF6C4C7C-4260-421A-8156-36CBB22FBB83}
 	EndGlobalSection
 EndGlobal
