@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NSubstitute, Version=1.10.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NSubstitute.1.10.0.0\lib\net45\NSubstitute.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.2.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NUnit.3.2.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,6 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Completed\Exception\DependendClassCallDuringUnitTestException.cs" />
+    <Compile Include="Completed\Exception\UserNotLoggedInException.cs" />
+    <Compile Include="Completed\TripServiceTest.cs" />
+    <Compile Include="Completed\Trip\ITripRepository.cs" />
+    <Compile Include="Completed\Trip\Trip.cs" />
+    <Compile Include="Completed\Trip\TripDAO.cs" />
+    <Compile Include="Completed\Trip\TripService.cs" />
+    <Compile Include="Completed\User\User.cs" />
+    <Compile Include="Completed\User\UserSession.cs" />
     <Compile Include="Init\Exception\DependendClassCallDuringUnitTestException.cs" />
     <Compile Include="Init\Exception\UserNotLoggedInException.cs" />
     <Compile Include="Init\TripServiceTest.cs" />
@@ -49,6 +66,9 @@
     <Compile Include="Init\User\User.cs" />
     <Compile Include="Init\User\UserSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
