@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Completed\Yatzy.cs" />
+    <Compile Include="Completed\YatzyDice.cs" />
+    <Compile Include="Completed\YatzyTest.cs" />
     <Compile Include="Init\Yatzy.cs" />
     <Compile Include="Init\YatzyTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
