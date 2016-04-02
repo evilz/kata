@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E4CC9CCF-C1B1-48D2-9935-16E2DD294087}"
 	ProjectSection(SolutionItems) = preProject
@@ -152,6 +152,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Yatzy", "Yatzy", "{EF6C4C7C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy-csharp", "Refactoring-Kata\Yatzy\Yatzy-csharp\Yatzy-csharp.csproj", "{BE25113C-4165-475C-8904-DAFD97FDF53B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trivia", "Trivia", "{C2B7EB2B-0A00-4AD3-8237-A69D3328CEEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trivia-csharp", "Refactoring-Kata\Trivia\Trivia-csharp\Trivia-csharp.csproj", "{2090E114-7EF3-4F0A-A619-C1616422AEFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -242,6 +246,10 @@ Global
 		{BE25113C-4165-475C-8904-DAFD97FDF53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE25113C-4165-475C-8904-DAFD97FDF53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE25113C-4165-475C-8904-DAFD97FDF53B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2090E114-7EF3-4F0A-A619-C1616422AEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2090E114-7EF3-4F0A-A619-C1616422AEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2090E114-7EF3-4F0A-A619-C1616422AEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2090E114-7EF3-4F0A-A619-C1616422AEFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -290,5 +298,7 @@ Global
 		{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0} = {B7749DDF-F452-499A-932E-9B8C60ADC21C}
 		{EF6C4C7C-4260-421A-8156-36CBB22FBB83} = {01D61791-87A2-48C5-A222-A91EE8AF2A6D}
 		{BE25113C-4165-475C-8904-DAFD97FDF53B} = {EF6C4C7C-4260-421A-8156-36CBB22FBB83}
+		{C2B7EB2B-0A00-4AD3-8237-A69D3328CEEB} = {01D61791-87A2-48C5-A222-A91EE8AF2A6D}
+		{2090E114-7EF3-4F0A-A619-C1616422AEFF} = {C2B7EB2B-0A00-4AD3-8237-A69D3328CEEB}
 	EndGlobalSection
 EndGlobal
