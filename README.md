@@ -37,4 +37,8 @@ TDD, Refactoring kata in many languages
 |--------|--------|
 | [GildedRose](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/GildedRose) | ![](cs6.png)   |
 | [MovieRental](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/MovieRental) | ![](cs6.png)   |
+| [Tennis](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/Tennis) | ![](cs6.png)   |
+| [TripService](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/TripService) | ![](cs6.png)   |
+| [Trivia](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/Trivia) | ![](cs6.png)   |
+| [Yatzy](https://github.com/evilz/kata/tree/master/Src/Refactoring-Kata/Yatzy) | ![](cs6.png)   |
 
