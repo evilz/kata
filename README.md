@@ -4,9 +4,9 @@ TDD, Refactoring kata in many languages
 #### Builds
 
 
-| ![](cs6.png) | [![Build status](https://ci.appveyor.com/api/projects/status/owl5fe1pfagu1rf5?svg=true)](https://ci.appveyor.com/project/evilz/kata)|
-|-----|-----|
-| ![](fsharp.png) |  [![Build status](https://ci.appveyor.com/api/projects/status/ev8vap58rhe636ig?svg=true)](https://ci.appveyor.com/project/evilz/kata-vgf59) |
+| ![](cs6.png) | [![Build status](https://ci.appveyor.com/api/projects/status/owl5fe1pfagu1rf5?svg=true)](https://ci.appveyor.com/project/evilz/kata)| [![codecov.io](https://codecov.io/github/codecov/codecov-ruby/coverage.svg?branch=master)](https://codecov.io/github/codecov/codecov-ruby?branch=master) |
+|-----|-----|-------|
+| ![](fsharp.png) |  [![Build status](https://ci.appveyor.com/api/projects/status/ev8vap58rhe636ig?svg=true)](https://ci.appveyor.com/project/evilz/kata-vgf59) |      |
 
 ## List
 
