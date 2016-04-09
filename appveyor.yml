@@ -1,0 +1,8 @@
+version: 1.0.{build}
+image: Visual Studio 2015 RC
+build_script:
+- cmd: build-csharp.cmd
+test: off
+artifacts:
+- path: ./Artifacts
+  name: Build
