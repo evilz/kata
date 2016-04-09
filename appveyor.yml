@@ -5,7 +5,7 @@ build_script:
 test_script:
 - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
 - pip install codecov
-- codecov -f "opencover.xml"
+- codecov -f "./artifacts/opencover.xml"
 artifacts:
 - path: ./Artifacts
   name: Build
