@@ -1,0 +1,11 @@
+version: 1.0.{build}
+image: Visual Studio 2015 RC
+build_script:
+- cmd: build-csharp.cmd
+test_script:
+- "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
+- pip install codecov
+- codecov -f "./artifacts/opencover.xml"
+artifacts:
+- path: ./Artifacts
+  name: Build
