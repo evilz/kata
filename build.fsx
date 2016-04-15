@@ -75,6 +75,16 @@ let SetUpBuild (setting) =
                 info.FileName <- ReportUnitPath; info.WorkingDirectory <- setting.buildDir; info.Arguments <- "TestResults.xml TestResults.html") (TimeSpan.FromMinutes 5.0)
                 |> ignore
 
+        setEnvironVar "PATH" "C:\\Python34;C:\\Python34\\Scripts;%PATH%"
+                |> ignore
+
+        ExecProcess (fun info ->
+                info.FileName <- "pip"; info.Arguments <- "install codecov") (TimeSpan.FromMinutes 5.0)
+                |> ignore
+        ExecProcess (fun info ->
+                info.FileName <- "codecov"; info.Arguments <- "-f \"./artifacts/opencover.xml\"") (TimeSpan.FromMinutes 5.0)
+                |> ignore
+
 
     Target "Test" (fun _ ->
         runtest()
