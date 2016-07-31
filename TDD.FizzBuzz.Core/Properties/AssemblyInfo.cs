@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FizzBuzz.TDD.Core")]
+[assembly: AssemblyTitle("TDD.FizzBuzz.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FizzBuzz.TDD.Core")]
+[assembly: AssemblyProduct("TDD.FizzBuzz.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ca204d8c-b9b8-413a-abdc-e6ee6f8f64c3")]
+[assembly: Guid("077ffd8c-ad76-4e66-98cc-c08c9b3a3f16")]
 
 // Version information for an assembly consists of the following four values:
 //

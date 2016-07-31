@@ -79,7 +79,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TDD.MiniPrice.Core\TDD.MiniPricer.Core.csproj">
+    <ProjectReference Include="..\TDD.MiniPricer.Core\TDD.MiniPricer.Core.csproj">
       <Project>{cb978c47-4ddf-4d9b-b25b-6f2898abaa12}</Project>
       <Name>TDD.MiniPricer.Core</Name>
     </ProjectReference>
