@@ -27,6 +27,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Text;
 
 namespace TDD.FooBarQix.Core
 {
@@ -38,12 +39,48 @@ namespace TDD.FooBarQix.Core
 
         public static IReadOnlyList<String> FooBarQix()
         {
-            throw new NotImplementedException();
+            const Byte itemCount = 100;
+            var items = new String[itemCount];
+
+            for (var i = 0; i < 100; i++)
+            {
+                var number = i + 1;
+                items[i] = Program.GetNumberString((Byte)number);
+            }
+
+            return new ReadOnlyCollection<String>(items);
         }
 
         public static String GetNumberString(Byte number)
         {
-            throw new NotImplementedException();
+            var numberString = number.ToString();
+
+            var stringBuilder = new StringBuilder();
+
+            if ((number % 3) == 0)
+            {
+                stringBuilder.Append(Program.Foo);
+            }
+            if ((number % 5) == 0)
+            {
+                stringBuilder.Append(Program.Bar);
+            }
+            if ((number % 7) == 0)
+            {
+                stringBuilder.Append(Program.Qix);
+            }
+
+            foreach (var character in numberString)
+            {
+                switch (character)
+                {
+                    case '3': stringBuilder.Append(Program.Foo); break;
+                    case '5': stringBuilder.Append(Program.Bar); break;
+                    case '7': stringBuilder.Append(Program.Qix); break;
+                }
+            }
+
+            return stringBuilder.Length > 0 ? stringBuilder.ToString() : numberString;
         }
     }
 }
