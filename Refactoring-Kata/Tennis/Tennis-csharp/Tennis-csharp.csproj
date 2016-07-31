@@ -44,11 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Init\TennisGame.cs" />
-    <Compile Include="Init\TennisGame1.cs" />
-    <Compile Include="Init\TennisGame2.cs" />
-    <Compile Include="Init\TennisGame3.cs" />
-    <Compile Include="Init\TennisTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

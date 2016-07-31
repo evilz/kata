@@ -53,12 +53,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BoardCellState.cs" />
-    <Compile Include="Players.cs" />
-    <Compile Include="TicTacToe.cs" />
-    <Compile Include="TicTacToeException.cs" />
-    <Compile Include="TicTacToeGame.cs" />
-    <Compile Include="TicTacToeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
