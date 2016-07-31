@@ -27,44 +27,23 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 
-namespace TDD.FizzBuzz.Core
+namespace TDD.FooBarQix.Core
 {
     public static class Program
     {
-        public static IReadOnlyList<String> FizzBuzz()
+        public const String Foo = @"Foo";
+        public const String Bar = @"Bar";
+        public const String Qix = @"Qix";
+
+        public static IReadOnlyList<String> FooBarQix()
         {
-            const Byte itemCount = 100;
-            var items = new String[itemCount];
-
-            for (var i = 0; i < 100; i++)
-            {
-                var number = i + 1;
-                items[i] = Program.GetNumberString((Byte)number);
-            }
-
-            return new ReadOnlyCollection<String>(items);
+            throw new NotImplementedException();
         }
-
-        public const String Fizz = @"Fizz";
-        public const String Buzz = @"Buzz";
 
         public static String GetNumberString(Byte number)
         {
-            var stringBuilder = new StringBuilder();
-
-            if ((number % 3) == 0)
-            {
-                stringBuilder.Append(Program.Fizz);
-            }
-
-            if ((number % 5) == 0)
-            {
-                stringBuilder.Append(Program.Buzz);
-            }
-
-            return stringBuilder.ToString();
+            throw new NotImplementedException();
         }
     }
 }

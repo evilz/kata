@@ -1,5 +1,5 @@
 ﻿// 
-// FizzBuzzFixture.cs
+// FooBarQixFixture.cs
 // 
 // Author:
 //       Ehouarn Perret <ehouarn.perret@outlook.com>
@@ -26,30 +26,20 @@
 
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using NUnit.Framework;
-using TDD.FizzBuzz.Core;
+using TDD.FooBarQix.Core;
 
-namespace TDD.FizzBuzz.Test
+namespace TDD.FooBarQix.Test
 {
     [TestFixture]
-    public class FizzBuzzFixture
+    public class FooBarQixFixture
     {
+        private IReadOnlyList<String> _output;
+
         [SetUp]
         public void SetUp()
         {
-            this._output = Program.FizzBuzz();
-        }
-
-        private IReadOnlyList<String> _output;
-
-        [TestCase]
-        public void Should_output_100_items()
-        {
-            var expected = 100;
-            var actual = this._output.Count;
-
-            Assert.AreEqual(expected, actual);
+            _output = Program.FooBarQix();
         }
 
         private void CheckExpectedNumberStringConsistency(Byte number, String expectedNumberString)
@@ -59,25 +49,46 @@ namespace TDD.FizzBuzz.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestCase(3)]
         [TestCase(9)]
-        public void Should_print_Fizz_if_number_multiple_of_3_only(Byte number)
+        [TestCase(24)]
+        public void Should_return_Foo_if_number_only_divisible_by_3(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Fizz);
+            this.CheckExpectedNumberStringConsistency(number, Program.Foo);
         }
 
-        [TestCase(5)]
+        [TestCase(13)]
+        [TestCase(23)]
+        public void Should_return_Foo_if_number_only_contains_3(Byte number)
+        {
+            this.CheckExpectedNumberStringConsistency(number, Program.Foo);
+        }
+
         [TestCase(10)]
-        public void Should_print_Buzz_if_number_multiple_of_5_only(Byte number)
+        [TestCase(20)]
+        public void Should_return_Bar_if_number_only_divisible_by_5(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Buzz);
+            this.CheckExpectedNumberStringConsistency(number, Program.Bar);
         }
 
-        [TestCase(15)]
-        [TestCase(45)]
-        public void Should_print_FizzBuzz_if_number_multiple_of_3_and_5(Byte number)
+        [TestCase(51)]
+        [TestCase(57)]
+        public void Should_return_Foo_if_number_only_contains_5(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Fizz + Program.Buzz);
+            this.CheckExpectedNumberStringConsistency(number, Program.Bar);
+        }
+
+        [TestCase(14)]
+        [TestCase(28)]
+        public void Should_return_Bar_if_number_only_divisible_by_7(Byte number)
+        {
+            this.CheckExpectedNumberStringConsistency(number, Program.Qix);
+        }
+
+        [TestCase(71)]
+        [TestCase(74)]
+        public void Should_return_Foo_if_number_only_contains_7(Byte number)
+        {
+            this.CheckExpectedNumberStringConsistency(number, Program.Qix);
         }
     }
 }
