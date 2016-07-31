@@ -76,16 +76,17 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="FizzBuzzFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FizzBuzz.TDD.Core\TDD.FizzBuzz.Core.csproj">
-      <Project>{ca204d8c-b9b8-413a-abdc-e6ee6f8f64c3}</Project>
-      <Name>TDD.FizzBuzz.Core</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\TDD.FizzBuzz.Core\TDD.FizzBuzz.Core.csproj">
+      <Project>{077ffd8c-ad76-4e66-98cc-c08c9b3a3f16}</Project>
+      <Name>TDD.FizzBuzz.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
