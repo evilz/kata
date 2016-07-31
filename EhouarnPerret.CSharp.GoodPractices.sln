@@ -3,53 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "TDD\FizzBuzz\FizzBuzz-csharp\FizzBuzz.csproj", "{AD0E342C-FE9E-4841-B116-35AD1EB19F36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "TDD\FizzBuzz\FizzBuzz\FizzBuzz.csproj", "{AD0E342C-FE9E-4841-B116-35AD1EB19F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYears", "TDD\LeapYears\LeapYears-csharp\LeapYears.csproj", "{EAE66D52-635D-4870-B326-3BADD0EDE093}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYears", "TDD\LeapYears\LeapYears\LeapYears.csproj", "{EAE66D52-635D-4870-B326-3BADD0EDE093}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBarQix", "TDD\FooBarQix\FooBarQix-csharp\FooBarQix.csproj", "{C075AD15-A759-4D0A-9B74-99ABAAD21E77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBarQix", "TDD\FooBarQix\FooBarQix\FooBarQix.csproj", "{C075AD15-A759-4D0A-9B74-99ABAAD21E77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "TDD\StringCalculator\StringCalculator-csharp\StringCalculator.csproj", "{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "TDD\StringCalculator\StringCalculator\StringCalculator.csproj", "{5F9F33BB-BF05-4570-BF7B-770ED8C307D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals", "TDD\RomanNumerals\RomanNumerals-csharp\RomanNumerals.csproj", "{5B14A93B-2A45-4044-ABF8-DA330E782791}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumerals", "TDD\RomanNumerals\RomanNumerals\RomanNumerals.csproj", "{5B14A93B-2A45-4044-ABF8-DA330E782791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond", "TDD\Diamond\Diamond-csharp\Diamond.csproj", "{8FF273ED-B670-4350-A885-C61317036D7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diamond", "TDD\Diamond\Diamond\Diamond.csproj", "{8FF273ED-B670-4350-A885-C61317036D7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD", "TDD\DDD\DDD-csharp\DDD.csproj", "{94ED8D4B-8899-406E-AED1-89130CA60434}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD", "TDD\DDD\DDD\DDD.csproj", "{94ED8D4B-8899-406E-AED1-89130CA60434}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactor", "TDD\PrimeFactor\PrimeFactor-csharp\PrimeFactor.csproj", "{A65DA4E8-394F-44A2-87FB-12407ABAAF33}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactor", "TDD\PrimeFactor\PrimeFactor\PrimeFactor.csproj", "{A65DA4E8-394F-44A2-87FB-12407ABAAF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem", "TDD\FileSystem\FileSystem-csharp\FileSystem.csproj", "{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystem", "TDD\FileSystem\FileSystem\FileSystem.csproj", "{9B84FCCC-9F6B-414E-BD07-4AE3B4AB0CD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniPricer", "TDD\MiniPricer\MiniPricer-csharp\MiniPricer.csproj", "{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniPricer", "TDD\MiniPricer\MiniPricer\MiniPricer.csproj", "{9AD6874E-AEA7-4DB1-ABC3-CAF131C44E87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame", "TDD\BowlingGame\BowlingGame-csharp\BowlingGame.csproj", "{D0FC464E-3A0F-4FD8-AE79-73AE389DACD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame", "TDD\BowlingGame\BowlingGame\BowlingGame.csproj", "{D0FC464E-3A0F-4FD8-AE79-73AE389DACD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "TDD\Minesweeper\Minesweeper-csharp\Minesweeper.csproj", "{466973FE-CADA-4A12-A886-FB76D3EB4635}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "TDD\Minesweeper\Minesweeper\Minesweeper.csproj", "{466973FE-CADA-4A12-A886-FB76D3EB4635}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife", "TDD\GameOfLife\GameOfLife-csharp\GameOfLife.csproj", "{C804C936-31E6-4AD2-8888-D08EB4D6D169}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife", "TDD\GameOfLife\GameOfLife\GameOfLife.csproj", "{C804C936-31E6-4AD2-8888-D08EB4D6D169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TDD\TicTacToe\TicTacToe-csharp\TicTacToe.csproj", "{298E8531-827A-473C-8F11-B4FEC82DE9D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TDD\TicTacToe\TicTacToe\TicTacToe.csproj", "{298E8531-827A-473C-8F11-B4FEC82DE9D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReloadCountdown", "TDD\ReloadCountdown\ReloadCountdown-csharp\ReloadCountdown.csproj", "{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReloadCountdown", "TDD\ReloadCountdown\ReloadCountdown\ReloadCountdown.csproj", "{CB988AC0-DD29-4ECE-BB92-13E2AC2AAFC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDD", "TDD", "{A651760D-445C-4AB2-80D8-3084D5BD15E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Args", "TDD\Args\Args-csharp\Args.csproj", "{980699FF-C475-4DAD-8E54-48962B5FA26B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Args", "TDD\Args\Args\Args.csproj", "{980699FF-C475-4DAD-8E54-48962B5FA26B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refactoring", "Refactoring", "{01D61791-87A2-48C5-A222-A91EE8AF2A6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose", "Refactoring\GildedRose\GildedRose-csharp\GildedRose.csproj", "{330AA49E-6C8E-425B-9878-DE0C846B643F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GildedRose", "Refactoring\GildedRose\GildedRose\GildedRose.csproj", "{330AA49E-6C8E-425B-9878-DE0C846B643F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental", "Refactoring\MovieRental\MovieRental-csharp\MovieRental.csproj", "{F268E7CB-15F0-46CD-AE37-08E8F487F85E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental", "Refactoring\MovieRental\MovieRental\MovieRental.csproj", "{F268E7CB-15F0-46CD-AE37-08E8F487F85E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tennis", "Refactoring\Tennis\Tennis-csharp\Tennis.csproj", "{DABC0239-B02D-43BE-8DBD-45535A17005E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tennis", "Refactoring\Tennis\Tennis\Tennis.csproj", "{DABC0239-B02D-43BE-8DBD-45535A17005E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripService", "Refactoring\TripService\TripService-csharp\TripService.csproj", "{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripService", "Refactoring\TripService\TripService\TripService.csproj", "{D2D23DFE-689F-4A8A-BA53-3A68759E0CB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy", "Refactoring\Yatzy\Yatzy-csharp\Yatzy.csproj", "{BE25113C-4165-475C-8904-DAFD97FDF53B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yatzy", "Refactoring\Yatzy\Yatzy\Yatzy.csproj", "{BE25113C-4165-475C-8904-DAFD97FDF53B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trivia", "Refactoring\Trivia\Trivia-csharp\Trivia.csproj", "{2090E114-7EF3-4F0A-A619-C1616422AEFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trivia", "Refactoring\Trivia\Trivia\Trivia.csproj", "{2090E114-7EF3-4F0A-A619-C1616422AEFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
