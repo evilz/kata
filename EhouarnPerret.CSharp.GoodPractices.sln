@@ -115,6 +115,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trivia", "Trivia", "{FC163C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Yatzi", "Yatzi", "{156C82AC-B1DD-4E0B-993D-661782D0774F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D492A236-B737-4CC1-8A95-2D365F548BEC}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
