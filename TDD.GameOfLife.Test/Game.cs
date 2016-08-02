@@ -46,10 +46,32 @@ namespace TDD.GameOfLife.Test
             }
         }
 
-        public Boolean GetCellNextGenerationStatus(Int32 x, Int32 y)
+        public Boolean GetCellNextGenerationStatus(Int32 cellX, Int32 cellY)
         {
 
+            // var neigbourAliveCellCount = this.Grid.WalkAround(cellX, cellY).Count();
+            return true;
+        }
 
+        private Int32 CountAliveCells(Int32 cellX, Int32 cellY)
+        {
+            var aliveCellCount = 0;
+
+            for (var x = Math.Max(0, cellX - 1); x <= Math.Min(cellX + 1, this.RowCount); x++)
+            {
+                for (var y = Math.Max(0, cellY - 1); y <= Math.Min(cellY + 1, this.ColumnCount); y++)
+                {
+                    if ((x != cellX) || (y != cellY))
+                    {
+                        if (this.Grid[x, y])
+                        {
+                            aliveCellCount++;
+                        }
+                    }
+                }
+            }
+
+            return aliveCellCount;
         }
 
         public void NextGeneration()
