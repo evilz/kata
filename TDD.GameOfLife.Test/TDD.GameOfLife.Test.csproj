@@ -76,6 +76,8 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Game.cs" />
+    <Compile Include="GameFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
