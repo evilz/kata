@@ -26,59 +26,79 @@
 
 using System;
 using NUnit.Framework;
+using TDD.GameOfLife.Core;
 
 namespace TDD.GameOfLife.Test
 {
     [TestFixture]
     public class GameFixture
     {
-        // Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
-        // Any live cell with more than three live neighbours dies, as if by overcrowding.
-        // Any live cell with two or three live neighbours lives on to the next generation.
-        // Any dead cell with exactly three live neighbours becomes a live cell.
-
-
-        [TestCase]
-        protected void Should_return_game_next_generation()
+        private void CheckGameCell(Boolean[,] grid, Int32 cellX, Int32 cellY, Boolean expected)
         {
+            var game = new Game(grid);
+            var actual = game.GetCellNextGenerationStatus(cellX, cellY);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestCase]
-        protected void Should_return_alive_cell_dead_because_of_underpopulation()
+        public void Should_return_game_next_generation()
+        {
+            var game = new Game(2, 3);
+            var expected = 1;
+            var actual = game.NextGeneration();
+            Assert.AreEqual(expected, actual);
+        }
+
+        // Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+        [TestCase]
+        public void Should_return_alive_cell_dead_because_of_underpopulation()
         {
             var grid = new[,]
             {
-                { false, true, false,},
+                { false, true, false },
                 { false, false, false}
             };
 
-            var game = new Game(grid);
-            var actual = game.GetCellNextGenerationStatus(1, 0);
-            Assert.IsFalse(actual);
+            CheckGameCell(grid, 0, 1, false);
         }
 
+        // Any live cell with more than three live neighbours dies, as if by overcrowding.
         [TestCase]
-        protected void Should_return_alive_cell_dead_because_of_overcrowding()
+        public void Should_return_alive_cell_dead_because_of_overcrowding()
         {
             var grid = new[,]
             {
-                { true, true, true,},
+                { true, true, true },
                 { true, true, false}
             };
 
-            var game = new Game(grid);
-            var actual = game.GetCellNextGenerationStatus(1, 0);
-            Assert.IsFalse(actual);
+            CheckGameCell(grid, 1, 1, false);
         }
 
+        // Any live cell with two or three live neighbours lives on to the next generation.
         [TestCase]
-        protected void Should_return_alive_cell_alive_because_of_proper_surrounding()
+        public void Should_return_alive_cell_alive_because_of_proper_surrounding()
         {
+            var grid = new[,]
+            {
+                { true, false, true},
+                { true, true, false}
+            };
+
+            CheckGameCell(grid, 1, 0, true);
         }
 
+        // Any dead cell with exactly three live neighbours becomes a live cell.
         [TestCase]
-        protected void Should_return_dead_cell_alive_because_of_3_alive_cells_around_it()
+        public void Should_return_dead_cell_alive_because_of_3_alive_cells_around_it()
         {
+            var grid = new[,]
+            {
+                { true, false, true },
+                { true, false, false}
+            };
+
+            CheckGameCell(grid, 0, 1, true);
         }
     }
 }

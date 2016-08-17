@@ -1,6 +1,8 @@
 using System;
+using System.Linq;
+using Utils;
 
-namespace TDD.GameOfLife.Test
+namespace TDD.GameOfLife.Core
 {
     public class Game
     {
@@ -48,33 +50,35 @@ namespace TDD.GameOfLife.Test
 
         public Boolean GetCellNextGenerationStatus(Int32 cellX, Int32 cellY)
         {
+            var isCellAlive = this.Grid[cellX, cellY];
 
-            // var neigbourAliveCellCount = this.Grid.WalkAround(cellX, cellY).Count();
-            return true;
-        }
+            var neigbourAliveCellCount = this.Grid.WalkAround(cellX, cellY).Count(item => item);
 
-        private Int32 CountAliveCells(Int32 cellX, Int32 cellY)
-        {
-            var aliveCellCount = 0;
-
-            for (var x = Math.Max(0, cellX - 1); x <= Math.Min(cellX + 1, this.RowCount); x++)
+            if (isCellAlive)
             {
-                for (var y = Math.Max(0, cellY - 1); y <= Math.Min(cellY + 1, this.ColumnCount); y++)
-                {
-                    if ((x != cellX) || (y != cellY))
-                    {
-                        if (this.Grid[x, y])
-                        {
-                            aliveCellCount++;
-                        }
-                    }
-                }
-            }
+                return neigbourAliveCellCount.IsBetween(2, 3);
 
-            return aliveCellCount;
+                //// isCellAlive
+                //if (neigbourAliveCellCount < 2)
+                //{
+                //    return false;
+                //}
+                //else if (neigbourAliveCellCount.IsBetween(2, 3))
+                //{
+                //    return true;
+                //}
+                //else if (neigbourAliveCellCount > 3)
+                //{
+                //    return false;
+                //}
+            }
+            else
+            {
+                return neigbourAliveCellCount == 3;
+            }
         }
 
-        public void NextGeneration()
+        public Int32 NextGeneration()
         {
             for (var x = 0; x < this.RowCount; x++)
             {
@@ -85,6 +89,8 @@ namespace TDD.GameOfLife.Test
             }
 
             this.Generation++;
+
+            return this.Generation;
         }
 
         public Int32 Generation { get; private set; }
