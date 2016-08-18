@@ -38,7 +38,7 @@ Note: pour simplifier on peut ne considérer que les jours fériés à date fixe
 
 # Etape 2: Le caractère aléatoire
 
- Enoncé:
+Enoncé:
 
 En fait, un instrument ne varie jamais exactement de sa volatilité moyenne tous les jours. Comme son nom le dit C’est une moyenne. De plus la valeur de la volatilité est une valeur absolue, donc le prix de l’instrument peut augmenter ou descendre de cette valeur.
 

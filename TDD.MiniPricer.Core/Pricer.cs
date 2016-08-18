@@ -30,15 +30,49 @@ namespace TDD.MiniPricer.Core
 {
     public class Pricer
     {
-        public Decimal Price(DateTime startDate, DateTime stopDate, Decimal startPrice, Decimal averageVolatility)
+        public Pricer(ICalendarService calendarService, IVolatilityService volatilityService)
         {
-            if (startDate == stopDate)
+            this.CalendarService = calendarService;
+            this.VolatilityService = volatilityService;
+        }
+
+        public IVolatilityService VolatilityService { get; }
+
+        public ICalendarService CalendarService { get; }
+
+        public Decimal Price(DateTime startDateTime, DateTime stopDateTime, Decimal startPrice, Decimal averageVolatility)
+        {
+            var currentDateTime = startDateTime.AddDays(1);
+
+            var currentPrice = startPrice;
+
+            while (currentDateTime <= stopDateTime)
             {
-                return startPrice;
+                currentDateTime = currentDateTime.AddDays(1);
+
+                if (this.CalendarService.IsOpenDay(currentDateTime))
+                {
+                    currentPrice *= (1 + averageVolatility/100);
+                }
             }
-            else
+
+            return currentPrice;
+        }
+
+        public Decimal NextVolatility(Decimal averageVolatility)
+        {
+            var volatilityVariation = this.VolatilityService.NextVariation();
+
+            switch (volatilityVariation)
             {
-                throw new NotImplementedException();
+                case VolatilityVariation.None:
+                    return 0;
+                case VolatilityVariation.Increase:
+                    return averageVolatility;
+                case VolatilityVariation.Decrease:
+                    return -averageVolatility;
+                default:
+                    throw new ArgumentException(nameof(averageVolatility));
             }
         }
     }

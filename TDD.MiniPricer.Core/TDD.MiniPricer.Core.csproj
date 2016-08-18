@@ -58,8 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ICalendarService.cs" />
+    <Compile Include="IVolatilityService.cs" />
     <Compile Include="Pricer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VolatilityVariation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
