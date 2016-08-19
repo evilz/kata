@@ -25,6 +25,8 @@
 // THE SOFTWARE.
 
 using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace TDD.MiniPricer.Core
 {
@@ -32,36 +34,54 @@ namespace TDD.MiniPricer.Core
     {
         public Pricer(ICalendarService calendarService, IVolatilityService volatilityService)
         {
-            this.CalendarService = calendarService;
-            this.VolatilityService = volatilityService;
+            CalendarService = calendarService;
+            VolatilityService = volatilityService;
         }
 
         public IVolatilityService VolatilityService { get; }
 
         public ICalendarService CalendarService { get; }
 
-        public Decimal Price(DateTime startDateTime, DateTime stopDateTime, Decimal startPrice, Decimal averageVolatility)
+        public Decimal Price(DateTime startDateTime, DateTime stopDateTime, Decimal startPrice, Decimal averageVolatility, Int32 simulationCount = 1)
         {
-            var currentDateTime = startDateTime.AddDays(1);
+            var currentDateTime = startDateTime;
 
             var currentPrice = startPrice;
 
-            while (currentDateTime <= stopDateTime)
+            while (currentDateTime < stopDateTime)
             {
                 currentDateTime = currentDateTime.AddDays(1);
-
-                if (this.CalendarService.IsOpenDay(currentDateTime))
-                {
-                    currentPrice *= (1 + averageVolatility/100);
-                }
+                currentPrice = NextPrice(averageVolatility, currentDateTime, currentPrice, simulationCount);
             }
 
             return currentPrice;
         }
 
+        public Decimal NextMonteCarloVolatility(Decimal averageVolatility, Int32 count)
+        {
+            var volatilities = new Decimal[count];
+
+            Parallel.For(0, count, i => volatilities[i] = NextVolatility(averageVolatility));
+
+            var average = volatilities.Average();
+
+            return average;
+        }
+
+        private Decimal NextPrice(Decimal averageVolatility, DateTime currentDateTime, Decimal currentPrice, Int32 simulationCount)
+        {
+            if (CalendarService.IsOpenDay(currentDateTime))
+            {
+                var volatility = NextMonteCarloVolatility(averageVolatility, simulationCount);
+
+                currentPrice *= (1 + volatility / 100);
+            }
+            return currentPrice;
+        }
+
         public Decimal NextVolatility(Decimal averageVolatility)
         {
-            var volatilityVariation = this.VolatilityService.NextVariation();
+            var volatilityVariation = VolatilityService.NextVariation();
 
             switch (volatilityVariation)
             {

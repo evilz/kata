@@ -53,60 +53,60 @@ namespace TDD.FooBarQix.Test
         [TestCase(24)]
         public void Should_return_Foo_if_number_only_divisible_by_3(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Foo);
+            CheckExpectedNumberStringConsistency(number, Program.Foo);
         }
 
         [TestCase(13)]
         [TestCase(23)]
         public void Should_return_Foo_if_number_only_contains_3(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Foo);
+            CheckExpectedNumberStringConsistency(number, Program.Foo);
         }
 
         [TestCase(3)]
         public void Should_return_FooFoo_if_number_only_divisible_by_3_and_contains_3(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Foo + Program.Foo);
+            CheckExpectedNumberStringConsistency(number, Program.Foo + Program.Foo);
         }
 
         [TestCase(10)]
         [TestCase(20)]
         public void Should_return_Bar_if_number_only_divisible_by_5(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Bar);
+            CheckExpectedNumberStringConsistency(number, Program.Bar);
         }
 
         [TestCase(59)]
         [TestCase(58)]
         public void Should_return_Bar_if_number_only_contains_5(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Bar);
+            CheckExpectedNumberStringConsistency(number, Program.Bar);
         }
 
         [TestCase(5)]
         public void Should_return_BarBar_if_number_only_divisible_by_5_and_contains_5(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Bar + Program.Bar);
+            CheckExpectedNumberStringConsistency(number, Program.Bar + Program.Bar);
         }
 
         [TestCase(14)]
         [TestCase(28)]
         public void Should_return_Bar_if_number_only_divisible_by_7(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Qix);
+            CheckExpectedNumberStringConsistency(number, Program.Qix);
         }
 
         [TestCase(71)]
         [TestCase(74)]
         public void Should_return_Foo_if_number_only_contains_7(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Qix);
+            CheckExpectedNumberStringConsistency(number, Program.Qix);
         }
 
         [TestCase(7)]
         public void Should_return_QixQix_if_number_only_divisible_by_7_and_contains_7(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Qix + Program.Qix);
+            CheckExpectedNumberStringConsistency(number, Program.Qix + Program.Qix);
         }
     }
 }

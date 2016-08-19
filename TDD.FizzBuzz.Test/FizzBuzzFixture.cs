@@ -37,7 +37,7 @@ namespace TDD.FizzBuzz.Test
         [SetUp]
         public void SetUp()
         {
-            this._output = Program.FizzBuzz();
+            _output = Program.FizzBuzz();
         }
 
         private IReadOnlyList<String> _output;
@@ -46,7 +46,7 @@ namespace TDD.FizzBuzz.Test
         public void Should_output_100_items()
         {
             var expected = 100;
-            var actual = this._output.Count;
+            var actual = _output.Count;
 
             Assert.AreEqual(expected, actual);
         }
@@ -62,21 +62,21 @@ namespace TDD.FizzBuzz.Test
         [TestCase(9)]
         public void Should_print_Fizz_if_number_multiple_of_3_only(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Fizz);
+            CheckExpectedNumberStringConsistency(number, Program.Fizz);
         }
 
         [TestCase(5)]
         [TestCase(10)]
         public void Should_print_Buzz_if_number_multiple_of_5_only(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Buzz);
+            CheckExpectedNumberStringConsistency(number, Program.Buzz);
         }
 
         [TestCase(15)]
         [TestCase(45)]
         public void Should_print_FizzBuzz_if_number_multiple_of_3_and_5(Byte number)
         {
-            this.CheckExpectedNumberStringConsistency(number, Program.Fizz + Program.Buzz);
+            CheckExpectedNumberStringConsistency(number, Program.Fizz + Program.Buzz);
         }
     }
 }

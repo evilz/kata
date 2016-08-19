@@ -14,11 +14,11 @@ namespace TDD.GameOfLife.Core
             }
             else
             {
-                this.Generation = 0;
+                Generation = 0;
 
-                this.Grid = new Boolean[grid.GetLength(0), grid.GetLength(1)];
+                Grid = new Boolean[grid.GetLength(0), grid.GetLength(1)];
 
-                Array.Copy(grid, this.Grid, this.Grid.Length);
+                Array.Copy(grid, Grid, Grid.Length);
             }
         }
 
@@ -34,7 +34,7 @@ namespace TDD.GameOfLife.Core
             }
             else
             {
-                this.Grid = new Boolean[rowCount, columnCount];
+                Grid = new Boolean[rowCount, columnCount];
 
                 var random = new Random();
 
@@ -42,7 +42,7 @@ namespace TDD.GameOfLife.Core
                 {
                     for (var y = 0; y < rowCount; y++)
                     {
-                        this.Grid[x, y] = random.Next(0, 2) != 0;
+                        Grid[x, y] = random.Next(0, 2) != 0;
                     }
                 }
             }
@@ -50,9 +50,9 @@ namespace TDD.GameOfLife.Core
 
         public Boolean GetCellNextGenerationStatus(Int32 cellX, Int32 cellY)
         {
-            var isCellAlive = this.Grid[cellX, cellY];
+            var isCellAlive = Grid[cellX, cellY];
 
-            var neigbourAliveCellCount = this.Grid.WalkAround(cellX, cellY).Count(item => item);
+            var neigbourAliveCellCount = Grid.WalkAround(cellX, cellY).Count(item => item);
 
             if (isCellAlive)
             {
@@ -80,23 +80,23 @@ namespace TDD.GameOfLife.Core
 
         public Int32 NextGeneration()
         {
-            for (var x = 0; x < this.RowCount; x++)
+            for (var x = 0; x < RowCount; x++)
             {
-                for (var y = 0; y < this.ColumnCount; y++)
+                for (var y = 0; y < ColumnCount; y++)
                 {
-                    this.Grid[x, y] = this.GetCellNextGenerationStatus(x, y);
+                    Grid[x, y] = GetCellNextGenerationStatus(x, y);
                 }
             }
 
-            this.Generation++;
+            Generation++;
 
-            return this.Generation;
+            return Generation;
         }
 
         public Int32 Generation { get; private set; }
         private Boolean[,] Grid { get; }
-        public Int32 RowCount => this.Grid.GetLength(0);
-        public Int32 ColumnCount => this.Grid.GetLength(1);
-        public Boolean this[Int32 x, Int32 y] => this.Grid[x, y];
+        public Int32 RowCount => Grid.GetLength(0);
+        public Int32 ColumnCount => Grid.GetLength(1);
+        public Boolean this[Int32 x, Int32 y] => Grid[x, y];
     }
 }
