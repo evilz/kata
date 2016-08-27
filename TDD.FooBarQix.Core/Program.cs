@@ -26,8 +26,8 @@
 
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Text;
+using Utils;
 
 namespace TDD.FooBarQix.Core
 {
@@ -39,44 +39,46 @@ namespace TDD.FooBarQix.Core
 
         public static IReadOnlyList<string> FooBarQix()
         {
-            const Byte itemCount = 100;
+            const byte itemCount = 100;
             var items = new string[itemCount];
 
             for (var i = 0; i < 100; i++)
             {
                 var number = i + 1;
-                items[i] = Program.GetNumberString((Byte)number);
+                items[i] = GetNumberString((byte)number);
             }
 
-            return new ReadOnlyCollection<string>(items);
+            var readOnlyItems = items.AsReadOnly();
+
+            return readOnlyItems;
         }
 
-        public static string GetNumberString(Byte number)
+        public static string GetNumberString(byte number)
         {
             var numberString = number.ToString();
 
             var stringBuilder = new StringBuilder();
 
-            if ((number % 3) == 0)
+            if (number % 3 == 0)
             {
-                stringBuilder.Append(Program.Foo);
+                stringBuilder.Append(Foo);
             }
-            if ((number % 5) == 0)
+            if (number % 5 == 0)
             {
-                stringBuilder.Append(Program.Bar);
+                stringBuilder.Append(Bar);
             }
-            if ((number % 7) == 0)
+            if (number % 7 == 0)
             {
-                stringBuilder.Append(Program.Qix);
+                stringBuilder.Append(Qix);
             }
 
             foreach (var character in numberString)
             {
                 switch (character)
                 {
-                    case '3': stringBuilder.Append(Program.Foo); break;
-                    case '5': stringBuilder.Append(Program.Bar); break;
-                    case '7': stringBuilder.Append(Program.Qix); break;
+                    case '3': stringBuilder.Append(Foo); break;
+                    case '5': stringBuilder.Append(Bar); break;
+                    case '7': stringBuilder.Append(Qix); break;
                 }
             }
 

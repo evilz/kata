@@ -74,7 +74,7 @@ namespace TDD.MiniPricer.Core
             {
                 var volatility = NextMonteCarloVolatility(averageVolatility, simulationCount);
 
-                currentPrice *= (1 + volatility / 100);
+                currentPrice *= 1 + volatility / 100;
             }
             return currentPrice;
         }

@@ -51,7 +51,7 @@ namespace TDD.FizzBuzz.Test
             Assert.AreEqual(expected, actual);
         }
 
-        private void CheckExpectedNumberStringConsistency(Byte number, string expectedNumberString)
+        private void CheckExpectedNumberStringConsistency(byte number, string expectedNumberString)
         {
             var expected = expectedNumberString;
             var actual = Program.GetNumberString(number);
@@ -60,21 +60,21 @@ namespace TDD.FizzBuzz.Test
 
         [TestCase(3)]
         [TestCase(9)]
-        public void Should_print_Fizz_if_number_multiple_of_3_only(Byte number)
+        public void Should_print_Fizz_if_number_multiple_of_3_only(byte number)
         {
             CheckExpectedNumberStringConsistency(number, Program.Fizz);
         }
 
         [TestCase(5)]
         [TestCase(10)]
-        public void Should_print_Buzz_if_number_multiple_of_5_only(Byte number)
+        public void Should_print_Buzz_if_number_multiple_of_5_only(byte number)
         {
             CheckExpectedNumberStringConsistency(number, Program.Buzz);
         }
 
         [TestCase(15)]
         [TestCase(45)]
-        public void Should_print_FizzBuzz_if_number_multiple_of_3_and_5(Byte number)
+        public void Should_print_FizzBuzz_if_number_multiple_of_3_and_5(byte number)
         {
             CheckExpectedNumberStringConsistency(number, Program.Fizz + Program.Buzz);
         }

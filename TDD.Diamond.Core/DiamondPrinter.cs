@@ -1,11 +1,14 @@
 using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
+using Utils;
 
 namespace TDD.Diamond.Core
 {
     public static class DiamondPrinter
     {
-        public static string[] Print(char letter)
+        public static IReadOnlyList<string> Print(char letter)
         {
             if (!char.IsLetter(letter) || char.IsLower(letter))
             {
@@ -35,18 +38,10 @@ namespace TDD.Diamond.Core
                     currentLetter++;
                 }
 
-                return lines;
-            }
-        }
-    }
+                var readOnlyLines = lines.AsReadOnly();
 
-    public static class StringBuilderExtensions
-    {
-        public static void Reset(this StringBuilder stringBuilder, char character)
-        {
-            var length = stringBuilder.Length;
-            stringBuilder.Clear();
-            stringBuilder.Append(character, length);
+                return readOnlyLines;
+            }
         }
     }
 }

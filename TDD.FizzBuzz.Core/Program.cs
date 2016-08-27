@@ -35,13 +35,13 @@ namespace TDD.FizzBuzz.Core
     {
         public static IReadOnlyList<string> FizzBuzz()
         {
-            const Byte itemCount = 100;
+            const byte itemCount = 100;
             var items = new string[itemCount];
 
             for (var i = 0; i < 100; i++)
             {
                 var number = i + 1;
-                items[i] = Program.GetNumberString((Byte)number);
+                items[i] = GetNumberString((byte)number);
             }
 
             return new ReadOnlyCollection<string>(items);
@@ -50,7 +50,7 @@ namespace TDD.FizzBuzz.Core
         public const string Fizz = @"Fizz";
         public const string Buzz = @"Buzz";
 
-        public static string GetNumberString(Byte number)
+        public static string GetNumberString(byte number)
         {
             var stringBuilder = new StringBuilder();
 

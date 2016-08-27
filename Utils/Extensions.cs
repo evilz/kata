@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Text;
 
 namespace Utils
 {
@@ -37,6 +39,18 @@ namespace Utils
             }
         }
 
+        public static IReadOnlyList<T> AsReadOnly<T>(this IList<T> source)
+        {
+            var readOnlyList = new ReadOnlyCollection<T>(source);
 
+            return readOnlyList;
+        }
+
+        public static void Reset(this StringBuilder stringBuilder, char character)
+        {
+            var length = stringBuilder.Length;
+            stringBuilder.Clear();
+            stringBuilder.Append(character, length);
+        }
     }
 }

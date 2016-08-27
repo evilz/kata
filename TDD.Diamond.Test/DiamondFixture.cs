@@ -25,6 +25,7 @@
 // THE SOFTWARE.
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using TDD.Diamond.Core;
@@ -34,7 +35,7 @@ namespace TDD.Diamond.Test
     [TestFixture]
     public class DiamondFixture
     {
-        private void CheckExpectedActualDiamonds(string[] expectedLines, string[] actualLines)
+        private void CheckExpectedActualDiamonds(IReadOnlyList<string> expectedLines, IReadOnlyList<string> actualLines)
         {
             CollectionAssert.AreEqual(expectedLines, actualLines);
         }
@@ -61,7 +62,7 @@ namespace TDD.Diamond.Test
         [TestCase('A', new [] { "A" })]
         [TestCase('B', new [] { " A ", "B B", " A " })]
         [TestCase('C', new [] { "  A  ", " B B ", "C   C", " B B ", "  A  " })]
-        public void Should_return_relevant_diamond_letters_pattern(char letter, string[] expectedLines)
+        public void Should_return_relevant_diamond_letters_pattern(char letter, IReadOnlyList<string> expectedLines)
         {
             var actualLines = DiamondPrinter.Print(letter);
 
