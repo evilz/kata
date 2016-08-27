@@ -42,7 +42,7 @@ namespace TDD.MiniPricer.Core
 
         public ICalendarService CalendarService { get; }
 
-        public Decimal Price(DateTime startDateTime, DateTime stopDateTime, Decimal startPrice, Decimal averageVolatility, Int32 simulationCount = 1)
+        public Decimal Price(DateTime startDateTime, DateTime stopDateTime, Decimal startPrice, Decimal averageVolatility, int simulationCount = 1)
         {
             var currentDateTime = startDateTime;
 
@@ -57,7 +57,7 @@ namespace TDD.MiniPricer.Core
             return currentPrice;
         }
 
-        public Decimal NextMonteCarloVolatility(Decimal averageVolatility, Int32 count)
+        public Decimal NextMonteCarloVolatility(Decimal averageVolatility, int count)
         {
             var volatilities = new Decimal[count];
 
@@ -68,7 +68,7 @@ namespace TDD.MiniPricer.Core
             return average;
         }
 
-        private Decimal NextPrice(Decimal averageVolatility, DateTime currentDateTime, Decimal currentPrice, Int32 simulationCount)
+        private Decimal NextPrice(Decimal averageVolatility, DateTime currentDateTime, Decimal currentPrice, int simulationCount)
         {
             if (CalendarService.IsOpenDay(currentDateTime))
             {

@@ -22,7 +22,7 @@ namespace TDD.GameOfLife.Core
             }
         }
 
-        public Game(Int32 rowCount, Int32 columnCount)
+        public Game(int rowCount, int columnCount)
         {
             if (rowCount < 0)
             {
@@ -48,7 +48,7 @@ namespace TDD.GameOfLife.Core
             }
         }
 
-        public Boolean GetCellNextGenerationStatus(Int32 cellX, Int32 cellY)
+        public Boolean GetCellNextGenerationStatus(int cellX, int cellY)
         {
             var isCellAlive = Grid[cellX, cellY];
 
@@ -78,7 +78,7 @@ namespace TDD.GameOfLife.Core
             }
         }
 
-        public Int32 NextGeneration()
+        public int NextGeneration()
         {
             for (var x = 0; x < RowCount; x++)
             {
@@ -93,10 +93,10 @@ namespace TDD.GameOfLife.Core
             return Generation;
         }
 
-        public Int32 Generation { get; private set; }
+        public int Generation { get; private set; }
         private Boolean[,] Grid { get; }
-        public Int32 RowCount => Grid.GetLength(0);
-        public Int32 ColumnCount => Grid.GetLength(1);
-        public Boolean this[Int32 x, Int32 y] => Grid[x, y];
+        public int RowCount => Grid.GetLength(0);
+        public int ColumnCount => Grid.GetLength(1);
+        public Boolean this[int x, int y] => Grid[x, y];
     }
 }

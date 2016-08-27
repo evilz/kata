@@ -5,9 +5,9 @@ namespace TDD.Diamond.Core
 {
     public static class DiamondPrinter
     {
-        public static String[] Print(Char letter)
+        public static string[] Print(char letter)
         {
-            if (!Char.IsLetter(letter) || Char.IsLower(letter))
+            if (!char.IsLetter(letter) || char.IsLower(letter))
             {
                 throw new ArgumentException(nameof(letter));
             }
@@ -20,7 +20,7 @@ namespace TDD.Diamond.Core
                 var stringBuilder = new StringBuilder(width);
                 stringBuilder.Append(' ', width);
 
-                var lines = new String[width];
+                var lines = new string[width];
 
                 for (var i = 0; i <= difference; i++)
                 {
@@ -42,7 +42,7 @@ namespace TDD.Diamond.Core
 
     public static class StringBuilderExtensions
     {
-        public static void Reset(this StringBuilder stringBuilder, Char character)
+        public static void Reset(this StringBuilder stringBuilder, char character)
         {
             var length = stringBuilder.Length;
             stringBuilder.Clear();

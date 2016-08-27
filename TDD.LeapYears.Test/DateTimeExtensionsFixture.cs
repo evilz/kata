@@ -34,40 +34,40 @@ namespace TDD.LeapYears.Test
     {
         [TestCase(42)]
         [TestCase(1850)]
-        public void Should_not_throw_exception_if_year_is_positive(Int32 year)
+        public void Should_not_throw_exception_if_year_is_positive(int year)
         {
             Assert.DoesNotThrow(() => DateTime.IsLeapYear(year));
         }
 
         [TestCase(-1750)]
-        public void Should_throw_out_of_range_exception_if_year_is_negative(Int32 year)
+        public void Should_throw_out_of_range_exception_if_year_is_negative(int year)
         {
             Assert.Throws<ArgumentOutOfRangeException>(() => DateTime.IsLeapYear(year));
         }
 
         [TestCase(2001)]
-        public void Should_return_false_if_year_not_divisible_by_4(Int32 year)
+        public void Should_return_false_if_year_not_divisible_by_4(int year)
         {
             var actual = DateTime.IsLeapYear(year);
             Assert.IsFalse(actual);
         }
 
         [TestCase(1996)]
-        public void Should_return_true_if_year_divisible_by_4_and_not_divisible_by_100(Int32 year)
+        public void Should_return_true_if_year_divisible_by_4_and_not_divisible_by_100(int year)
         {
             var actual = DateTime.IsLeapYear(year);
             // Assert.IsTrue(actual);
         }
 
         [TestCase(1900)]
-        public void Should_return_false_if_year_divisible_by_4_and_not_divisible_by_400(Int32 year)
+        public void Should_return_false_if_year_divisible_by_4_and_not_divisible_by_400(int year)
         {
             var actual = DateTime.IsLeapYear(year);
             Assert.IsFalse(actual);
         }
 
         [TestCase(2000)]
-        public void Should_return_true_if_year_not_divisible_by_400_and_not_divisible_by_4_and_not_divisible_by_100(Int32 year)
+        public void Should_return_true_if_year_not_divisible_by_400_and_not_divisible_by_4_and_not_divisible_by_100(int year)
         {
             var actual = DateTime.IsLeapYear(year);
             Assert.IsTrue(actual);

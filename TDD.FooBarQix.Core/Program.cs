@@ -33,14 +33,14 @@ namespace TDD.FooBarQix.Core
 {
     public static class Program
     {
-        public const String Foo = @"Foo";
-        public const String Bar = @"Bar";
-        public const String Qix = @"Qix";
+        public const string Foo = @"Foo";
+        public const string Bar = @"Bar";
+        public const string Qix = @"Qix";
 
-        public static IReadOnlyList<String> FooBarQix()
+        public static IReadOnlyList<string> FooBarQix()
         {
             const Byte itemCount = 100;
-            var items = new String[itemCount];
+            var items = new string[itemCount];
 
             for (var i = 0; i < 100; i++)
             {
@@ -48,10 +48,10 @@ namespace TDD.FooBarQix.Core
                 items[i] = Program.GetNumberString((Byte)number);
             }
 
-            return new ReadOnlyCollection<String>(items);
+            return new ReadOnlyCollection<string>(items);
         }
 
-        public static String GetNumberString(Byte number)
+        public static string GetNumberString(Byte number)
         {
             var numberString = number.ToString();
 

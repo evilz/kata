@@ -40,7 +40,7 @@ namespace TDD.FizzBuzz.Test
             _output = Program.FizzBuzz();
         }
 
-        private IReadOnlyList<String> _output;
+        private IReadOnlyList<string> _output;
 
         [TestCase]
         public void Should_output_100_items()
@@ -51,7 +51,7 @@ namespace TDD.FizzBuzz.Test
             Assert.AreEqual(expected, actual);
         }
 
-        private void CheckExpectedNumberStringConsistency(Byte number, String expectedNumberString)
+        private void CheckExpectedNumberStringConsistency(Byte number, string expectedNumberString)
         {
             var expected = expectedNumberString;
             var actual = Program.GetNumberString(number);

@@ -34,36 +34,44 @@ namespace TDD.Diamond.Test
     [TestFixture]
     public class DiamondFixture
     {
-        private void CheckExpectedActualDiamonds(String[] expectedLines, String[] actualLines)
+        private void CheckExpectedActualDiamonds(string[] expectedLines, string[] actualLines)
         {
             CollectionAssert.AreEqual(expectedLines, actualLines);
         }
 
         [Test]
-        public void Should_return_diamond_with_two_A_levels_only()
+        public void Should_return_diamond_with_one_A_only()
         {
             var letter = 'A';
 
             var actualLines = DiamondPrinter.Print(letter);
             var expectedLines = new[] {"A"};
 
-            this.CheckExpectedActualDiamonds(expectedLines, actualLines);
+            CheckExpectedActualDiamonds(expectedLines, actualLines);
+        }
+
+        [TestCase('c')]
+        [TestCase('3')]
+        [TestCase('+')]
+        public void Should_throw_exception_if_invalid_character_is_given(char letter)
+        {
+            Assert.Throws<ArgumentException>(() => DiamondPrinter.Print(letter));
         }
 
         [TestCase('A', new [] { "A" })]
         [TestCase('B', new [] { " A ", "B B", " A " })]
         [TestCase('C', new [] { "  A  ", " B B ", "C   C", " B B ", "  A  " })]
-        public void Should_return_relevant_diamond_letters_pattern(Char letter, String[] expectedLines)
+        public void Should_return_relevant_diamond_letters_pattern(char letter, string[] expectedLines)
         {
             var actualLines = DiamondPrinter.Print(letter);
 
-            this.CheckExpectedActualDiamonds(actualLines, expectedLines);
+            CheckExpectedActualDiamonds(actualLines, expectedLines);
         }
 
         [TestCase('A', 1)]
         [TestCase('B', 3)]
         [TestCase('C', 5)]
-        public void Should_return_proper_width_diamond(Char letter, Int32 expectedWidth)
+        public void Should_return_proper_width_diamond(char letter, int expectedWidth)
         {
             var actualLines = DiamondPrinter.Print(letter);
 

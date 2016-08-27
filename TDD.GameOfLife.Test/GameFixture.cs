@@ -33,7 +33,7 @@ namespace TDD.GameOfLife.Test
     [TestFixture]
     public class GameFixture
     {
-        private void CheckGameCell(Boolean[,] grid, Int32 cellX, Int32 cellY, Boolean expected)
+        private void CheckGameCell(Boolean[,] grid, int cellX, int cellY, Boolean expected)
         {
             var game = new Game(grid);
             var actual = game.GetCellNextGenerationStatus(cellX, cellY);

@@ -34,7 +34,7 @@ namespace TDD.FooBarQix.Test
     [TestFixture]
     public class FooBarQixFixture
     {
-        private IReadOnlyList<String> _output;
+        private IReadOnlyList<string> _output;
 
         [SetUp]
         public void SetUp()
@@ -42,7 +42,7 @@ namespace TDD.FooBarQix.Test
             _output = Program.FooBarQix();
         }
 
-        private void CheckExpectedNumberStringConsistency(Byte number, String expectedNumberString)
+        private void CheckExpectedNumberStringConsistency(Byte number, string expectedNumberString)
         {
             var expected = expectedNumberString;
             var actual = Program.GetNumberString(number);

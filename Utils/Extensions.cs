@@ -5,7 +5,7 @@ namespace Utils
 {
     public static class Extensions
     {
-        public static IEnumerable<TSource> WalkAround<TSource>(this TSource[,] source, Int32 centerX, Int32 centerY)
+        public static IEnumerable<TSource> WalkAround<TSource>(this TSource[,] source, int centerX, int centerY)
         {
             var rowLimit = source.GetLength(0) - 1;
             var columnLimit = source.GetLength(1) - 1;

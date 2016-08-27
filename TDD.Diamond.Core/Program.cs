@@ -4,7 +4,7 @@ namespace TDD.Diamond.Core
 {
     public static class Program
     {
-        public static void Main(params String[] arguments)
+        public static void Main(params string[] arguments)
         {
             Console.ReadKey();
         }

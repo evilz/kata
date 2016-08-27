@@ -33,10 +33,10 @@ namespace TDD.FizzBuzz.Core
 {
     public static class Program
     {
-        public static IReadOnlyList<String> FizzBuzz()
+        public static IReadOnlyList<string> FizzBuzz()
         {
             const Byte itemCount = 100;
-            var items = new String[itemCount];
+            var items = new string[itemCount];
 
             for (var i = 0; i < 100; i++)
             {
@@ -44,13 +44,13 @@ namespace TDD.FizzBuzz.Core
                 items[i] = Program.GetNumberString((Byte)number);
             }
 
-            return new ReadOnlyCollection<String>(items);
+            return new ReadOnlyCollection<string>(items);
         }
 
-        public const String Fizz = @"Fizz";
-        public const String Buzz = @"Buzz";
+        public const string Fizz = @"Fizz";
+        public const string Buzz = @"Buzz";
 
-        public static String GetNumberString(Byte number)
+        public static string GetNumberString(Byte number)
         {
             var stringBuilder = new StringBuilder();
 
