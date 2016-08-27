@@ -76,6 +76,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="DiamondFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

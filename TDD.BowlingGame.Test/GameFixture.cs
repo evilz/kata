@@ -1,5 +1,5 @@
 ﻿// 
-// Program.cs
+// GameFixture.cs
 // 
 // Author:
 //       Ehouarn Perret <ehouarn.perret@outlook.com>
@@ -24,47 +24,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
+using NUnit.Framework;
 
-namespace TDD.FizzBuzz.Core
+namespace TDD.BowlingGame.Test
 {
-    public static class Program
+    [TestFixture]
+    public class GameFixture
     {
-        public static IReadOnlyList<String> FizzBuzz()
-        {
-            const Byte itemCount = 100;
-            var items = new String[itemCount];
-
-            for (var i = 0; i < 100; i++)
-            {
-                var number = i + 1;
-                items[i] = Program.GetNumberString((Byte)number);
-            }
-
-            return new ReadOnlyCollection<String>(items);
-        }
-
-        public const String Fizz = @"Fizz";
-        public const String Buzz = @"Buzz";
-
-        public static String GetNumberString(Byte number)
-        {
-            var stringBuilder = new StringBuilder();
-
-            if (number % 3 == 0)
-            {
-                stringBuilder.Append(Program.Fizz);
-            }
-
-            if (number % 5 == 0)
-            {
-                stringBuilder.Append(Program.Buzz);
-            }
-
-            return stringBuilder.ToString();
-        }
     }
 }
