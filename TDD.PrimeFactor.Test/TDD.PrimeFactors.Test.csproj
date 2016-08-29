@@ -6,8 +6,8 @@
     <ProjectGuid>{C07AF5D9-B9AA-4862-A264-FF69EE80686F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TDD.PrimeFactor.Test</RootNamespace>
-    <AssemblyName>TDD.PrimeFactor.Test</AssemblyName>
+    <RootNamespace>TDD.PrimeFactors.Test</RootNamespace>
+    <AssemblyName>TDD.PrimeFactors.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -76,12 +76,13 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="PrimeFactorizerFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TDD.PrimeFactor.Core\TDD.PrimeFactor.Core.csproj">
+    <ProjectReference Include="..\TDD.PrimeFactor.Core\TDD.PrimeFactors.Core.csproj">
       <Project>{0560a21d-e6ae-4c7c-b0e6-30e3322569eb}</Project>
-      <Name>TDD.PrimeFactor.Core</Name>
+      <Name>TDD.PrimeFactors.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

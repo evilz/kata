@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 
 namespace Utils
@@ -51,6 +52,43 @@ namespace Utils
             var length = stringBuilder.Length;
             stringBuilder.Clear();
             stringBuilder.Append(character, length);
+        }
+
+        public static IEnumerable<int> CountRepetitions(this string source, char character)
+        {
+            var isPreviousChar = source[0] == character;
+
+            var currentCount = isPreviousChar ? 1 : 0;
+            var maxCount = currentCount;
+
+            for (var i = 1; i < source.Length; i++)
+            {
+                var currentChar = source[i];
+
+                isPreviousChar = source[0] == character;
+
+                if (!isPreviousChar)
+                {
+                    currentCount = 1;
+                }
+
+                if (currentChar == character)
+                {
+                    currentCount++;
+
+                    if (currentCount > maxCount)
+                    {
+                        maxCount = currentCount;
+                    }
+                }
+            }
+
+            return maxCount;
+        }
+
+        public static Int32 CountMaxRepetitions(this string source, char character)
+        {
+            
         }
     }
 }

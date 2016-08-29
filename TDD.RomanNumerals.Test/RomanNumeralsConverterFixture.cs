@@ -1,5 +1,5 @@
 ﻿// 
-// FizzBuzzFixture.cs
+// RomanNumeralsConverterFixture.cs
 // 
 // Author:
 //       Ehouarn Perret <ehouarn.perret@outlook.com>
@@ -24,58 +24,53 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+using System;
 using System.Collections.Generic;
 using NUnit.Framework;
-using TDD.FizzBuzz.Core;
 
-namespace TDD.FizzBuzz.Test
+namespace TDD.RomanNumerals.Test
 {
     [TestFixture]
-    public class FizzBuzzFixture
+    public class RomanNumeralsConverterFixture
     {
-        [SetUp]
-        public void SetUp()
+        private void CheckExpectedConversion(int n, string expectedRomanNumerals)
         {
-            _output = Program.FizzBuzz();
+            var actualRomanNumerals = RomanNumeralsConverter.ToString(n);
+                
+            Assert.AreEqual(expectedRomanNumerals, actualRomanNumerals);
         }
 
-        private IReadOnlyList<string> _output;
-
-        [TestCase]
-        public void Should_output_100_items()
+        [Test]
+        public void Should_not_return_special_characters_more_than_3_times_in_a_row()
         {
-            var expected = 100;
-            var actual = _output.Count;
+            var specialCharacters = new[] {"I", "X", "C", "M"};
 
-            Assert.AreEqual(expected, actual);
+            for (var i = 0; i < 3000; i++)
+            {
+                var actual = RomanNumeralsConverter.Convert();
+            }
         }
 
-        private void CheckExpectedNumberStringConsistency(byte number, string expectedNumberString)
+        public void Should_not_return()
         {
-            var expected = expectedNumberString;
-            var actual = Program.GetNumberString(number);
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestCase(3)]
-        [TestCase(9)]
-        public void Should_print_Fizz_if_number_multiple_of_3_only(byte number)
-        {
-            CheckExpectedNumberStringConsistency(number, Program.Fizz);
-        }
-
-        [TestCase(5)]
-        [TestCase(10)]
-        public void Should_print_Buzz_if_number_multiple_of_5_only(byte number)
-        {
-            CheckExpectedNumberStringConsistency(number, Program.Buzz);
-        }
-
-        [TestCase(15)]
-        [TestCase(45)]
-        public void Should_print_FizzBuzz_if_number_multiple_of_3_and_5(byte number)
-        {
-            CheckExpectedNumberStringConsistency(number, Program.Fizz + Program.Buzz);
+            
         }
     }
+
+    public static class RomanNumeralsConverter
+    {
+        public static IReadOnlyList<RomanNumerals> ToNumerals(int n)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static string ToString(int n)
+        {
+            var romanNumerals = ToNumerals(n);
+
+            var str = string.Join(string.Empty, romanNumerals);
+
+            return str;
+        }
+    } 
 }

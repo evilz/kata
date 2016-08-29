@@ -7,8 +7,8 @@
     <ProjectGuid>{0560A21D-E6AE-4C7C-B0E6-30E3322569EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TDD.PrimeFactor.Core</RootNamespace>
-    <AssemblyName>TDD.PrimeFactor.Core</AssemblyName>
+    <RootNamespace>TDD.PrimeFactors.Core</RootNamespace>
+    <AssemblyName>TDD.PrimeFactors.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrimeFactorizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

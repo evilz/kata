@@ -1,5 +1,5 @@
 ﻿// 
-// Program.cs
+// PrimeFactorizer.cs
 // 
 // Author:
 //       Ehouarn Perret <ehouarn.perret@outlook.com>
@@ -25,45 +25,27 @@
 // THE SOFTWARE.
 
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text;
 
-namespace TDD.FizzBuzz.Core
+namespace TDD.PrimeFactors.Core
 {
-    public static class Program
+    public static class PrimeFactorizer
     {
-        public static IReadOnlyList<string> FizzBuzz()
+        public static IReadOnlyList<int> Factorize(int n)
         {
-            const byte itemCount = 100;
-            var items = new string[itemCount];
+            var primeFactors = new List<int>();
 
-            for (var i = 0; i < 100; i++)
+            for (var i = 2; i <= n; i++)
             {
-                var number = i + 1;
-                items[i] = GetNumberString((byte)number);
+                while (n % i == 0)
+                {
+                    primeFactors.Add(i);
+                    n /= i;
+                }
             }
 
-            return new ReadOnlyCollection<string>(items);
-        }
+            var readOnlyPrimeFactors = primeFactors.AsReadOnly();
 
-        public const string Fizz = @"Fizz";
-        public const string Buzz = @"Buzz";
-
-        public static string GetNumberString(byte number)
-        {
-            var stringBuilder = new StringBuilder();
-
-            if (number % 3 == 0)
-            {
-                stringBuilder.Append(Program.Fizz);
-            }
-
-            if (number % 5 == 0)
-            {
-                stringBuilder.Append(Program.Buzz);
-            }
-
-            return stringBuilder.ToString();
+            return readOnlyPrimeFactors;
         }
     }
 }

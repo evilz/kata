@@ -77,6 +77,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RomanNumerals.cs" />
+    <Compile Include="RomanNumeralsConverterFixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDD.RomanNumerals.Core\TDD.RomanNumerals.Core.csproj">

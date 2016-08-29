@@ -1,5 +1,5 @@
 ﻿// 
-// FizzBuzzFixture.cs
+// PrimeFactorizerFixture.cs
 // 
 // Author:
 //       Ehouarn Perret <ehouarn.perret@outlook.com>
@@ -26,56 +26,45 @@
 
 using System.Collections.Generic;
 using NUnit.Framework;
-using TDD.FizzBuzz.Core;
+using TDD.PrimeFactors.Core;
 
-namespace TDD.FizzBuzz.Test
+namespace TDD.PrimeFactors.Test
 {
     [TestFixture]
-    public class FizzBuzzFixture
+    public class PrimeFactorizerFixture
     {
-        [SetUp]
-        public void SetUp()
+        private void CheckExpectedActualPrimeFactors(int n, IReadOnlyList<int> expectedPrimeFactors)
         {
-            _output = Program.FizzBuzz();
+            var actualPrimeFactors = PrimeFactorizer.Factorize(n);
+
+            CollectionAssert.AreEqual(expectedPrimeFactors, actualPrimeFactors);
         }
 
-        private IReadOnlyList<string> _output;
-
-        [TestCase]
-        public void Should_output_100_items()
+        [Test]
+        public void Should_return_no_primer_numbers()
         {
-            var expected = 100;
-            var actual = _output.Count;
-
-            Assert.AreEqual(expected, actual);
+            var n = 1;
+            var expectedPrimeFactors = new int[0];
+            CheckExpectedActualPrimeFactors(n, expectedPrimeFactors);
         }
 
-        private void CheckExpectedNumberStringConsistency(byte number, string expectedNumberString)
+        [TestCase(2)]
+        [TestCase(41)]
+        [TestCase(67)]
+        [TestCase(19)]
+        public void Should_return_given_number_if_prime_number(int n)
         {
-            var expected = expectedNumberString;
-            var actual = Program.GetNumberString(number);
-            Assert.AreEqual(expected, actual);
+            var expectedPrimeFactors = new[] {n};
+            CheckExpectedActualPrimeFactors(n, expectedPrimeFactors);   
         }
 
-        [TestCase(3)]
-        [TestCase(9)]
-        public void Should_print_Fizz_if_number_multiple_of_3_only(byte number)
+        [TestCase(14, 2, 7)]
+        [TestCase(6, 2, 3)]
+        [TestCase(32, 2, 2, 2, 2, 2)]
+        [TestCase(258, 2, 3, 43)]
+        public void Should_return_prime_number_factors_accordingly(int n, params int[] expectedPrimeFactors)
         {
-            CheckExpectedNumberStringConsistency(number, Program.Fizz);
-        }
-
-        [TestCase(5)]
-        [TestCase(10)]
-        public void Should_print_Buzz_if_number_multiple_of_5_only(byte number)
-        {
-            CheckExpectedNumberStringConsistency(number, Program.Buzz);
-        }
-
-        [TestCase(15)]
-        [TestCase(45)]
-        public void Should_print_FizzBuzz_if_number_multiple_of_3_and_5(byte number)
-        {
-            CheckExpectedNumberStringConsistency(number, Program.Fizz + Program.Buzz);
+            CheckExpectedActualPrimeFactors(n, expectedPrimeFactors);
         }
     }
 }

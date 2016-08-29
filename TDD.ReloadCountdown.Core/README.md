@@ -13,4 +13,6 @@ Create a helper class called Countdown with operations:
 - Start(seconds) - set the countdown to seconds, therefore Stopped() will return false
 - Decrease(seconds) - decrease the countdown. If time reaches (or passes!) zero, Stopped() will return true again
 
-When developing the class, think about names. What names feel most "natural" when testing? Feel free to choose other names than Stopped, Start and Decrease, if those feel awkward when testing the class.
+When developing the class, think about names. 
+What names feel most "natural" when testing? 
+Feel free to choose other names than Stopped, Start and Decrease, if those feel awkward when testing the class.

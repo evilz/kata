@@ -32,13 +32,6 @@ namespace TDD.LeapYears.Test
     [TestFixture]
     public class DateTimeExtensionsFixture
     {
-        [TestCase(42)]
-        [TestCase(1850)]
-        public void Should_not_throw_exception_if_year_is_positive(int year)
-        {
-            Assert.DoesNotThrow(() => DateTime.IsLeapYear(year));
-        }
-
         [TestCase(-1750)]
         public void Should_throw_out_of_range_exception_if_year_is_negative(int year)
         {
