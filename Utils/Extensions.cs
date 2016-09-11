@@ -54,7 +54,7 @@ namespace Utils
             stringBuilder.Append(character, length);
         }
 
-        public static IEnumerable<int> CountRepetitions(this string source, char character)
+        public static int MaxCountRepetitions(this string source, char character)
         {
             var isPreviousChar = source[0] == character;
 
@@ -84,11 +84,6 @@ namespace Utils
             }
 
             return maxCount;
-        }
-
-        public static Int32 CountMaxRepetitions(this string source, char character)
-        {
-            
         }
     }
 }

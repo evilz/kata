@@ -1,5 +1,5 @@
 ﻿// 
-// RomanNumeralsConverterFixture.cs
+// Countdown.cs
 // 
 // Author:
 //       Ehouarn Perret <ehouarn.perret@outlook.com>
@@ -25,51 +25,55 @@
 // THE SOFTWARE.
 
 using System;
-using System.Collections.Generic;
-using NUnit.Framework;
 
-namespace TDD.RomanNumerals.Test
+namespace TDD.ReloadCountdown.Core
 {
-    [TestFixture]
-    public class RomanNumeralsConverterFixture
+    public class Countdown
     {
-        private void CheckExpectedConversion(int n, string expectedRomanNumerals)
+        public Countdown()
         {
-            var actualRomanNumerals = RomanNumeralsConverter.ToString(n);
-                
-            Assert.AreEqual(expectedRomanNumerals, actualRomanNumerals);
+            IsStopped = true;
+            _secondCount = 0;
         }
 
-        [Test]
-        public void Should_not_return_special_characters_more_than_3_times_in_a_row()
-        {
-            var specialCharacters = new[] {"I", "X", "C", "M"};
+        public bool IsStopped { get; private set; }
 
-            for (var i = 0; i < 3000; i++)
+        private uint _secondCount;
+
+        public void Start(uint seconds)
+        {
+            if (!IsStopped)
             {
+                throw new InvalidOperationException();
+            }
+            else
+            {
+                if (seconds > 0)
+                {
+                    _secondCount = seconds;
+                    IsStopped = false;
+                }
             }
         }
 
-        public void Should_not_return()
+        public void Decrease(uint seconds)
         {
-            
+            if (IsStopped)
+            {
+                throw new InvalidOperationException();
+            }
+            else
+            {
+                if (_secondCount <= seconds)
+                {
+                    _secondCount = uint.MinValue;
+                    IsStopped = true;
+                }
+                else
+                {
+                    _secondCount -= seconds;
+                }
+            }
         }
     }
-
-    public static class RomanNumeralsConverter
-    {
-        public static IReadOnlyList<RomanNumerals> ToNumerals(int n)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static string ToString(int n)
-        {
-            var romanNumerals = ToNumerals(n);
-
-            var str = string.Join(string.Empty, romanNumerals);
-
-            return str;
-        }
-    } 
 }
