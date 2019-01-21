@@ -7,6 +7,9 @@ steps:
 - script: dotnet test ./Src/TDD-Kata/Args/Args-tests-csharp/Args-tests-csharp.csproj /p:CollectCoverage=true /p:Exclude="[xunit.runner.*]*" /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./Coverage/
   displayName: Run test & cover
 
+- script: ls
+  displayName: List files !
+
 # Publish Code Coverage Results
 # Publish Cobertura or JaCoCo code coverage results from a build
 - task: PublishCodeCoverageResults@1
