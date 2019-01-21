@@ -22,8 +22,6 @@ steps:
 #     #additionalCodeCoverageFiles: # Optional
 #     #failIfCoverageEmpty: false # Optional
 
-
-steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 - script: |
