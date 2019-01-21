@@ -22,7 +22,7 @@ steps:
 #     #additionalCodeCoverageFiles: # Optional
 #     #failIfCoverageEmpty: false # Optional
 
-- script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet build --configuration $(buildConfiguration) ./Src/TDD-Kata/Args/Args-tests-csharp/Args-tests-csharp.csproj
   displayName: 'dotnet build $(buildConfiguration)'
 - script: |
     mkdir $(Build.SourcesDirectory)\results
