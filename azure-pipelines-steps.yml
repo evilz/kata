@@ -12,7 +12,7 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'cobertura'
-    summaryFileLocation: './Src/TDD-Kata/Args/Args-tests-csharp/Coverage/coverage.cobertura.xml'
+    summaryFileLocation: './Coverage/coverage.cobertura.xml'
     #reportDirectory: # Optional
     #additionalCodeCoverageFiles: # Optional
     #failIfCoverageEmpty: false # Optional
