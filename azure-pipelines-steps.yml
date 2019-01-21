@@ -40,4 +40,13 @@ steps:
     reportDirectory: $(Build.SourcesDirectory)\results
     codecoverageTool: cobertura
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: publish
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    projects: ./Src/TDD-Kata/Args/Args-csharp/Args-csharp.csproj
+    publishWebProjects: false
+    modifyOutputPath: true
+    zipAfterPublish: true
+
 - task: PublishBuildArtifacts@1
