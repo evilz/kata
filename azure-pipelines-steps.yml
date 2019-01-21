@@ -1,4 +1,7 @@
 
+variables:
+  buildConfiguration: 'Release'
+  
 steps:
 - task: DotNetCoreInstaller@0
   inputs:
@@ -20,8 +23,6 @@ steps:
 #     #additionalCodeCoverageFiles: # Optional
 #     #failIfCoverageEmpty: false # Optional
 
-variables:
-  buildConfiguration: 'Release'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
