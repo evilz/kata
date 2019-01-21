@@ -1,7 +1,6 @@
 
-variables:
-  buildConfiguration: 'Release'
-  
+
+
 steps:
 - task: DotNetCoreInstaller@0
   inputs:
