@@ -4,7 +4,7 @@ steps:
   inputs:
     version: '2.1.300' # replace this value with the version that you need for your project
 
-- script: cd Src/TDD-Kata/Args/Args-tests-csharp && dotnet test /p:CollectCoverage=true /p:Exclude="[xunit.runner.*]*" /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./Coverage/
+- script: dotnet test ./Src/TDD-Kata/Args/Args-tests-csharp/Args-tests-csharp.csproj /p:CollectCoverage=true /p:Exclude="[xunit.runner.*]*" /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./Coverage/
   displayName: Run test & cover
 
 # Publish Code Coverage Results
@@ -16,5 +16,3 @@ steps:
     #reportDirectory: # Optional
     #additionalCodeCoverageFiles: # Optional
     #failIfCoverageEmpty: false # Optional
-
-
