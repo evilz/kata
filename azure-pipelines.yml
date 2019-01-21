@@ -1,0 +1,29 @@
+# Node.js
+# Build a general Node.js application with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/vsts/pipelines/languages/javascript
+
+jobs:
+  - job: Linux
+    pool:
+      vmImage: 'ubuntu-16.04'
+    variables:
+      platform: Linux
+    steps:
+      - template: azure-pipelines-steps.yml
+
+  - job: Windows
+    pool:
+      vmImage: 'vs2017-win2016'
+    variables:
+      platform: Windows
+    steps:
+      - template: azure-pipelines-steps.yml 
+
+  - job: macOS
+    pool:
+      vmImage: 'xcode9-macos10.13'
+    variables:
+      platform: MacOS
+    steps:
+      - template: azure-pipelines-steps.yml 

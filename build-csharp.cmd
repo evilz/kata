@@ -1,14 +1,4 @@
-@echo off
-cls
 
-.paket\paket.bootstrapper.exe
-if errorlevel 1 (
-  exit /b %errorlevel%
-)
-
-.paket\paket.exe restore
-if errorlevel 1 (
-  exit /b %errorlevel%
-)
-
-packages\FAKE\tools\FAKE.exe build-csharp.fsx %*
+dotnet build ./Src/csharp-kata.sln
+dotnet tool install --global coverlet.console
+dotnet test ./Src/csharp-kata.sln  /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput='./coverage.json'

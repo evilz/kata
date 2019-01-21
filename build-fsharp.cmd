@@ -1,6 +1,10 @@
 @echo off
 cls
 
+dotnet tool install fake-cli -g
+
+
+
 .paket\paket.bootstrapper.exe
 if errorlevel 1 (
   exit /b %errorlevel%
