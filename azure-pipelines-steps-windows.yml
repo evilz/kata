@@ -13,7 +13,7 @@ steps:
     dotnet test --logger trx /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura  ./Src/TDD-Kata/Args/Args-tests-csharp/Args-tests-csharp.csproj /p:Exclude=[xunit.*]*
     cp $(Build.SourcesDirectory)/Src/TDD-Kata/Args/Args-tests-csharp/coverage.cobertura.xml $(Build.SourcesDirectory)/results/coverage.cobertura.xml
     dotnet tool install dotnet-reportgenerator-globaltool --tool-path tools
-    ./tools/reportgenerator.exe -reports:$(Build.SourcesDirectory)/results/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/results/ -sourcedirs:$(Build.SourcesDirectory)/Src/TDD-Kata/Args/ -reporttypes:HTMLInline;HTMLChart
+    .\tools\reportgenerator.exe -reports:$(Build.SourcesDirectory)/results/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/results/ -sourcedirs:$(Build.SourcesDirectory)/Src/TDD-Kata/Args/ -reporttypes:HTMLInline;HTMLChart
   displayName: 'Unit testing'
 
 - task: PublishTestResults@2
