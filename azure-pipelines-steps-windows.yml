@@ -30,7 +30,7 @@ steps:
 - powershell: |
     Invoke-WebRequest -Uri "https://download.jetbrains.com/resharper/ReSharperUltimate.2018.3.1/JetBrains.ReSharper.CommandLineTools.2018.3.1.zip" -OutFile ".\tools\JetBrains.ReSharper.CommandLineTools.2018.3.1.zip"
     Expand-Archive -LiteralPath .\tools\JetBrains.ReSharper.CommandLineTools.2018.3.1.zip -DestinationPath .\tools\JetBrains.ReSharper.CommandLineTools
-    .\tools\JetBrains.ReSharper.CommandLineTools\InspectCode.exe "$(Build.SourcesDirectory)/Src/TDD-Kata/csharp-kata.sln" -o="$(Build.SourcesDirectory)/results/inspect.xml"
+    .\tools\JetBrains.ReSharper.CommandLineTools\InspectCode.exe "$(Build.SourcesDirectory)/Src/csharp-kata.sln" -o="$(Build.SourcesDirectory)/results/inspect.xml"
   displayName: Resharper Analyse  
 
 - task: DotNetCoreCLI@2
