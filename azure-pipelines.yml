@@ -19,7 +19,7 @@ jobs:
     variables:
         buildConfiguration: 'Release'
     steps:
-      - template: azure-pipelines-steps.yml 
+      - template: azure-pipelines-steps-windows.yml 
 
   - job: macOS
     pool:
