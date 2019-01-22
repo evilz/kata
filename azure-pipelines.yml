@@ -10,10 +10,8 @@ jobs:
       vmImage: 'ubuntu-16.04'
     variables:
         buildConfiguration: 'Release'
-
-
     steps:
-      - template: azure-pipelines-steps.yml
+      - template: azure-pipelines-steps-linux.yml
 
   - job: Windows
     pool:
@@ -29,4 +27,4 @@ jobs:
     variables:
         buildConfiguration: 'Release'
     steps:
-      - template: azure-pipelines-steps.yml 
+      - template: azure-pipelines-steps-linux.yml 
