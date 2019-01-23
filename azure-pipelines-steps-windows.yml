@@ -38,6 +38,11 @@ steps:
     .\tools\dotnet-reqube -i "$(Build.SourcesDirectory)/results/inspect.xml" -o "$(Build.SourcesDirectory)/results/SonarQubeReport.json" -d "$(Build.SourcesDirectory)/Src/"
   displayName: 'Reqube'
 
+- script: |
+    dotnet tool install --global dotnet-sonarscanner
+    dotnet sonarscanner -Dsonar.projectKey=evilz_kata -Dsonar.organization=evilz-github -Dsonar.sources=./src -Dsonar.host.url=https://sonarcloud.io -Dsonar.pullrequest.base=master -Dsonar.pullrequest.provider=GitHub -Dsonar.pullrequest.github.repository=evilz/kata -Dsonar.externalIssuesReportPaths="$(Build.SourcesDirectory)/results/SonarQubeReport.json"  -Dsonar.login=$(sonar.token) -Dsonar.pullrequest.branch=$(System.PullRequest.SourceBranch) -Dsonar.pullrequest.key=$(System.PullRequest.PullRequestNumber)
+  displayName: sonar PR branch $(System.PullRequest.SourceBranch) - $(System.PullRequest.PullRequestNumber)
+
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
