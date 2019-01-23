@@ -40,7 +40,7 @@ steps:
 
 - script: |
     dotnet tool install --global dotnet-sonarscanner
-    dotnet sonarscanner -Dsonar.projectKey=evilz_kata -Dsonar.organization=evilz-github -Dsonar.sources=./src -Dsonar.host.url=https://sonarcloud.io -Dsonar.pullrequest.base=master -Dsonar.pullrequest.provider=GitHub -Dsonar.pullrequest.github.repository=evilz/kata -Dsonar.externalIssuesReportPaths="$(Build.SourcesDirectory)/results/SonarQubeReport.json"  -Dsonar.login=$(sonar.token) -Dsonar.pullrequest.branch=$(System.PullRequest.SourceBranch) -Dsonar.pullrequest.key=$(System.PullRequest.PullRequestNumber)
+    dotnet sonarscanner /d:sonar.projectKey=evilz_kata /d:sonar.organization=evilz-github /d:sonar.sources=./src /d:sonar.host.url=https://sonarcloud.io /d:sonar.pullrequest.base=master /d:sonar.pullrequest.provider=GitHub /d:sonar.pullrequest.github.repository=evilz/kata /d:sonar.externalIssuesReportPaths="$(Build.SourcesDirectory)/results/SonarQubeReport.json"  /d:sonar.login=$(sonar.token) /d:sonar.pullrequest.branch=$(System.PullRequest.SourceBranch) /d:sonar.pullrequest.key=$(System.PullRequest.PullRequestNumber)
   displayName: sonar PR branch $(System.PullRequest.SourceBranch) - $(System.PullRequest.PullRequestNumber)
 
 - task: DotNetCoreCLI@2
