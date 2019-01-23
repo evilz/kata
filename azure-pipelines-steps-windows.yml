@@ -33,6 +33,11 @@ steps:
     .\tools\JetBrains.ReSharper.CommandLineTools\InspectCode.exe "$(Build.SourcesDirectory)/Src/csharp-kata.sln" -o="$(Build.SourcesDirectory)/results/inspect.xml"
   displayName: Resharper Analyse  
 
+- script: |
+    dotnet tool install dotnet-reqube --tool-path tools
+    .\tools\dotnet-reqube -i "$(Build.SourcesDirectory)/results/inspect.xml" -o "$(Build.SourcesDirectory)/results/SonarQubeReport.json" -d "$(Build.SourcesDirectory)/Src/"
+  displayName: 'Reqube'
+
 - task: DotNetCoreCLI@2
   inputs:
     command: publish
