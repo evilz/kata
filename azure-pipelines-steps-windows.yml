@@ -41,7 +41,7 @@ steps:
 - script: |
     dotnet tool install --global dotnet-sonarscanner
     dotnet sonarscanner begin /k:evilz_kata /d:sonar.organization=evilz-github /d:sonar.sources=./src /d:sonar.host.url=https://sonarcloud.io /d:sonar.pullrequest.base=master /d:sonar.pullrequest.provider=GitHub /d:sonar.pullrequest.github.repository=evilz/kata /d:sonar.externalIssuesReportPaths="$(Build.SourcesDirectory)/results/SonarQubeReport.json"  /d:sonar.login=$(sonar.token) /d:sonar.pullrequest.branch=$(System.PullRequest.SourceBranch) /d:sonar.pullrequest.key=$(System.PullRequest.PullRequestNumber)
-    dotnet sonarscanner end
+    dotnet sonarscanner end /d:sonar.login=$(sonar.token)
   displayName: sonar PR branch $(System.PullRequest.SourceBranch) - $(System.PullRequest.PullRequestNumber)
 
 - task: DotNetCoreCLI@2
