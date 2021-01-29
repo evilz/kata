@@ -1,0 +1,10 @@
+
+
+
+steps:
+- task: DotNetCoreInstaller@0
+  inputs:
+    version: '2.1.300'
+
+- script: dotnet test --configuration $(buildConfiguration) ./Src/TDD-Kata/Args/Args-tests-csharp/Args-tests-csharp.csproj
+  displayName: 'Dotnet Test'

@@ -203,3 +203,6 @@ paket-files/*
 artifacts/*
 artifacts
 *.dll
+
+
+**/.idea/*

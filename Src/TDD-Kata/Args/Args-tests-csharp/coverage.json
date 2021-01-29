@@ -1,0 +1,264 @@
+{
+  "Args-csharp.dll": {
+    "D:\\GITHUB\\kata\\Src\\TDD-Kata\\Args\\Args-csharp\\Arg.cs": {
+      "Args_csharp.Arg": {
+        "System.String Args_csharp.Arg::get_Description()": {
+          "Lines": {
+            "14": 1
+          },
+          "Branches": []
+        },
+        "System.String Args_csharp.Arg::get_Flag()": {
+          "Lines": {
+            "15": 26
+          },
+          "Branches": []
+        },
+        "System.Object Args_csharp.Arg::get_Value()": {
+          "Lines": {
+            "16": 40
+          },
+          "Branches": []
+        },
+        "System.Type Args_csharp.Arg::get_Type()": {
+          "Lines": {
+            "18": 15
+          },
+          "Branches": []
+        },
+        "System.Void Args_csharp.Arg::.ctor(System.String,System.String,System.Object)": {
+          "Lines": {
+            "7": 13,
+            "8": 13,
+            "9": 13,
+            "10": 13,
+            "11": 13,
+            "12": 13
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\GITHUB\\kata\\Src\\TDD-Kata\\Args\\Args-csharp\\ArgsParser.cs": {
+      "Args_csharp.ArgsParser": {
+        "System.Collections.Generic.Dictionary`2<System.String,Args_csharp.Arg> Args_csharp.ArgsParser::get_Spec()": {
+          "Lines": {
+            "10": 30
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IDictionary`2<System.String,Args_csharp.Arg> Args_csharp.ArgsParser::Parse(System.Collections.Generic.IEnumerable`1<System.String>)": {
+          "Lines": {
+            "18": 6,
+            "19": 6,
+            "21": 6,
+            "23": 38,
+            "24": 11,
+            "25": 11,
+            "26": 7,
+            "27": 7,
+            "28": 6,
+            "29": 6,
+            "31": 4,
+            "33": 4,
+            "34": 4,
+            "35": 3,
+            "36": 3,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "42": 3,
+            "43": 3,
+            "45": 9,
+            "47": 4,
+            "48": 4
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 147,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 11
+            },
+            {
+              "Line": 25,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 25,
+              "Offset": 38,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 23,
+              "Offset": 147,
+              "EndOffset": 152,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Collections.Generic.IDictionary`2<System.String,Args_csharp.Arg> Args_csharp.ArgsParser::SetTrueIfBoolean(Args_csharp.Arg,System.Collections.Generic.IDictionary`2<System.String,Args_csharp.Arg>)": {
+          "Lines": {
+            "51": 6,
+            "52": 6,
+            "53": 2,
+            "54": 2,
+            "55": 2,
+            "56": 6,
+            "57": 6
+          },
+          "Branches": [
+            {
+              "Line": 52,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 52,
+              "Offset": 24,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "Args_csharp.Arg Args_csharp.ArgsParser::GetSpecFor(System.String)": {
+          "Lines": {
+            "60": 7,
+            "61": 7,
+            "62": 7,
+            "63": 1,
+            "64": 1,
+            "66": 6,
+            "67": 6
+          },
+          "Branches": [
+            {
+              "Line": 62,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 62,
+              "Offset": 27,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Boolean Args_csharp.ArgsParser::IsFlag(System.String)": {
+          "Lines": {
+            "70": 11,
+            "71": 11,
+            "72": 11
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IDictionary`2<System.String,Args_csharp.Arg> Args_csharp.ArgsParser::GetDefaultArgsValues()": {
+          "Lines": {
+            "75": 6,
+            "76": 6,
+            "77": 22,
+            "78": 6
+          },
+          "Branches": [
+            {
+              "Line": 76,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 76,
+              "Offset": 18,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 76,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 76,
+              "Offset": 49,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 6
+            }
+          ]
+        },
+        "System.Void Args_csharp.ArgsParser::.ctor(System.Collections.Generic.IEnumerable`1<Args_csharp.Arg>)": {
+          "Lines": {
+            "12": 12,
+            "13": 12,
+            "14": 38,
+            "15": 12
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 16,
+              "EndOffset": 18,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 16,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 12
+            },
+            {
+              "Line": 14,
+              "Offset": 47,
+              "EndOffset": 49,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 47,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 12
+            }
+          ]
+        }
+      }
+    }
+  }
+}
